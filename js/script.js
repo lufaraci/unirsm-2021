@@ -19,8 +19,8 @@ window.onload = function () {
 	var params = {
 		vertexShaderID: "plane-vs", // our vertex shader ID
 		fragmentShaderID: "plane-fs", // our framgent shader ID
-		widthSegments: 30,
-		heightSegments: 30, // we now have 20*20*6 = 2400 vertices !
+		widthSegments: 20,
+		heightSegments: 20, // we now have 20*20*6 = 2400 vertices !
 		uniforms: {
 			time: {
 				name: "uTime", // uniform name that will be passed to our shaders
