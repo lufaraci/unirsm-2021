@@ -1,0 +1,80 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 551.32 363.72">
+    <title>fonti-energetiche</title>
+    <g id="fb">
+        <rect id="fb-2" data-name="fb" x="540.31" width="11.03" height="24.02" style="fill:#383838" />
+        <rect id="fb-3" data-name="fb" x="490.69" width="49.62" height="24.02" style="fill:#606060" />
+        <rect id="fb-4" data-name="fb" x="407.99" width="82.7" height="24.02" style="fill:#afafaf;opacity:0.6000000000000001" />
+        <rect id="fb-5" data-name="fb" x="369.39" width="38.59" height="24.02" style="fill:#d3d3d3;opacity:0.6000000000000001" />
+        <rect id="fb-6" data-name="fb" width="369.39" height="24.02" style="fill:#f2f2f2" /><text transform="translate(4.84 15.12)" style="font-size:11px;font-family:Akkurat-Mono, Akkurat-Mono">FB/ WA/ IG</text>
+    </g>
+    <g id="google_play" data-name="google play">
+        <rect id="google_play-2" data-name="google play" x="523.77" y="34.02" width="27.57" height="24.02" style="fill:#383838" />
+        <rect id="google_play-3" data-name="google play" x="468.63" y="34.02" width="55.13" height="24.02" style="fill:#606060" />
+        <rect id="google_play-4" data-name="google play" x="385.93" y="34.02" width="82.7" height="24.02" style="fill:#afafaf;opacity:0.6000000000000001" />
+        <rect id="google_play-5" data-name="google play" x="308.75" y="34.02" width="77.19" height="24.02" style="fill:#d3d3d3;opacity:0.6000000000000001" />
+        <rect id="google_play-6" data-name="google play" y="34.02" width="308.75" height="24.02" style="fill:#f2f2f2" /><text transform="translate(4.84 49.14)" style="font-size:11px;font-family:Akkurat-Mono, Akkurat-Mono">GOOGLE PLAY</text>
+    </g>
+    <g id="itunes">
+        <rect id="itunes-2" data-name="itunes" x="534.79" y="68.04" width="16.54" height="24.02" style="fill:#383838" />
+        <rect id="itunes-3" data-name="itunes" x="507.23" y="68.04" width="27.57" height="24.02" style="fill:#606060" />
+        <rect id="itunes-4" data-name="itunes" x="479.66" y="68.04" width="27.57" height="24.02" style="fill:#afafaf;opacity:0.6000000000000001" />
+        <rect id="itunes-5" data-name="itunes" x="457.61" y="68.04" width="22.05" height="24.02" style="fill:#d3d3d3;opacity:0.6000000000000001" />
+        <rect id="itunes-6" data-name="itunes" y="68.04" width="457.61" height="24.02" style="fill:#f2f2f2" /><text transform="translate(4.84 83.16)" style="font-size:11px;font-family:Akkurat-Mono, Akkurat-Mono">ITUNES</text>
+    </g>
+    <g id="youtube">
+        <rect x="523.77" y="102.06" width="27.57" height="24.02" style="fill:#383838" />
+        <rect x="468.63" y="102.06" width="55.13" height="24.02" style="fill:#606060" />
+        <rect x="385.93" y="102.06" width="82.7" height="24.02" style="fill:#afafaf;opacity:0.6000000000000001" />
+        <rect x="308.75" y="102.06" width="77.19" height="24.02" style="fill:#d3d3d3;opacity:0.6000000000000001" />
+        <rect y="102.06" width="308.75" height="24.02" style="fill:#f2f2f2" /><text transform="translate(4.84 117.18)" style="font-size:11px;font-family:Akkurat-Mono, Akkurat-Mono">YOUTUBE</text>
+    </g>
+    <g id="amazon">
+        <rect x="534.79" y="204.12" width="16.54" height="24.02" style="fill:#383838" />
+        <rect x="391.45" y="204.12" width="143.35" height="24.02" style="fill:#606060" />
+        <rect x="226.05" y="204.12" width="165.4" height="24.02" style="fill:#afafaf;opacity:0.6000000000000001" />
+        <rect x="93.73" y="204.12" width="132.32" height="24.02" style="fill:#d3d3d3;opacity:0.6000000000000001" />
+        <rect y="204.12" width="93.73" height="24.02" style="fill:#f2f2f2" /><text transform="translate(4.84 219.24)" style="font-size:11px;font-family:Akkurat-Mono, Akkurat-Mono">AMAZON</text>
+    </g>
+    <g id="netflix">
+        <rect id="netflix-2" data-name="netflix" x="534.79" y="136.08" width="16.54" height="24.02" style="fill:#383838" />
+        <rect id="netflix-3" data-name="netflix" x="391.45" y="136.08" width="143.35" height="24.02" style="fill:#606060" />
+        <rect id="netflix-4" data-name="netflix" x="226.05" y="136.08" width="165.4" height="24.02" style="fill:#afafaf;opacity:0.6000000000000001" />
+        <rect id="netflix-5" data-name="netflix" x="93.73" y="136.08" width="132.32" height="24.02" style="fill:#d3d3d3;opacity:0.6000000000000001" />
+        <rect id="netflix-6" data-name="netflix" y="136.08" width="93.73" height="24.02" style="fill:#f2f2f2" /><text transform="translate(4.84 151.2)" style="font-size:11px;font-family:Akkurat-Mono, Akkurat-Mono">NETFLIX</text>
+    </g>
+    <g id="vimeo">
+        <rect id="vimeo-2" data-name="vimeo" x="545.82" y="170.1" width="5.51" height="24.02" style="fill:#383838" />
+        <rect id="vimeo-3" data-name="vimeo" x="441.07" y="170.1" width="104.75" height="24.02" style="fill:#606060" />
+        <rect id="vimeo-4" data-name="vimeo" x="330.8" y="170.1" width="110.27" height="24.02" style="fill:#afafaf;opacity:0.6000000000000001" />
+        <rect id="vimeo-5" data-name="vimeo" x="259.13" y="170.1" width="71.67" height="24.02" style="fill:#d3d3d3;opacity:0.6000000000000001" />
+        <rect id="vimeo-6" data-name="vimeo" y="170.1" width="259.13" height="24.02" style="fill:#f2f2f2" /><text transform="translate(4.84 185.22)" style="font-size:11px;font-family:Akkurat-Mono, Akkurat-Mono">VIMEO</text>
+    </g>
+    <g id="skype">
+        <rect id="skype-2" data-name="skype" x="529.23" y="238.14" width="22.05" height="23.96" style="fill:#383838" />
+        <rect id="skype-3" data-name="skype" x="474.1" y="238.14" width="55.13" height="23.96" style="fill:#606060" />
+        <rect id="skype-4" data-name="skype" x="303.2" y="238.14" width="170.9" height="23.96" style="fill:#afafaf;opacity:0.6000000000000001" />
+        <rect id="skype-5" data-name="skype" x="176.41" y="238.14" width="126.79" height="23.96" style="fill:#d3d3d3;opacity:0.59" />
+        <rect id="skype-6" data-name="skype" y="238.14" width="176.41" height="23.96" style="fill:#f2f2f2" /><text transform="translate(4.78 253.23)" style="font-size:11px;font-family:Akkurat-Mono, Akkurat-Mono">SKYPE</text>
+    </g>
+    <g id="twitter">
+        <rect id="twitter-2" data-name="twitter" x="485.12" y="272.11" width="66.15" height="23.96" style="fill:#383838" />
+        <rect id="twitter-3" data-name="twitter" x="407.95" y="272.11" width="77.18" height="23.96" style="fill:#606060" />
+        <rect id="twitter-4" data-name="twitter" x="292.18" y="272.11" width="115.77" height="23.96" style="fill:#afafaf;opacity:0.6000000000000001" />
+        <rect id="twitter-5" data-name="twitter" x="55.13" y="272.11" width="237.05" height="23.96" style="fill:#d3d3d3;opacity:0.59" />
+        <rect id="twitter-6" data-name="twitter" y="272.11" width="55.13" height="23.96" style="fill:#f2f2f2" /><text transform="translate(4.78 287.55)" style="font-size:11px;font-family:Akkurat-Mono, Akkurat-Mono">TWITTER</text>
+    </g>
+    <g id="spotify">
+        <rect id="spotify-2" data-name="spotify" x="523.71" y="306.07" width="27.56" height="23.83" style="fill:#383838" />
+        <rect id="spotify-3" data-name="spotify" x="468.59" y="306.07" width="55.13" height="23.83" style="fill:#606060" />
+        <rect id="spotify-4" data-name="spotify" x="385.89" y="306.07" width="82.69" height="23.83" style="fill:#afafaf;opacity:0.6000000000000001" />
+        <rect id="spotify-5" data-name="spotify" x="308.72" y="306.07" width="77.18" height="23.83" style="fill:#d3d3d3;opacity:0.6000000000000001" />
+        <rect id="spotify-6" data-name="spotify" y="306.07" width="308.72" height="23.83" style="fill:#f2f2f2" /><text transform="translate(4.78 321.09)" style="font-size:11px;font-family:Akkurat-Mono, Akkurat-Mono">SPOTIFY</text>
+    </g>
+    <g id="soundcloud">
+        <rect id="soundcloud-2" data-name="soundcloud" x="534.74" y="339.89" width="16.54" height="23.83" style="fill:#383838" />
+        <rect id="soundcloud-3" data-name="soundcloud" x="391.41" y="339.89" width="143.33" height="23.83" style="fill:#606060" />
+        <rect id="soundcloud-4" data-name="soundcloud" x="226.02" y="339.89" width="165.38" height="23.83" style="fill:#afafaf;opacity:0.6000000000000001" />
+        <rect id="soundcloud-5" data-name="soundcloud" x="93.72" y="339.89" width="132.31" height="23.83" style="fill:#d3d3d3;opacity:0.6000000000000001" />
+        <rect id="soundcloud-6" data-name="soundcloud" y="339.89" width="93.72" height="23.83" style="fill:#f2f2f2" /><text transform="translate(4.78 354.92)" style="font-size:11px;font-family:Akkurat-Mono, Akkurat-Mono">SOUNDCLOUD</text>
+    </g>
+</svg>

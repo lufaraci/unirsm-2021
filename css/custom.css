@@ -1,0 +1,128 @@
+/*
+#400DB2
+#FF4B00
+#19BBE0
+
+*/
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+	background-color: #565de8;
+	letter-spacing: 0;
+	text-rendering: optimizeLegibility;
+}
+
+.container {
+	width: 100%;
+	max-width: 800px;
+}
+
+h6 {
+	text-transform: uppercase;
+	font-size: 1.25rem;
+	letter-spacing: 0.01rem;
+	color: #ecfa89;
+	margin: 0;
+	padding: 0;
+}
+
+#main {
+	padding-top: 3rem;
+}
+
+h1 {
+	color: #ffacac;
+	font-weight: 600;
+	font-size: 6.7rem;
+	margin-bottom: 2rem;
+	margin-top: 5rem;
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+
+p,
+a {
+	line-height: 3rem;
+	font-size: 2rem;
+	font-weight: inherit;
+	color: #062265;
+	color: #ecfa89;
+	letter-spacing: 0.01rem;
+	max-width: 780px;
+}
+
+#projects a {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 4rem;
+	color: #ecfa89;
+	border: 1px solid #ecfa89 !important;
+	padding: 5px 20px 5px 20px;
+	border-radius: 40px;
+	text-decoration: none;
+	font-weight: 300;
+}
+
+#projects a:hover {
+	background-color: #ecfa89;
+	color: #565de8;
+}
+
+#projects,
+#projects p {
+	/*    background-color: #400DB2;*/
+	color: #ffacac;
+
+}
+
+#projects p {
+	padding-left: 20px;
+}
+
+
+
+
+#logos img {
+	width: 350px;
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+}
+
+/* Larger than mobile */
+@media (min-width: 320px) {
+	body {
+		margin: 0 5% 0 5%;
+	}
+
+	h1 {
+		font-size: 5rem;
+	}
+
+
+
+	#logos img {
+		width: 290px;
+	}
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+	h1 {
+		font-size: 6rem;
+	}
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+	h1 {
+		font-size: 6.7rem;
+	}
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}

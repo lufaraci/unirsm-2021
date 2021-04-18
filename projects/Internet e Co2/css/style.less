@@ -1,0 +1,340 @@
+// out: style.css, sourcemap: true, compress: false
+//importo i less
+@import "normalize";
+@import "skeleton"; // variabili colori font
+@fontcolor: #ffffff;
+@background-color: #1e1e1e;
+@linkcolor: #00FFC2;
+@citcolor: #00FFC2;
+@internetcolor: #00FFC2; // variabili font
+@body-fontsize: 14px;
+@h1-fontsize: 26px;
+@h2-fontsize: 20px;
+@footer-fontsize: 10px;
+@link-fontsize: 10px; // variabili interlinea
+@body-lineheight: 28px;
+
+body {
+  background-color: @background-color;
+  color: @fontcolor;
+  font-size: @body-fontsize;
+  font-family: "Sole24Sans";
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  letter-spacing: 0;
+}
+
+h1 {
+  font-size: @h1-fontsize;
+  color: @fontcolor;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0;
+}
+
+h3 {
+  font-size: @body-fontsize;
+  font-weight: 400;
+  text-align: center;
+  font-style: normal;
+  letter-spacing: 0;
+}
+
+.boxTitolo {
+  height: 100vh;
+}
+
+.titolo {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.articolo {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+h2 {
+  font-size: @h2-fontsize;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+p {
+  font-size: @body-fontsize;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+}
+
+.vertical {
+  border-left: 0.8px solid @citcolor;
+}
+
+.citazioni {
+  margin-left: 5%;
+}
+
+.treeMaps {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.barChart {
+  opacity: 1;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.praticaIntera {
+  display: inline-block;
+  width: 100%;
+  border-bottom: 0.8px solid rgba(255, 255, 255, 0.3);
+}
+#ultima{
+  border:none;
+}
+
+.icone {
+  float: left;
+  width: 20%;
+}
+
+.pratica {
+  width: 80%;
+  float: right;
+}
+
+.icone,
+.pratica {
+  height: 50px;
+}
+
+.icone svg,
+.pratica p {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.titoloGrafici {
+  font-weight: 500;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.internetStato {
+  font-weight: 500;
+}
+
+#internet {
+  float: left;
+  color: @internetcolor;
+  line-height: 120%;
+}
+
+#stato {
+  float: right;
+  text-align: right;
+  line-height: 120%;
+}
+
+.ultimoTitolo {
+  margin-top: 7%;
+}
+///////////////////////////////////
+//Vertical menu////////////////////////
+///////////////////////////////////
+
+.dropup {
+  position: relative;
+  display: inline-block;
+  width: 99.5%;
+  margin-top: 2.3%;
+  margin-bottom: 5%;
+  border: 0.8px solid white;
+  font-size: @footer-fontsize;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.dropbtn {
+  background-color: #1e1e1e;
+  color: white;
+  float: left;
+  padding-left: 3%;
+}
+
+.freccetta {
+  float: right;
+  padding-right: 3%;
+}
+
+.dropup-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  bottom: 100%;
+  border: 0.8px solid #1e1e1e;
+  left: -0.8px;
+  z-index: 1;
+  overflow: auto;
+  height: 600%;
+  white-space: nowrap;
+}
+
+.elencoStati {
+  border-bottom: 0.8px solid #D2D2D2;
+  color: black;
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.elencoStati:hover {
+  background-color: #616161;
+}
+
+.dropup:hover .dropup-content {
+  display: block;
+}
+
+.dropup:hover .dropbtn {
+  background-color: #1e1e1e;
+}
+///////////////////////////////////
+//Grafico 1////////////////////////
+///////////////////////////////////
+///////////////////////////////////
+
+.treeMaps svg {
+  margin-top: 5%;
+}
+///////////////////////////////////
+//Bottoni////////////////////////
+///////////////////////////////////
+///////////////////////////////////
+//
+// .bottoni {
+//   width: 100%;
+//   text-align: center;
+//   font-size: @footer-fontsize;
+//   margin-top: 7%;
+//   margin-bottom: 7%;
+// }
+
+#grafico2 path {
+  transition: fill 0.5s ease;
+}
+
+.testo{
+  font-weight: 500;
+  opacity:0;
+}
+
+.bottoni {
+  margin-top: 3%;
+  margin-bottom: 5%;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: auto;
+  font-size: @footer-fontsize;
+  text-align: center;
+
+  .flex-item {
+    flex: 0 0 auto;
+    box-shadow: inset 0 0 0 0.8px;
+    width: 18%;
+    margin-right: 1%;
+    margin-left: 1%;
+  }
+
+  .flex-item:first-child {
+    margin-left: 0;
+    width: 19%;
+  }
+
+  .flex-item:last-child {
+    margin-right: 0;
+    width: 19%;
+  }
+
+  #rinnovabili {
+    box-shadow: inset 0 0 0 0.8px solid #8fff00;
+    color: #8fff00;
+  }
+
+  #gasNaturale {
+    box-shadow: inset 0 0 0 0.8px solid #A67EFF;
+    color: #A67EFF;
+  }
+
+  #carbone {
+    box-shadow: inset 0 0 0 0.8px solid #ff9900;
+    color: #ff9900;
+  }
+
+  #nucleare {
+    box-shadow: inset 0 0 0 0.8px solid #ff1111;
+    color: #ff1111;
+  }
+
+  #altro {
+    box-shadow: inset 0 0 0 0.8px solid white;
+    color: white;
+  }
+}
+///////////////////////////////////
+//Link////////////////////////
+///////////////////////////////////
+
+#linkini {
+  font-weight: 400;
+  font-style: normal;
+  font-size: @link-fontsize;
+  color: white;
+  opacity: 0.3;
+}
+
+a {
+  color: white;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: @linkcolor;
+}
+///////////////////////////////////
+//FOOTER////////////////////////
+///////////////////////////////////
+///////////////////////////////////
+
+.footer {
+  margin-left: 20px;
+  margin-right: 20px;
+  border-top: 1.2px solid white;
+  margin-top: 7%;
+}
+
+#footerLogo {
+  width: 15.5%;
+  margin-top: 4px;
+  margin-top: 25px;
+  float: left;
+}
+
+#testoFooter {
+  font-size: @footer-fontsize;
+  float: right;
+  width: 80%;
+  margin-bottom: 7%;
+  margin-top: 7%;
+}
+//MOBILE////////////////////////
+///////////////////////////////////
+/* Larger than mobile */
+@media screen and (max-width: 400px) {}
