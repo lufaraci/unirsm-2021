@@ -208,6 +208,11 @@ h1 {
 	display: none;
 }
 
+#canvas,
+.plane {
+	pointer-events: none;
+}
+
 /*** in case of error show the image ***/
 
 .no-curtains .plane {
