@@ -27,7 +27,6 @@
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/sole-sans.css">
-  <link rel="stylesheet" href="css/w-fonts.css">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="images/favicon.png">
@@ -49,7 +48,7 @@
   <script>
     $(document).ready(function() {
 
-      $(".elencoStati").hover(
+      $(".elencoStati").click(
         function() {
 
           idVal = $(this).attr("id");
@@ -98,7 +97,6 @@
       );
 
       // wait for document ready
-      // init
       var controller = new ScrollMagic.Controller();
 
       new ScrollMagic.Scene({
@@ -109,23 +107,6 @@
         .setPin("#grafico2", {
           pushFollowers: true
         })
-
-        //       idVal = $(this).attr("id");
-        //
-        //       $("#" + idVal + "2" + " text").css("fill", "#1e1e1e");
-        //
-        //       tmpCol = $(this).css("fill");
-        //
-        //       tmpVal = $("#" + idVal + "2").data("myval");
-        //
-        //       tmpPaese = $(this).text();
-        //
-        //       $("#stato").html(tmpPaese + ":</br>" + tmpVal + " MtCO₂eq");
-        //
-        //       $(this).css("fill", tmpCol);
-        //
-        //
-
         .on("progress", function(e) {
 
           tmpValLinkS = $("#linkedin .sost").data("s");
@@ -490,7 +471,7 @@
             <g id="kuwait2" data-myval="107.53">
               <path d="M207.751 33.0208L207.751 17.8754L182.788 17.8754L182.788 33.0208L207.751 33.0208Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="0.8" mask="url(#path-39-inside-39)" />
             </g>
-            <g id="quatar2" data-myval="109.35">
+            <g id="qatar2" data-myval="109.35">
               <path d="M180.466 33.02L180.466 0.835938L168.275 0.835937L168.275 33.02L180.466 33.02Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="0.8" mask="url(#path-40-inside-40)" />
             </g>
             <g id="uzbekistan2" data-myval="110.25">
@@ -613,7 +594,7 @@
                 <tspan x="7.31055" y="11.52">SA</tspan>
               </text>
             </g>
-            <g id="coreaDelSud2" data-myval="611.26">
+            <g id="sudKorea2" data-myval="611.26">
               <path d="M46.3631 55.7382L46.3631 0.835938L0.501137 0.835935L0.501135 55.7382L46.3631 55.7382Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="0.8" mask="url(#path-81-inside-70)" />
               <text id="KR" transform="translate(15.3899 20.0447)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
                 <tspan x="0.573904" y="11.52">KR</tspan>
@@ -637,6 +618,7 @@
                 <tspan x="4.73242" y="11.52">IR</tspan>
               </text>
             </g>
+              <!--TODO: sistemare internet selezione!!!-->
             <g id="internet" data-myval="1100">
               <path id="path74" d="M165.952 245.688L165.952 174.378L100.932 174.378L100.932 245.688L165.952 245.688Z" fill="#00FFC2" />
               <text id="Internet_2" transform="translate(109.393 201.412)" fill="#1E1E1E" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
@@ -744,7 +726,7 @@
             <div class="elencoStati" id="peru">Perù</div>
             <div class="elencoStati" id="polonia">Polonia</div>
             <div class="elencoStati" id="portogallo">Portogallo</div>
-            <div class="elencoStati" id="quatar">Qatar</div>
+            <div class="elencoStati" id="qatar">Qatar</div>
             <div class="elencoStati" id="regnoUnito">Regno Unito</div>
             <div class="elencoStati" id="repubblicaCeca">Repubblica Ceca</div>
             <div class="elencoStati" id="romania">Romania</div>
