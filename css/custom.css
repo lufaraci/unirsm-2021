@@ -6,7 +6,7 @@ body {
 }
 
 body {
-	background-color: #070707;
+	background-color: #140411;
 	background-image: linear-gradient(rgba(180, 90, 200, .21) 0.5px, transparent 0.5px), linear-gradient(90deg, rgba(180, 90, 200, .21) 0.5px, transparent 0.5px);
 	background-size: 0.2rem;
 	color: #f2bebe;
@@ -52,7 +52,7 @@ a:hover {
 
 h1 {
 	margin-top: 5rem;
-	margin-bottom: 2rem;
+	margin-bottom: 0rem;
 	color: #6100FF;
 	font-weight: 500;
 	font-size: 4.666666rem;
@@ -118,6 +118,7 @@ h1 {
 	bottom: 9%;
 	border: 3px solid black;
 	color: black;
+	font-weight: 500;
 }
 
 @media screen and (max-width: 400px) {
