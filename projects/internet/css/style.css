@@ -879,7 +879,7 @@ body {
   letter-spacing: 0;
 }
 h1 {
-  font-size: 4em;
+  font-size: 3.5em;
   color: #ffffff;
   font-weight: 500;
   text-align: center;
@@ -1138,24 +1138,15 @@ a:hover {
 }
 @media screen and (max-width: 400px) {
   body {
-    background-color: #1e1e1e;
-    color: #ffffff;
-    font-size: 1em;
-    font-family: 'Sole24Sans';
-    font-weight: 400;
-    font-style: normal;
-    margin: 0;
-    letter-spacing: 0;
+    font-size: 1.2em;
   }
   h1 {
-    font-size: 1.7em;
+    font-size: 2.5em;
     color: #ffffff;
     font-weight: 500;
-    text-align: center;
-    letter-spacing: 0;
   }
   h3 {
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 400;
     text-align: center;
     font-style: normal;
@@ -1164,23 +1155,18 @@ a:hover {
   .boxTitolo {
     height: 100vh;
   }
-  .titolo {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-  }
   .articolo {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
   }
   h2 {
-    font-size: 1.4em;
+    font-size: 1.5em;
     font-weight: 500;
     letter-spacing: 0;
   }
   p {
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 400;
     font-style: normal;
     letter-spacing: 0;
@@ -1218,7 +1204,7 @@ a:hover {
     transform: translateY(-50%);
   }
   .titoloGrafici {
-    font-size: 1.4em;
+    font-size: 1.5em;
     font-weight: 500;
     letter-spacing: 0;
     margin-bottom: 5%;
@@ -1241,7 +1227,7 @@ a:hover {
     margin-top: 7%;
   }
   .dropup {
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 400;
     font-style: normal;
     position: relative;
@@ -1329,7 +1315,7 @@ a:hover {
     display: flex;
     flex-wrap: nowrap;
     overflow: auto;
-    font-size: 0.7em;
+    font-size: 0.95em;
     text-align: center;
   }
   .bottoni .flex-item {
@@ -1398,7 +1384,7 @@ a:hover {
     float: left;
   }
   #testoFooter {
-    font-size: 0.7em;
+    font-size: 0.95em;
     float: right;
     width: 80%;
     margin-bottom: 7%;
