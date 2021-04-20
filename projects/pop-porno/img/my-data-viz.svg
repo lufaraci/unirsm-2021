@@ -1,0 +1,168 @@
+<!--
+<svg width="505px" height="736px" viewBox="0 0 505 736" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>my-data-viz</title>
+    <g id="my-data-viz" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" fill="#7A6AEC" cx="232" cy="261" r="114"></circle>
+        <circle id="Oval-Copy" fill="#6AEC76" cx="350" cy="408" r="73"></circle>
+        <circle id="Oval-Copy-2" fill="#EC6A6A" cx="152.5" cy="491.5" r="125.5"></circle>
+        <circle id="Oval-Copy-3" fill="#ECDF6A" cx="361" cy="581" r="98"></circle>
+    </g>
+</svg>
+-->
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 689.5 942.55">
+    <title>time per svg</title>
+    <g id="linea">
+        <path d="M566,181.5a142.5,142.5,0,0,1,0,285" transform="translate(-41 -118.45)" style="fill:none;stroke:#e6e6e6;stroke-miterlimit:10;stroke-width:5px" />
+        <path d="M187,753.5a143.5,143.5,0,0,1,0-287" transform="translate(-41 -118.45)" style="fill:none;stroke:#e6e6e6;stroke-miterlimit:10;stroke-width:5px" />
+        <path d="M567,753.5a143.5,143.5,0,0,1,0,287" transform="translate(-41 -118.45)" style="fill:none;stroke:#e6e6e6;stroke-miterlimit:10;stroke-width:5px" />
+        <path d="M709.5,310.5c22,1,22,26,0,26" transform="translate(-41 -118.45)" style="fill:none;stroke:#e6e6e6;stroke-miterlimit:10;stroke-width:5px" />
+        <path d="M711.5,883.5c22,1,22,26,0,26" transform="translate(-41 -118.45)" style="fill:none;stroke:#e6e6e6;stroke-miterlimit:10;stroke-width:5px" />
+        <line x1="39.5" y1="492.05" x2="2.5" y2="492.05" style="fill:none;stroke:#e6e6e6;stroke-miterlimit:10;stroke-width:5px" />
+        <line x1="104.5" y1="63.05" x2="526" y2="63.05" style="fill:none;stroke:#e6e6e6;stroke-miterlimit:10;stroke-width:5px" />
+        <line x1="146" y1="348.05" x2="526" y2="348.05" style="fill:none;stroke:#e6e6e6;stroke-miterlimit:10;stroke-width:5px" />
+        <line x1="146" y1="635.05" x2="526.5" y2="635.05" style="fill:none;stroke:#e6e6e6;stroke-miterlimit:10;stroke-width:5px" />
+        <line x1="105.5" y1="922.05" x2="526.5" y2="922.05" style="fill:none;stroke:#e6e6e6;stroke-miterlimit:10;stroke-width:5px" />
+    </g>
+    <g id="Super8">
+        <circle cx="138" cy="62.55" r="10.5" style="stroke:#e6e6e6;stroke-miterlimit:10;stroke-width:5px" /><text transform="translate(107.8 32.45)" style="font-size:17px;fill:#e6e6e6;font-family:MADESunflower, MADE Sunflower">
+            <tspan style="letter-spacing:0.01999080882352941em">S</tspan>
+            <tspan x="10.23" y="0" style="letter-spacing:-0.01999080882352941em">u</tspan>
+            <tspan x="20.52" y="0" style="letter-spacing:0.02998621323529412em">p</tspan>
+            <tspan x="31.62" y="0">er8</tspan>
+        </text>
+    </g>
+    <g id="VHS">
+        <circle cx="254" cy="62.55" r="10.5" style="stroke:#e6e6e6;stroke-miterlimit:10;stroke-width:5px" /><text transform="translate(235.3 32.45)" style="font-size:17px;fill:#e6e6e6;font-family:MADESunflower, MADE Sunflower">VHS</text>
+    </g>
+    <g id="ecommence">
+        <circle cx="375" cy="62.55" r="10.5" style="stroke:#e6e6e6;stroke-miterlimit:10;stroke-width:5px" /><text transform="translate(328.66 32.45)" style="font-size:17px;fill:#e6e6e6;font-family:MADESunflower, MADE Sunflower">
+            <tspan style="letter-spacing:0.009995404411764705em">E</tspan>
+            <tspan x="11.42" y="0" style="letter-spacing:0.04997702205882353em">-</tspan>
+            <tspan x="19.23" y="0" style="letter-spacing:0.01999080882352941em">C</tspan>
+            <tspan x="30.91" y="0">om</tspan>
+            <tspan x="57.54" y="0" style="letter-spacing:-0.01999080882352941em">m</tspan>
+            <tspan x="74.85" y="0">e</tspan>
+            <tspan x="83.37" y="0" style="letter-spacing:-0.009995404411764705em">r</tspan>
+            <tspan x="92.17" y="0" style="letter-spacing:0.01999080882352941em">c</tspan>
+            <tspan x="101.03" y="0">e</tspan>
+        </text>
+    </g>
+    <g id="email">
+        <circle cx="519" cy="62.55" r="10.5" style="stroke:#e6e6e6;stroke-miterlimit:10;stroke-width:5px" /><text transform="translate(490.15 14.45)" style="font-size:17px;fill:#e6e6e6;font-family:MADESunflower, MADE Sunflower">Mail di<tspan x="-11.42" y="18" style="letter-spacing:0.01999080882352941em">c</tspan>
+            <tspan x="-2.57" y="18">on</tspan>
+            <tspan x="18.63" y="18" style="letter-spacing:-0.009995404411764705em">f</tspan>
+            <tspan x="25.24" y="18">er</tspan>
+            <tspan x="42.74" y="18" style="letter-spacing:-0.009995404411764705em">m</tspan>
+            <tspan x="60.21" y="18">a</tspan>
+        </text>
+    </g>
+    <g id="streaming">
+        <circle cx="515" cy="347.55" r="10.5" style="stroke:#e6e6e6;stroke-miterlimit:10;stroke-width:5px" /><text transform="translate(473.2 306.45)" style="font-size:17px;fill:#e6e6e6;font-family:MADESunflower, MADE Sunflower">
+            <tspan style="letter-spacing:-0.009995404411764705em">Str</tspan>
+            <tspan x="24.68" y="0" style="letter-spacing:0.01999080882352941em">e</tspan>
+            <tspan x="33.54" y="0">aming</tspan>
+        </text>
+    </g>
+    <g id="barra">
+        <circle cx="389" cy="347.55" r="10.5" style="stroke:#e6e6e6;stroke-miterlimit:10;stroke-width:5px" /><text transform="translate(354.81 272.45)" style="font-size:17px;fill:#e6e6e6;font-family:MADESunflower, MADE Sunflower">
+            <tspan style="letter-spacing:0.01999080882352941em">B</tspan>
+            <tspan x="12.21" y="0">ar</tspan>
+            <tspan x="30.97" y="0" style="letter-spacing:-0.02998621323529412em">r</tspan>
+            <tspan x="39.44" y="0">a di </tspan>
+            <tspan x="-20.22" y="18" style="letter-spacing:-0.06999655330882353em">a</tspan>
+            <tspan x="-11.62" y="18" style="letter-spacing:-0.009995404411764705em">v</tspan>
+            <tspan x="-2.86" y="18">anza</tspan>
+            <tspan x="36.81" y="18" style="letter-spacing:-0.01999080882352941em">m</tspan>
+            <tspan x="54.12" y="18">e</tspan>
+            <tspan x="62.64" y="18" style="letter-spacing:-0.03998161764705882em">n</tspan>
+            <tspan x="74.16" y="18">to </tspan>
+            <tspan x="-1.39" y="36">d</tspan>
+            <tspan x="9.15" y="36" style="letter-spacing:-0.01999080882352941em">e</tspan>
+            <tspan x="17.32" y="36">l </tspan>
+            <tspan x="26.88" y="36" style="letter-spacing:0.009995404411764705em">v</tspan>
+            <tspan x="35.97" y="36">id</tspan>
+            <tspan x="52.63" y="36" style="letter-spacing:0.02998621323529412em">e</tspan>
+            <tspan x="61.66" y="36">o</tspan>
+        </text>
+    </g>
+    <g id="banda">
+        <circle cx="268" cy="347.55" r="10.5" style="stroke:#e6e6e6;stroke-miterlimit:10;stroke-width:5px" /><text transform="translate(226.29 289.45)" style="font-size:17px;fill:#e6e6e6;font-family:MADESunflower, MADE Sunflower">La<tspan x="21.22" y="0" style="letter-spacing:-0.03998161764705882em">r</tspan>
+            <tspan x="29.51" y="0" style="letter-spacing:-0.009995404411764705em">g</tspan>
+            <tspan x="38.5" y="0" style="letter-spacing:-0.01999080882352941em">h</tspan>
+            <tspan x="50.37" y="0" style="letter-spacing:-0.009995404411764705em">e</tspan>
+            <tspan x="58.72" y="0">zza </tspan>
+            <tspan x="-6.62" y="18">d</tspan>
+            <tspan x="3.92" y="18" style="letter-spacing:-0.01999080882352941em">e</tspan>
+            <tspan x="12.1" y="18">lla </tspan>
+            <tspan x="37.63" y="18" style="letter-spacing:0.01999080882352941em">b</tspan>
+            <tspan x="48.75" y="18">a</tspan>
+            <tspan x="58.54" y="18" style="letter-spacing:-0.01999080882352941em">n</tspan>
+            <tspan x="70.41" y="18" style="letter-spacing:0.009995404411764705em">d</tspan>
+            <tspan x="81.12" y="18">a</tspan>
+        </text>
+    </g>
+    <g id="dvd">
+        <circle cx="145" cy="347.55" r="10.5" style="stroke:#e6e6e6;stroke-miterlimit:10;stroke-width:5px" /><text transform="translate(126.44 306.45)" style="font-size:17px;fill:#e6e6e6;font-family:MADESunflower, MADE Sunflower">
+            <tspan style="letter-spacing:-0.06000114889705882em">D</tspan>
+            <tspan x="11.92" y="0">VD</tspan>
+        </text>
+    </g>
+    <g id="tinder">
+        <circle cx="149" cy="635.55" r="10.5" style="stroke:#e6e6e6;stroke-miterlimit:10;stroke-width:5px" /><text transform="translate(81.02 596.45)" style="font-size:17px;fill:#e6e6e6;font-family:MADESunflower, MADE Sunflower">
+            <tspan style="letter-spacing:-0.009995404411764705em">S</tspan>
+            <tspan x="9.72" y="0" style="letter-spacing:-0.01999080882352941em">i</tspan>
+            <tspan x="15.5" y="0">to di i</tspan>
+            <tspan x="60.33" y="0" style="letter-spacing:-0.01999080882352941em">n</tspan>
+            <tspan x="72.2" y="0" style="letter-spacing:0.01999080882352941em">c</tspan>
+            <tspan x="81.05" y="0">o</tspan>
+            <tspan x="90.05" y="0" style="letter-spacing:-0.03998161764705882em">n</tspan>
+            <tspan x="101.57" y="0" style="letter-spacing:-0.009995404411764705em">t</tspan>
+            <tspan x="107.73" y="0">ri</tspan>
+        </text>
+    </g>
+    <g id="webcam">
+        <circle cx="271" cy="635.55" r="10.5" style="stroke:#e6e6e6;stroke-miterlimit:10;stroke-width:5px" /><text transform="translate(234.71 595.45)" style="font-size:17px;fill:#e6e6e6;font-family:MADESunflower, MADE Sunflower">
+            <tspan style="letter-spacing:-0.12999770220588236em">W</tspan>
+            <tspan x="17.17" y="0" style="letter-spacing:-0.02998621323529412em">e</tspan>
+            <tspan x="25.18" y="0" style="letter-spacing:0.02998621323529412em">b</tspan>
+            <tspan x="36.46" y="0" style="letter-spacing:0.009995404411764705em">c</tspan>
+            <tspan x="45.15" y="0">am</tspan>
+        </text>
+    </g>
+    <g id="sexavatar">
+        <circle cx="394" cy="635.55" r="10.5" style="stroke:#e6e6e6;stroke-miterlimit:10;stroke-width:5px" /><text transform="translate(350.5 596.45)" style="font-size:17px;fill:#e6e6e6;font-family:MADESunflower, MADE Sunflower">
+            <tspan style="letter-spacing:0.03998161764705882em">S</tspan>
+            <tspan x="10.57" y="0" style="letter-spacing:-0.01999080882352941em">e</tspan>
+            <tspan x="18.75" y="0">x </tspan>
+            <tspan x="31.45" y="0" style="letter-spacing:-0.06996783088235294em">a</tspan>
+            <tspan x="40.05" y="0" style="letter-spacing:-0.009995404411764705em">v</tspan>
+            <tspan x="48.81" y="0" style="letter-spacing:-0.050005744485294115em">a</tspan>
+            <tspan x="57.75" y="0" style="letter-spacing:0.009995404411764705em">t</tspan>
+            <tspan x="64.24" y="0">ar</tspan>
+        </text>
+    </g>
+    <g id="teledildonica">
+        <circle cx="525" cy="635.55" r="10.5" style="stroke:#e6e6e6;stroke-miterlimit:10;stroke-width:5px" /><text transform="translate(468.94 596.45)" style="font-size:17px;fill:#e6e6e6;font-family:MADESunflower, MADE Sunflower">
+            <tspan style="letter-spacing:-0.06999655330882353em">T</tspan>
+            <tspan x="10.88" y="0" style="letter-spacing:-0.01999080882352941em">e</tspan>
+            <tspan x="19.06" y="0" style="letter-spacing:-0.009995404411764705em">l</tspan>
+            <tspan x="25.08" y="0" style="letter-spacing:0.030014935661764705em">e</tspan>
+            <tspan x="34.1" y="0">di</tspan>
+            <tspan x="50.76" y="0" style="letter-spacing:-0.009995404411764705em">l</tspan>
+            <tspan x="56.78" y="0">doni</tspan>
+            <tspan x="94.64" y="0" style="letter-spacing:0.009995404411764705em">c</tspan>
+            <tspan x="103.33" y="0">a</tspan>
+        </text>
+    </g>
+    <g id="vr">
+        <circle cx="524" cy="921.55" r="10.5" style="stroke:#e6e6e6;stroke-miterlimit:10;stroke-width:5px" /><text transform="translate(510.14 883.45)" style="font-size:17px;fill:#e6e6e6;font-family:MADESunflower, MADE Sunflower">VR</text>
+    </g>
+    <g id="sexbot">
+        <circle cx="400" cy="921.55" r="10.5" style="stroke:#e6e6e6;stroke-miterlimit:10;stroke-width:5px" /><text transform="translate(375 883.45)" style="font-size:17px;fill:#e6e6e6;font-family:made_sunflowerregular">Sexbot
+        </text>
+    </g>
+    <g id="fine">
+        <circle cx="106" cy="918.55" r="21.5" style="stroke:#ec00b5;stroke-miterlimit:10;stroke-width:5px" /><text transform="translate(94.05 923.2)" style="font-size:14px;fill:#e6e6e6;font-family:MADESunflower, MADE Sunflower;letter-spacing:0.15000697544642858em">???</text>
+    </g>
+</svg>
