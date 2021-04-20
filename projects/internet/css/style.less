@@ -5,18 +5,20 @@
 ///////////////////////////////////
 //VARIABILI////////////////////////
 ///////////////////////////////////
+
 //Variabili mobile
 @fontcolor: #ffffff;
 @background-color: #1e1e1e;
 @azzurrinoInternet: #00FFC2;
-@body-fontsize: 1em;
-@h1-fontsize: 1.7em;
-@h2-fontsize: 1.4em;
-@footer-fontsize: 0.7em;
+@body-fontsize: 1.2em;
+@h1-fontsize: 2.5em;
+@h2-fontsize: 1.5em;
+@footer-fontsize: 0.95em;
 @link-fontsize: 0.7em; // variabili interlinea
+
 //Variabili desktop
 @body-fontsize-desktop: 1.5em;
-@h1-fontsize-desktop: 4em;
+@h1-fontsize-desktop: 3.5em;
 @h2-fontsize-desktop: 2em;
 @footer-fontsize-desktop: 1.3em;
 @link-fontsize-desktop: 10px; // variabili interlinea
@@ -381,22 +383,13 @@ a:hover {
 ///////////////////////////////////
 @media screen and (max-width: 400px) {
     body {
-        background-color: @background-color;
-        color: @fontcolor;
         font-size: @body-fontsize;
-        font-family: 'Sole24Sans';
-        font-weight: 400;
-        font-style: normal;
-        margin: 0;
-        letter-spacing: 0;
     }
 
     h1 {
         font-size: @h1-fontsize;
         color: @fontcolor;
         font-weight: 500;
-        text-align: center;
-        letter-spacing: 0;
     }
 
     h3 {
@@ -409,12 +402,6 @@ a:hover {
 
     .boxTitolo {
         height: 100vh;
-    }
-
-    .titolo {
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
     }
 
     .articolo {
