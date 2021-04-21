@@ -47,22 +47,33 @@
 
   <script>
     $(document).ready(function() {
-      $(window).on('load resize',function() {
-         if ($(this).width() < 750) {
-              $('#TreemapMobile').removeClass("nasconditi");
-              $('#TreemapDesk').addClass("nasconditi");
+      $(window).on('load resize', function() {
+        if ($(this).width() < 750) {
+          $('#TreemapMobile').removeClass("nasconditi");
+          $('#TreemapDesk').addClass("nasconditi");
 
-              $('#barchartMobile').removeClass("nasconditi");
-              $('#barchartDesk').addClass("nasconditi");
-         }
-         else {
-           $('#TreemapMobile').addClass("nasconditi");
-           $('#TreemapDesk').removeClass("nasconditi");
+          $('#barchartMobile').removeClass("nasconditi");
+          $('#barchartDesk').addClass("nasconditi");
+        } else {
+          $('#TreemapMobile').addClass("nasconditi");
+          $('#TreemapDesk').removeClass("nasconditi");
 
-           $('#barchartMobile').addClass("nasconditi");
-           $('#barchartDesk').removeClass("nasconditi");
-         }
-        });
+          $('#barchartMobile').addClass("nasconditi");
+          $('#barchartDesk').removeClass("nasconditi");
+        }
+      });
+
+      $(".dropup").hover(
+        function() {
+          console.log("hover");
+          $('.dropup-content').css("display", "block");
+        },
+        function() {
+          console.log("out");
+          $('.dropup-content').css("display", "none");
+        }
+
+      );
 
       $(".elencoStati").hover(
         function() {
@@ -369,317 +380,317 @@
         </div>
 
         <svg id="TreemapDesk" width="100%" height="100%" viewBox="0 0 664 571" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g id="Treemap" >
-                <g id="tunisia2" data-myval="31.01">
-                  <path d="M544.435 8.08361L544.435 0L518.896 -6.06978e-07L518.896 8.08361L544.435 8.08361Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="2" mask="url(#path-1-inside-1)"/>
-                </g>
-                <g id="danimarca2" data-myval="32.08">
-                  <path d="M544.435 19.1077L544.435 11.024L518.896 11.024L518.896 19.1077L544.435 19.1077Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="2" mask="url(#path-2-inside-2)"/>
-                </g>
-                <g id="laos2" data-myval="32.81">
-                  <path d="M514.252 19.1067L514.252 0L503.805 -2.48309e-07L503.805 19.1067L514.252 19.1067Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="2" mask="url(#path-3-inside-3)"/>
-                </g>
-                <g id="slovacchia2" data-myval="33.32">
-                  <path d="M544.435 34.5403L544.435 22.0474L527.022 22.0474L527.022 34.5403L544.435 34.5403Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-4-inside-4)"/>
-                </g>
-                <g id="bahrain2" data-myval="34.36">
-                  <path d="M522.378 34.5403L522.378 22.0474L503.805 22.0474L503.805 34.5403L522.378 34.5403Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-5-inside-5)"/>
-                </g>
-                <g id="nuovaZelanda2" data-myval="36.54">
-                  <path d="M544.435 52.1787L544.435 37.4812L527.022 37.4812L527.022 52.1787L544.435 52.1787Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-6-inside-6)"/>
-                </g>
-                <g id="irlanda2" data-myval="37.12">
-                  <path d="M522.378 52.1787L522.378 37.4812L503.805 37.4812L503.805 52.1787L522.378 52.1787Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-7-inside-7)"/>
-                </g>
-                <g id="svizzera2" data-myval="37.68">
-                  <path d="M544.435 69.0794L544.435 55.1168L525.861 55.1168L525.861 69.0794L544.435 69.0794Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-8-inside-8)"/>
-                </g>
-                <g id="trinidadEtobago2" data-myval="37.86">
-                  <path d="M521.218 69.0794L521.218 55.1168L503.805 55.1168L503.805 69.0794L521.218 69.0794Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-9-inside-9)"/>
-                </g>
-                <g id="angola2" data-myval="38.02">
-                  <path d="M664 87.451L664 72.0186L646.587 72.0186L646.587 87.451L664 87.451Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-10-inside-10)"/>
-                </g>
-                <g id="nordKorea2" data-myval="38.76">
-                  <path d="M641.943 87.451L641.943 72.0186L623.37 72.0186L623.37 87.451L641.943 87.451Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-11-inside-11)"/>
-                </g>
-                <g id="singapore2" data-myval="38.94">
-                  <path d="M664 105.822L664 90.3893L646.587 90.3893L646.587 105.822L664 105.822Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-12-inside-12)"/>
-                </g>
-                <g id="azerbaijan2" data-myval="39.82">
-                  <path d="M641.943 105.822L641.943 90.3893L623.37 90.3893L623.37 105.822L641.943 105.822Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-13-inside-13)"/>
-                </g>
-                <g id="ecuador2" data-myval="40.54">
-                  <path d="M618.724 81.572L618.724 72.0186L588.542 72.0186L588.542 81.572L618.724 81.572Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-14-inside-14)"/>
-                </g>
-                <g id="hongKong2" data-myval="41.54">
-                  <path d="M618.724 94.067L618.724 84.5137L588.542 84.5137L588.542 94.067L618.724 94.067Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-15-inside-15)"/>
-                </g>
-                <g id="finlandia2" data-myval="41.65">
-                  <path d="M618.724 105.822L618.724 97.0031L588.542 97.0031L588.542 105.822L618.724 105.822Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-16-inside-16)"/>
-                </g>
-                <g id="bulgaria2" data-myval="42.01">
-                  <path d="M664 130.075L664 108.764L650.07 108.764L650.07 130.075L664 130.075Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-17-inside-17)"/>
-                </g>
-                <g id="norvegia2" data-myval="42.44">
-                  <path d="M645.426 130.075L645.426 108.764L631.496 108.764L631.496 130.075L645.426 130.075Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-18-inside-18)"/>
-                </g>
-                <g id="svezia2" data-myval="42.76">
-                  <path d="M664 141.832L664 133.013L631.497 133.013L631.497 141.832L664 141.832Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-19-inside-19)"/>
-                </g>
-                <g id="libia2" data-myval="46.42">
-                  <path d="M626.854 130.075L626.854 108.764L610.602 108.764L610.602 130.075L626.854 130.075Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-20-inside-20)"/>
-                </g>
-                <g id="portogallo2" data-myval="48.59">
-                  <path d="M605.96 130.075L605.96 108.764L588.547 108.764L588.547 130.075L605.96 130.075Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-21-inside-21)"/>
-                </g>
-                <g id="ungheria2" data-myval="49.10">
-                  <path d="M626.854 141.832L626.854 133.013L588.546 133.013L588.546 141.832L626.854 141.832Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-22-inside-22)"/>
-                </g>
-                <g id="peru2" data-myval="54.53">
-                  <path d="M583.904 93.33L583.904 72.0186L564.169 72.0186L564.169 93.33L583.904 93.33Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-23-inside-23)"/>
-                </g>
-                <g id="serbia2" data-myval="54.67">
-                  <path d="M559.525 93.33L559.525 72.0186L539.791 72.0186L539.791 93.33L559.525 93.33Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-24-inside-24)"/>
-                </g>
-                <g id="belarus2" data-myval="62.48">
-                    <path d="M583.904 107.293L583.904 96.2694L539.792 96.2694L539.792 107.293L583.904 107.293Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-25-inside-25)"/>
-                </g>
-                <g id="israele2" data-myval="64.17">
-                  <path d="M535.147 88.1858L535.147 72.0186L503.804 72.0186L503.804 88.1858L535.147 88.1858Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-26-inside-26)"/>
-                </g>
-                <g id="mongolia2" data-myval="65.51">
-                  <path d="M535.147 107.292L535.147 91.1252L503.804 91.1252L503.804 107.292L535.147 107.292Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-27-inside-27)"/>
-                </g>
-                <g id="grecia2" data-myval="67.19">
-                  <path d="M583.904 124.195L583.904 110.232L546.757 110.232L546.757 124.195L583.904 124.195Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-28-inside-28)"/>
-                </g>
-                <g id="austria2" data-myval="68.50">
-                  <path d="M583.904 141.831L583.904 127.133L546.757 127.133L546.757 141.831L583.904 141.831Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-29-inside-29)"/>
-                </g>
-                <g id="oman2" data-myval="71.68">
-                    <path d="M542.113 124.195L542.113 110.232L503.805 110.232L503.805 124.195L542.113 124.195Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-30-inside-30)"/>
-                </g>
-                <g id="marocco2" data-myval="71.93">
-                  <path d="M542.113 141.831L542.113 127.133L503.805 127.133L503.805 141.831L542.113 141.831Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-31-inside-31)"/>
-                </g>
-                <g id="romania2" data-myval="75.08">
-                  <path d="M499.161 27.9252L499.161 0L478.266 -4.96618e-07L478.266 27.9252L499.161 27.9252Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-32-inside-32)"/>
-                </g>
-                <g id="cile2" data-myval="84.26">
-                  <path d="M473.624 27.9252L473.624 0L449.246 -5.79388e-07L449.246 27.9252L473.624 27.9252Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-33-inside-33)"/>
-                </g>
-                <g id="turkmenistan2" data-myval="85.65">
-                  <path d="M444.602 27.9252L444.602 0L419.064 -6.06979e-07L419.064 27.9252L444.602 27.9252Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-34-inside-34)"/>
-                </g>
-                <g id="belgio2" data-myval="99.71">
-                    <path d="M499.161 47.0334L499.161 30.8662L448.084 30.8662L448.084 47.0334L499.161 47.0334Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-35-inside-35)"/>
-                </g>
-                <g id="repubblicaCeca2" data-myval="101.01">
-                    <path d="M499.161 66.1399L499.161 49.9727L448.084 49.9727L448.084 66.1399L499.161 66.1399Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-36-inside-36)"/>
-                </g>
-                <g id="bangladesh2" data-myval="102.16">
-                    <path d="M443.442 66.1402L443.442 30.8662L419.064 30.8662L419.064 66.1402L443.442 66.1402Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-37-inside-37)"/>
-                </g>
-                <g id="colombia2" data-myval="102.20">
-                  <path d="M414.42 16.9021L414.42 0L364.504 -1.18636e-06L364.504 16.9021L414.42 16.9021Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="2" mask="url(#path-38-inside-38)"/>
-                </g>
-                <g id="kuwait2" data-myval="107.53">
-                    <path d="M414.42 37.4795L414.42 19.8425L364.504 19.8425L364.504 37.4795L414.42 37.4795Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-39-inside-39)"/>
-                </g>
-                <g id="qatar2" data-myval="109.35">
-                    <path d="M359.861 37.4785L359.861 0L335.484 -5.79388e-07L335.484 37.4785L359.861 37.4785Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-40-inside-40)"/>
-                </g>
-                <g id="uzbekistan2" data-myval="110.25">
-                      <path d="M414.42 66.1393L414.42 40.4187L378.434 40.4187L378.434 66.1393L414.42 66.1393Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-41-inside-41)"/>
-                </g>
-                <g id="venezuela2" data-myval="116.69">
-                        <path d="M373.79 66.1393L373.79 40.4187L335.482 40.4187L335.482 66.1393L373.79 66.1393Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-42-inside-42)"/>
-                </g>
-                <g id="nigeria2" data-myval="140.03">
-                        <path d="M499.161 101.414L499.161 69.0793L462.014 69.0793L462.014 101.414L499.161 101.414Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-43-inside-43)"/>
-                </g>
-                <g id="filippine2" data-myval="144.26">
-                   <path d="M457.373 101.414L457.373 69.0793L417.904 69.0793L417.904 101.414L457.373 101.414Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-44-inside-44)"/>
-                </g>
-                <g id="olanda2" data-myval="154.83">
-                   <path d="M499.161 141.831L499.161 104.352L463.175 104.352L463.175 141.831L499.161 141.831Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-45-inside-45)"/>
-                </g>
-                <g id="algeria2" data-myval="171.71">
-                   <path d="M458.531 141.831L458.531 104.352L417.901 104.352L417.901 141.831L458.531 141.831Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-46-inside-46)"/>
-                </g>
-                <g id="argentina2" data-myval="178.94">
-                   <path d="M413.26 113.172L413.26 69.0793L378.435 69.0793L378.435 113.172L413.26 113.172Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-47-inside-47)"/>
-                </g>
-                <g id="emiratiArabi2" data-myval="190.68">
-                   <path d="M373.79 113.172L373.79 69.0793L335.482 69.0793L335.482 113.172L373.79 113.172Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-48-inside-48)"/>
-                </g>
-                <g id="iraq2" data-myval="221.38">
-                   <path d="M413.26 141.831L413.26 116.11L335.484 116.11L335.484 141.831L413.26 141.831Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-49-inside-49)"/>
-                </g>
-                <g id="ucraina2" data-myval="223.23">
-                   <path d="M664 191.068L664 144.771L619.888 144.771L619.888 191.068L664 191.068Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-50-inside-50)"/>
-                </g>
-                <g id="egitto2" data-myval="246.64">
-                   <path d="M615.246 191.068L615.246 144.771L566.491 144.771L566.491 191.068L615.246 191.068Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-51-inside-51)"/>
-                </g>
-                <g id="vietnam2" data-myval="247.71">
-                     <path d="M664 216.791L664 194.01L566.49 194.01L566.49 216.791L664 216.791Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-52-inside-52)"/>
-                </g>
-                <g id="pakistan2" data-myval="248.84">
-                  <path d="M561.846 179.31L561.846 144.771L495.679 144.771L495.679 179.31L561.846 179.31Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-53-inside-53)"/>
-                </g>
-               <g id="spagna2" data-myval="252.68">
-                  <path d="M561.846 216.788L561.846 182.249L495.679 182.249L495.679 216.788L561.846 216.788Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-54-inside-54)"/>
-                </g>
-                <g id="spagna2" data-myval="252.68">
-                  <path d="M664 249.858L664 219.728L588.546 219.728L588.546 249.858L664 249.858Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-55-inside-55)"/>
-                </g>
-                <g id="taiwan2" data-myval="262.64">
-                  <path d="M664 285.132L664 252.797L588.546 252.797L588.546 285.132L664 285.132Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-56-inside-56)"/>
-                </g>
-                  <g id="tailandia2" data-myval="288.28">
-                  <path d="M583.904 249.123L583.904 219.728L495.68 219.728L495.68 249.123L583.904 249.123Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-57-inside-57)"/>
-                </g>
-                <g id="kazakistan2" data-myval="313.80">
-                  <path d="M583.904 285.131L583.904 252.062L495.68 252.062L495.68 285.131L583.904 285.131Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-58-inside-58)"/>
-                </g>
-                <g id="polonia2" data-myval="322.63">
-                  <path d="M491.036 206.5L491.036 144.771L443.442 144.771L443.442 206.5L491.036 206.5Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-59-inside-59)"/>
-                  <text class="disab" id="PL" transform="translate(455.473 168.225)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                    <tspan x="7.20033" y="11.52">PL</tspan>
-                  </text>
-                </g>
-                <g id="francia2" data-myval="323.75">
-                      <path d="M438.797 206.5L438.797 144.771L391.203 144.771L391.203 206.5L438.797 206.5Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-61-inside-60)"/>
-                      <text class="disab" id="FR" transform="translate(400.186 168.225)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                    <tspan x="7.84051" y="11.52">FR</tspan>
-                  </text>
-                </g>
-                <g id="italia2" data-myval="337.09">
-                    <path d="M386.561 206.5L386.561 144.771L335.484 144.771L335.484 206.5L386.561 206.5Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-63-inside-61)"/>
-                      <text class="disab" id="IT" transform="translate(350.428 168.225)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                    <tspan x="6.16456" y="11.52">IT</tspan>
-                  </text>
-                </g>
-                <g id="regnoUnito2" data-myval="369.88">
-                    <path d="M491.036 243.979L491.036 209.44L391.204 209.44L391.204 243.979L491.036 243.979Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-65-inside-62)"/>
-                    <text class="disab" id="UK" transform="translate(400.186 217.234)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                    <tspan x="33.8588" y="11.52">UK</tspan>
-                  </text>
-                </g>
-                <g id="turchia2" data-myval="405.13">
-                    <path d="M491.036 285.131L491.036 246.917L391.204 246.917L391.204 285.131L491.036 285.131Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-67-inside-63)"/>
-                    <text class="disab" id="TR" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                    <tspan x="436.343" y="267.26">TR</tspan>
-                  </text>
-                </g>
-                <g id="australia2" data-myval="411.02">
-                  <path d="M386.561 285.132L386.561 209.44L335.484 209.44L335.484 285.132L386.561 285.132Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-69-inside-64)"/>
-                  <text class="disab" id="AU" transform="translate(337.53 234.737)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                    <tspan x="15.4127" y="11.52">AU</tspan>
-                  </text>
-                </g>
+          <g id="Treemap">
+            <g id="tunisia2" data-myval="31.01">
+              <path d="M544.435 8.08361L544.435 0L518.896 -6.06978e-07L518.896 8.08361L544.435 8.08361Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="2" mask="url(#path-1-inside-1)" />
+            </g>
+            <g id="danimarca2" data-myval="32.08">
+              <path d="M544.435 19.1077L544.435 11.024L518.896 11.024L518.896 19.1077L544.435 19.1077Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="2" mask="url(#path-2-inside-2)" />
+            </g>
+            <g id="laos2" data-myval="32.81">
+              <path d="M514.252 19.1067L514.252 0L503.805 -2.48309e-07L503.805 19.1067L514.252 19.1067Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="2" mask="url(#path-3-inside-3)" />
+            </g>
+            <g id="slovacchia2" data-myval="33.32">
+              <path d="M544.435 34.5403L544.435 22.0474L527.022 22.0474L527.022 34.5403L544.435 34.5403Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-4-inside-4)" />
+            </g>
+            <g id="bahrain2" data-myval="34.36">
+              <path d="M522.378 34.5403L522.378 22.0474L503.805 22.0474L503.805 34.5403L522.378 34.5403Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-5-inside-5)" />
+            </g>
+            <g id="nuovaZelanda2" data-myval="36.54">
+              <path d="M544.435 52.1787L544.435 37.4812L527.022 37.4812L527.022 52.1787L544.435 52.1787Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-6-inside-6)" />
+            </g>
+            <g id="irlanda2" data-myval="37.12">
+              <path d="M522.378 52.1787L522.378 37.4812L503.805 37.4812L503.805 52.1787L522.378 52.1787Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-7-inside-7)" />
+            </g>
+            <g id="svizzera2" data-myval="37.68">
+              <path d="M544.435 69.0794L544.435 55.1168L525.861 55.1168L525.861 69.0794L544.435 69.0794Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-8-inside-8)" />
+            </g>
+            <g id="trinidadEtobago2" data-myval="37.86">
+              <path d="M521.218 69.0794L521.218 55.1168L503.805 55.1168L503.805 69.0794L521.218 69.0794Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-9-inside-9)" />
+            </g>
+            <g id="angola2" data-myval="38.02">
+              <path d="M664 87.451L664 72.0186L646.587 72.0186L646.587 87.451L664 87.451Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-10-inside-10)" />
+            </g>
+            <g id="nordKorea2" data-myval="38.76">
+              <path d="M641.943 87.451L641.943 72.0186L623.37 72.0186L623.37 87.451L641.943 87.451Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-11-inside-11)" />
+            </g>
+            <g id="singapore2" data-myval="38.94">
+              <path d="M664 105.822L664 90.3893L646.587 90.3893L646.587 105.822L664 105.822Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-12-inside-12)" />
+            </g>
+            <g id="azerbaijan2" data-myval="39.82">
+              <path d="M641.943 105.822L641.943 90.3893L623.37 90.3893L623.37 105.822L641.943 105.822Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-13-inside-13)" />
+            </g>
+            <g id="ecuador2" data-myval="40.54">
+              <path d="M618.724 81.572L618.724 72.0186L588.542 72.0186L588.542 81.572L618.724 81.572Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-14-inside-14)" />
+            </g>
+            <g id="hongKong2" data-myval="41.54">
+              <path d="M618.724 94.067L618.724 84.5137L588.542 84.5137L588.542 94.067L618.724 94.067Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-15-inside-15)" />
+            </g>
+            <g id="finlandia2" data-myval="41.65">
+              <path d="M618.724 105.822L618.724 97.0031L588.542 97.0031L588.542 105.822L618.724 105.822Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-16-inside-16)" />
+            </g>
+            <g id="bulgaria2" data-myval="42.01">
+              <path d="M664 130.075L664 108.764L650.07 108.764L650.07 130.075L664 130.075Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-17-inside-17)" />
+            </g>
+            <g id="norvegia2" data-myval="42.44">
+              <path d="M645.426 130.075L645.426 108.764L631.496 108.764L631.496 130.075L645.426 130.075Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-18-inside-18)" />
+            </g>
+            <g id="svezia2" data-myval="42.76">
+              <path d="M664 141.832L664 133.013L631.497 133.013L631.497 141.832L664 141.832Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-19-inside-19)" />
+            </g>
+            <g id="libia2" data-myval="46.42">
+              <path d="M626.854 130.075L626.854 108.764L610.602 108.764L610.602 130.075L626.854 130.075Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-20-inside-20)" />
+            </g>
+            <g id="portogallo2" data-myval="48.59">
+              <path d="M605.96 130.075L605.96 108.764L588.547 108.764L588.547 130.075L605.96 130.075Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-21-inside-21)" />
+            </g>
+            <g id="ungheria2" data-myval="49.10">
+              <path d="M626.854 141.832L626.854 133.013L588.546 133.013L588.546 141.832L626.854 141.832Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-22-inside-22)" />
+            </g>
+            <g id="peru2" data-myval="54.53">
+              <path d="M583.904 93.33L583.904 72.0186L564.169 72.0186L564.169 93.33L583.904 93.33Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-23-inside-23)" />
+            </g>
+            <g id="serbia2" data-myval="54.67">
+              <path d="M559.525 93.33L559.525 72.0186L539.791 72.0186L539.791 93.33L559.525 93.33Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-24-inside-24)" />
+            </g>
+            <g id="belarus2" data-myval="62.48">
+              <path d="M583.904 107.293L583.904 96.2694L539.792 96.2694L539.792 107.293L583.904 107.293Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-25-inside-25)" />
+            </g>
+            <g id="israele2" data-myval="64.17">
+              <path d="M535.147 88.1858L535.147 72.0186L503.804 72.0186L503.804 88.1858L535.147 88.1858Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-26-inside-26)" />
+            </g>
+            <g id="mongolia2" data-myval="65.51">
+              <path d="M535.147 107.292L535.147 91.1252L503.804 91.1252L503.804 107.292L535.147 107.292Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-27-inside-27)" />
+            </g>
+            <g id="grecia2" data-myval="67.19">
+              <path d="M583.904 124.195L583.904 110.232L546.757 110.232L546.757 124.195L583.904 124.195Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-28-inside-28)" />
+            </g>
+            <g id="austria2" data-myval="68.50">
+              <path d="M583.904 141.831L583.904 127.133L546.757 127.133L546.757 141.831L583.904 141.831Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-29-inside-29)" />
+            </g>
+            <g id="oman2" data-myval="71.68">
+              <path d="M542.113 124.195L542.113 110.232L503.805 110.232L503.805 124.195L542.113 124.195Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-30-inside-30)" />
+            </g>
+            <g id="marocco2" data-myval="71.93">
+              <path d="M542.113 141.831L542.113 127.133L503.805 127.133L503.805 141.831L542.113 141.831Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-31-inside-31)" />
+            </g>
+            <g id="romania2" data-myval="75.08">
+              <path d="M499.161 27.9252L499.161 0L478.266 -4.96618e-07L478.266 27.9252L499.161 27.9252Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-32-inside-32)" />
+            </g>
+            <g id="cile2" data-myval="84.26">
+              <path d="M473.624 27.9252L473.624 0L449.246 -5.79388e-07L449.246 27.9252L473.624 27.9252Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-33-inside-33)" />
+            </g>
+            <g id="turkmenistan2" data-myval="85.65">
+              <path d="M444.602 27.9252L444.602 0L419.064 -6.06979e-07L419.064 27.9252L444.602 27.9252Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-34-inside-34)" />
+            </g>
+            <g id="belgio2" data-myval="99.71">
+              <path d="M499.161 47.0334L499.161 30.8662L448.084 30.8662L448.084 47.0334L499.161 47.0334Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-35-inside-35)" />
+            </g>
+            <g id="repubblicaCeca2" data-myval="101.01">
+              <path d="M499.161 66.1399L499.161 49.9727L448.084 49.9727L448.084 66.1399L499.161 66.1399Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-36-inside-36)" />
+            </g>
+            <g id="bangladesh2" data-myval="102.16">
+              <path d="M443.442 66.1402L443.442 30.8662L419.064 30.8662L419.064 66.1402L443.442 66.1402Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-37-inside-37)" />
+            </g>
+            <g id="colombia2" data-myval="102.20">
+              <path d="M414.42 16.9021L414.42 0L364.504 -1.18636e-06L364.504 16.9021L414.42 16.9021Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="2" mask="url(#path-38-inside-38)" />
+            </g>
+            <g id="kuwait2" data-myval="107.53">
+              <path d="M414.42 37.4795L414.42 19.8425L364.504 19.8425L364.504 37.4795L414.42 37.4795Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-39-inside-39)" />
+            </g>
+            <g id="qatar2" data-myval="109.35">
+              <path d="M359.861 37.4785L359.861 0L335.484 -5.79388e-07L335.484 37.4785L359.861 37.4785Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-40-inside-40)" />
+            </g>
+            <g id="uzbekistan2" data-myval="110.25">
+              <path d="M414.42 66.1393L414.42 40.4187L378.434 40.4187L378.434 66.1393L414.42 66.1393Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-41-inside-41)" />
+            </g>
+            <g id="venezuela2" data-myval="116.69">
+              <path d="M373.79 66.1393L373.79 40.4187L335.482 40.4187L335.482 66.1393L373.79 66.1393Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-42-inside-42)" />
+            </g>
+            <g id="nigeria2" data-myval="140.03">
+              <path d="M499.161 101.414L499.161 69.0793L462.014 69.0793L462.014 101.414L499.161 101.414Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-43-inside-43)" />
+            </g>
+            <g id="filippine2" data-myval="144.26">
+              <path d="M457.373 101.414L457.373 69.0793L417.904 69.0793L417.904 101.414L457.373 101.414Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-44-inside-44)" />
+            </g>
+            <g id="olanda2" data-myval="154.83">
+              <path d="M499.161 141.831L499.161 104.352L463.175 104.352L463.175 141.831L499.161 141.831Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-45-inside-45)" />
+            </g>
+            <g id="algeria2" data-myval="171.71">
+              <path d="M458.531 141.831L458.531 104.352L417.901 104.352L417.901 141.831L458.531 141.831Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-46-inside-46)" />
+            </g>
+            <g id="argentina2" data-myval="178.94">
+              <path d="M413.26 113.172L413.26 69.0793L378.435 69.0793L378.435 113.172L413.26 113.172Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-47-inside-47)" />
+            </g>
+            <g id="emiratiArabi2" data-myval="190.68">
+              <path d="M373.79 113.172L373.79 69.0793L335.482 69.0793L335.482 113.172L373.79 113.172Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-48-inside-48)" />
+            </g>
+            <g id="iraq2" data-myval="221.38">
+              <path d="M413.26 141.831L413.26 116.11L335.484 116.11L335.484 141.831L413.26 141.831Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-49-inside-49)" />
+            </g>
+            <g id="ucraina2" data-myval="223.23">
+              <path d="M664 191.068L664 144.771L619.888 144.771L619.888 191.068L664 191.068Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-50-inside-50)" />
+            </g>
+            <g id="egitto2" data-myval="246.64">
+              <path d="M615.246 191.068L615.246 144.771L566.491 144.771L566.491 191.068L615.246 191.068Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-51-inside-51)" />
+            </g>
+            <g id="vietnam2" data-myval="247.71">
+              <path d="M664 216.791L664 194.01L566.49 194.01L566.49 216.791L664 216.791Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-52-inside-52)" />
+            </g>
+            <g id="pakistan2" data-myval="248.84">
+              <path d="M561.846 179.31L561.846 144.771L495.679 144.771L495.679 179.31L561.846 179.31Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-53-inside-53)" />
+            </g>
+            <g id="spagna2" data-myval="252.68">
+              <path d="M561.846 216.788L561.846 182.249L495.679 182.249L495.679 216.788L561.846 216.788Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-54-inside-54)" />
+            </g>
+            <g id="spagna2" data-myval="252.68">
+              <path d="M664 249.858L664 219.728L588.546 219.728L588.546 249.858L664 249.858Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-55-inside-55)" />
+            </g>
+            <g id="taiwan2" data-myval="262.64">
+              <path d="M664 285.132L664 252.797L588.546 252.797L588.546 285.132L664 285.132Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-56-inside-56)" />
+            </g>
+            <g id="tailandia2" data-myval="288.28">
+              <path d="M583.904 249.123L583.904 219.728L495.68 219.728L495.68 249.123L583.904 249.123Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-57-inside-57)" />
+            </g>
+            <g id="kazakistan2" data-myval="313.80">
+              <path d="M583.904 285.131L583.904 252.062L495.68 252.062L495.68 285.131L583.904 285.131Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-58-inside-58)" />
+            </g>
+            <g id="polonia2" data-myval="322.63">
+              <path d="M491.036 206.5L491.036 144.771L443.442 144.771L443.442 206.5L491.036 206.5Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-59-inside-59)" />
+              <text class="disab" id="PL" transform="translate(455.473 168.225)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan x="7.20033" y="11.52">PL</tspan>
+              </text>
+            </g>
+            <g id="francia2" data-myval="323.75">
+              <path d="M438.797 206.5L438.797 144.771L391.203 144.771L391.203 206.5L438.797 206.5Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-61-inside-60)" />
+              <text class="disab" id="FR" transform="translate(400.186 168.225)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan x="7.84051" y="11.52">FR</tspan>
+              </text>
+            </g>
+            <g id="italia2" data-myval="337.09">
+              <path d="M386.561 206.5L386.561 144.771L335.484 144.771L335.484 206.5L386.561 206.5Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-63-inside-61)" />
+              <text class="disab" id="IT" transform="translate(350.428 168.225)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan x="6.16456" y="11.52">IT</tspan>
+              </text>
+            </g>
+            <g id="regnoUnito2" data-myval="369.88">
+              <path d="M491.036 243.979L491.036 209.44L391.204 209.44L391.204 243.979L491.036 243.979Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-65-inside-62)" />
+              <text class="disab" id="UK" transform="translate(400.186 217.234)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan x="33.8588" y="11.52">UK</tspan>
+              </text>
+            </g>
+            <g id="turchia2" data-myval="405.13">
+              <path d="M491.036 285.131L491.036 246.917L391.204 246.917L391.204 285.131L491.036 285.131Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-67-inside-63)" />
+              <text class="disab" id="TR" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan x="436.343" y="267.26">TR</tspan>
+              </text>
+            </g>
+            <g id="australia2" data-myval="411.02">
+              <path d="M386.561 285.132L386.561 209.44L335.484 209.44L335.484 285.132L386.561 285.132Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-69-inside-64)" />
+              <text class="disab" id="AU" transform="translate(337.53 234.737)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan x="15.4127" y="11.52">AU</tspan>
+              </text>
+            </g>
             <g id="messico2" data-myval="438.50">
-                    <path d="M330.839 61.7294L330.839 0L264.672 -1.57262e-06L264.672 61.7294L330.839 61.7294Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-71-inside-65)"/>
-                  <text class="disab" id="MX" transform="translate(278.558 22.3687)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                    <tspan x="10.4076" y="11.52">MX</tspan>
-                  </text>
-                </g>
-                <g id="brasile2" data-myval="465.72">
-                    <path d="M260.03 61.9267L260.03 0.197327L189.219 0.197325L189.219 61.9267L260.03 61.9267Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-73-inside-66)"/>
-                    <text class="disab" id="BR" transform="translate(204.844 22.3687)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                    <tspan x="12.8886" y="11.52">BR</tspan>
-                  </text>
-                </g>
-                <g id="canada2" data-myval="576.65">
-                    <path d="M264.671 138.157L264.671 64.6693L189.217 64.6692L189.217 138.157L264.671 138.157Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-75-inside-67)"/>
-                    <text class="disab" id="CA" transform="translate(212.216 92.38)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                    <tspan x="10.0247" y="11.52">CA</tspan>
-                  </text>
-                </g>
-                <g id="sudAfrica2" data-myval="478.61">
-                    <path d="M330.839 138.157L330.839 64.6693L269.315 64.6692L269.315 138.157L330.839 138.157Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-77-inside-68)"/>
-                  <text class="disab" id="ZA" transform="translate(280.4 93.5466)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                    <tspan x="13.971" y="11.52">ZA</tspan>
-                  </text>
-                </g>
-                <g id="arabiaSaudita2" data-myval="582.15">
-                    <path d="M184.575 63.934L184.575 0L96.3514 -2.09683e-06L96.3514 63.934L184.575 63.934Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-79-inside-69)"/>
-                    <text class="disab" id="SA" transform="translate(112.737 22.3167)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                    <tspan x="21.8049" y="11.52">SA</tspan>
-                  </text>
-                </g>
-                <g id="sudKorea2" data-myval="611.26">
-                    <path d="M91.7082 63.934L91.7083 0L0.00229645 -2.1796e-06L0.00229131 63.934L91.7082 63.934Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-81-inside-70)"/>
-                    <text class="disab" id="KR" transform="translate(29.774 22.3687)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                    <tspan x="8.40451" y="11.52">KR</tspan>
-                  </text>
-                </g>
-                <g id="indonesia2" data-myval="617.51">
-                      <path d="M184.575 138.157L184.575 66.8746L99.8339 66.8746L99.8338 138.157L184.575 138.157Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-83-inside-71)"/>
-                    <text class="disab" id="ID" transform="translate(131.13 92.38)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                    <tspan x="6.40631" y="11.52">ID</tspan>
-                  </text>
-                </g>
-                <g id="germania2" data-myval="701.96">
-                    <path d="M95.1902 138.157L95.1902 66.8746L0.00167084 66.8746L0.00166511 138.157L95.1902 138.157Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-85-inside-72)"/>
-                  <text class="disab" id="DE" transform="translate(31.6132 94.7141)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                    <tspan x="9.19703" y="11.52">DE</tspan>
-                  </text>
-                </g>
-                <g id="iran2" data-myval="779.53">
-                  <path d="M330.839 199.151L330.839 141.096L200.826 141.096L200.826 199.151L330.839 199.151Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-87-inside-73)"/>
-                  <text class="disab" id="IR" fill: "white" transform="translate(246.711 161.885)" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                    <tspan x="14.7285" y="11.52">IR</tspan>
-                  </text>
-                </g>
-                <g id="internetGrafico" data-myval="1100">
-                  <path id="path74" d="M330.839 285.132L330.839 202.091L200.826 202.091L200.826 285.132L330.839 285.132Z" fill="#00FFC2"/>
-                  <text id="Internet_2" transform="translate(217.745 233.572)" fill="#1E1E1E" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                    <tspan x="28.5051" y="11.52">Internet</tspan>
-                  </text>
-                </g>
-                <g id="giappone2" data-myval="1106.67">
-                  <g id="path75">
-                    <path d="M196.184 196.212L196.184 141.096L0.00323486 141.096L0.00323043 196.212L196.184 196.212Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-91-inside-74)"/>
-                  </g>
-                  <text class="disab" id="JP" fill="white" transform="translate(81.373 162.392)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                    <tspan x="10.0142" y="11.52">JP</tspan>
-                  </text>
-                </g>
-                <g id="russia2" data-myval="1678.37">
-                      <path d="M196.184 285.133L196.184 199.152L0.00323486 199.152L0.00322795 285.133L196.184 285.133Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-93-inside-75)"/>
-                  <text class="disab" id="RU" fill="white" transform="translate(74.0009 233.572)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                    <tspan x="15.4009" y="11.52">RU</tspan>
-                  </text>
-                </g>
-                <g id="cina2" data-myval="10174.68">
-                  <path d="M371.467 571L371.467 288.074L0 288.074L-2.27448e-05 571L371.467 571Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-95-inside-76)"/>
-                  <text class="disab" id="CN" fill="white" transform="translate(158.728 422.589)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                    <tspan x="19.0553" y="11.52">CN</tspan>
-                  </text>
-                </g>
-                <g id="statiUniti2" data-myval="5284.70">
-                    <path d="M663.999 570.997L663.999 382.87L376.112 382.87L376.112 570.997L663.999 570.997Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-97-inside-77)"/>
-                    <text class="disab" id="USA" fill="white" transform="translate(479.43 470.442)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                    <tspan x="28.4241" y="11.52">USA</tspan>
-                  </text>
-                </g>
-                <g id="india2" data-myval="2616.45">
-                  <path d="M664 379.933L664 288.074L376.113 288.074L376.113 379.933L664 379.933Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-99-inside-78)"/>
-                  <text class="disab" id="IN" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                    <tspan x="513.283" y="339.606">IN</tspan>
-                  </text>
-                </g>
-                <g id="altri2" data-myval="817.03">
-                  <path d="M664 69.0781L664 0L549.077 -2.7314e-06L549.077 69.0781L664 69.0781Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-101-inside-79)"/>
-                  <text  class="disab" id="ALTR" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                    <tspan x="592.052" y="37.3301">Altri*</tspan>
-                  </text>
-                </g>
+              <path d="M330.839 61.7294L330.839 0L264.672 -1.57262e-06L264.672 61.7294L330.839 61.7294Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-71-inside-65)" />
+              <text class="disab" id="MX" transform="translate(278.558 22.3687)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan x="10.4076" y="11.52">MX</tspan>
+              </text>
+            </g>
+            <g id="brasile2" data-myval="465.72">
+              <path d="M260.03 61.9267L260.03 0.197327L189.219 0.197325L189.219 61.9267L260.03 61.9267Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-73-inside-66)" />
+              <text class="disab" id="BR" transform="translate(204.844 22.3687)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan x="12.8886" y="11.52">BR</tspan>
+              </text>
+            </g>
+            <g id="canada2" data-myval="576.65">
+              <path d="M264.671 138.157L264.671 64.6693L189.217 64.6692L189.217 138.157L264.671 138.157Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-75-inside-67)" />
+              <text class="disab" id="CA" transform="translate(212.216 92.38)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan x="10.0247" y="11.52">CA</tspan>
+              </text>
+            </g>
+            <g id="sudAfrica2" data-myval="478.61">
+              <path d="M330.839 138.157L330.839 64.6693L269.315 64.6692L269.315 138.157L330.839 138.157Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-77-inside-68)" />
+              <text class="disab" id="ZA" transform="translate(280.4 93.5466)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan x="13.971" y="11.52">ZA</tspan>
+              </text>
+            </g>
+            <g id="arabiaSaudita2" data-myval="582.15">
+              <path d="M184.575 63.934L184.575 0L96.3514 -2.09683e-06L96.3514 63.934L184.575 63.934Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-79-inside-69)" />
+              <text class="disab" id="SA" transform="translate(112.737 22.3167)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan x="21.8049" y="11.52">SA</tspan>
+              </text>
+            </g>
+            <g id="sudKorea2" data-myval="611.26">
+              <path d="M91.7082 63.934L91.7083 0L0.00229645 -2.1796e-06L0.00229131 63.934L91.7082 63.934Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-81-inside-70)" />
+              <text class="disab" id="KR" transform="translate(29.774 22.3687)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan x="8.40451" y="11.52">KR</tspan>
+              </text>
+            </g>
+            <g id="indonesia2" data-myval="617.51">
+              <path d="M184.575 138.157L184.575 66.8746L99.8339 66.8746L99.8338 138.157L184.575 138.157Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-83-inside-71)" />
+              <text class="disab" id="ID" transform="translate(131.13 92.38)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan x="6.40631" y="11.52">ID</tspan>
+              </text>
+            </g>
+            <g id="germania2" data-myval="701.96">
+              <path d="M95.1902 138.157L95.1902 66.8746L0.00167084 66.8746L0.00166511 138.157L95.1902 138.157Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-85-inside-72)" />
+              <text class="disab" id="DE" transform="translate(31.6132 94.7141)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan x="9.19703" y="11.52">DE</tspan>
+              </text>
+            </g>
+            <g id="iran2" data-myval="779.53">
+              <path d="M330.839 199.151L330.839 141.096L200.826 141.096L200.826 199.151L330.839 199.151Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-87-inside-73)" />
+              <text class="disab" id="IR" fill: "white" transform="translate(246.711 161.885)" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan x="14.7285" y="11.52">IR</tspan>
+              </text>
+            </g>
+            <g id="internetGrafico" data-myval="1100">
+              <path id="path74" d="M330.839 285.132L330.839 202.091L200.826 202.091L200.826 285.132L330.839 285.132Z" fill="#00FFC2" />
+              <text id="Internet_2" transform="translate(217.745 233.572)" fill="#1E1E1E" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan x="28.5051" y="11.52">Internet</tspan>
+              </text>
+            </g>
+            <g id="giappone2" data-myval="1106.67">
+              <g id="path75">
+                <path d="M196.184 196.212L196.184 141.096L0.00323486 141.096L0.00323043 196.212L196.184 196.212Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-91-inside-74)" />
               </g>
-            </svg>
+              <text class="disab" id="JP" fill="white" transform="translate(81.373 162.392)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan x="10.0142" y="11.52">JP</tspan>
+              </text>
+            </g>
+            <g id="russia2" data-myval="1678.37">
+              <path d="M196.184 285.133L196.184 199.152L0.00323486 199.152L0.00322795 285.133L196.184 285.133Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-93-inside-75)" />
+              <text class="disab" id="RU" fill="white" transform="translate(74.0009 233.572)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan x="15.4009" y="11.52">RU</tspan>
+              </text>
+            </g>
+            <g id="cina2" data-myval="10174.68">
+              <path d="M371.467 571L371.467 288.074L0 288.074L-2.27448e-05 571L371.467 571Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-95-inside-76)" />
+              <text class="disab" id="CN" fill="white" transform="translate(158.728 422.589)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan x="19.0553" y="11.52">CN</tspan>
+              </text>
+            </g>
+            <g id="statiUniti2" data-myval="5284.70">
+              <path d="M663.999 570.997L663.999 382.87L376.112 382.87L376.112 570.997L663.999 570.997Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-97-inside-77)" />
+              <text class="disab" id="USA" fill="white" transform="translate(479.43 470.442)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan x="28.4241" y="11.52">USA</tspan>
+              </text>
+            </g>
+            <g id="india2" data-myval="2616.45">
+              <path d="M664 379.933L664 288.074L376.113 288.074L376.113 379.933L664 379.933Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-99-inside-78)" />
+              <text class="disab" id="IN" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan x="513.283" y="339.606">IN</tspan>
+              </text>
+            </g>
+            <g id="altri2" data-myval="817.03">
+              <path d="M664 69.0781L664 0L549.077 -2.7314e-06L549.077 69.0781L664 69.0781Z" fill="#1E1E1E" stroke="white" stroke-opacity="0.3" stroke-width="1.6" mask="url(#path-101-inside-79)" />
+              <text class="disab" id="ALTR" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan x="592.052" y="37.3301">Altri*</tspan>
+              </text>
+            </g>
+          </g>
+        </svg>
 
         <!-- mobile -->
         <svg id="TreemapMobile" width="100%" height="100%" viewBox="0 0 333 492" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1123,23 +1134,23 @@
         <div id="box">
 
           <!--grafico Desktop-->
-           <svg id="barchartDesk"  width="100%" height="100%" viewBox="0 0 664 571" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g id="barChart" >
+          <svg id="barchartDesk" width="100%" height="100%" viewBox="0 0 664 571" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="barChart">
               <g id="linkedin">
                 <g class="sost" data-s="10">
-                  <path d="M518.457 571L664 571L664 557.272L518.457 557.272L518.457 571Z" stroke="#8FFF00" stroke-width="1.6" mask="url(#path-1-inside-1)"/>
+                  <path d="M518.457 571L664 571L664 557.272L518.457 557.272L518.457 571Z" stroke="#8FFF00" stroke-width="1.6" mask="url(#path-1-inside-1)" />
                 </g>
                 <g class="gas" data-g="31">
-                  <path d="M518.457 556.255L664 556.255L664 512.021L518.457 512.021L518.457 556.255Z" stroke="#A67EFF" stroke-width="1.6" mask="url(#path-2-inside-2)"/>
+                  <path d="M518.457 556.255L664 556.255L664 512.021L518.457 512.021L518.457 556.255Z" stroke="#A67EFF" stroke-width="1.6" mask="url(#path-2-inside-2)" />
                 </g>
                 <g class="carb" data-c="23">
-                  <path d="M518.457 511.005L664 511.005L664 478.21L518.457 478.21L518.457 511.005Z" stroke="#FF9900" stroke-width="1.6" mask="url(#path-3-inside-3)"/>
+                  <path d="M518.457 511.005L664 511.005L664 478.21L518.457 478.21L518.457 511.005Z" stroke="#FF9900" stroke-width="1.6" mask="url(#path-3-inside-3)" />
                 </g>
                 <g class="nuc" data-n="20">
-                  <path d="M518.457 477.193L664 477.193L664 448.975L518.457 448.975L518.457 477.193Z" stroke="#FF1111" stroke-width="1.6" mask="url(#path-4-inside-4)"/>
+                  <path d="M518.457 477.193L664 477.193L664 448.975L518.457 448.975L518.457 477.193Z" stroke="#FF1111" stroke-width="1.6" mask="url(#path-4-inside-4)" />
                 </g>
                 <g class="altro2" data-a="16">
-                  <path d="M518.457 447.958L664 447.958L664 425.587L518.457 425.587L518.457 447.958Z" stroke="white" stroke-width="1.6" mask="url(#path-5-inside-5)"/>
+                  <path d="M518.457 447.958L664 447.958L664 425.587L518.457 425.587L518.457 447.958Z" stroke="white" stroke-width="1.6" mask="url(#path-5-inside-5)" />
                 </g>
                 <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
                   <tspan class="testo" x="647.904" y="411.896">0%</tspan>
@@ -1150,19 +1161,19 @@
               </g>
               <g id="twitter">
                 <g class="sost" data-s="10">
-                  <path d="M343.747 571L489.29 571L489.29 557.272L343.747 557.272L343.747 571Z" stroke="#8FFF00" stroke-width="1.6" mask="url(#path-8-inside-6)"/>
+                  <path d="M343.747 571L489.29 571L489.29 557.272L343.747 557.272L343.747 571Z" stroke="#8FFF00" stroke-width="1.6" mask="url(#path-8-inside-6)" />
                 </g>
                 <g class="gas" data-g="47">
-                  <path d="M343.747 556.255L489.29 556.255L489.29 494.48L343.747 494.48L343.747 556.255Z" stroke="#A67EFF" stroke-width="1.6" mask="url(#path-9-inside-7)"/>
+                  <path d="M343.747 556.255L489.29 556.255L489.29 494.48L343.747 494.48L343.747 556.255Z" stroke="#A67EFF" stroke-width="1.6" mask="url(#path-9-inside-7)" />
                 </g>
                 <g class="carb" data-c="21">
-                  <path d="M343.747 493.463L489.29 493.463L489.29 463.719L343.747 463.719L343.747 493.463Z" stroke="#FF9900" stroke-width="1.6" mask="url(#path-10-inside-8)"/>
+                  <path d="M343.747 493.463L489.29 493.463L489.29 463.719L343.747 463.719L343.747 493.463Z" stroke="#FF9900" stroke-width="1.6" mask="url(#path-10-inside-8)" />
                 </g>
                 <g class="nuc" data-n="14">
-                  <path d="M343.747 462.703L489.29 462.703L489.29 443.128L343.747 443.128L343.747 462.703Z" stroke="#FF1111" stroke-width="1.6" mask="url(#path-11-inside-9)"/>
+                  <path d="M343.747 462.703L489.29 462.703L489.29 443.128L343.747 443.128L343.747 462.703Z" stroke="#FF1111" stroke-width="1.6" mask="url(#path-11-inside-9)" />
                 </g>
                 <g class="altro2" data-a="12">
-                  <path d="M343.747 442.111L489.29 442.111L489.29 425.587L343.747 425.587L343.747 442.111Z" stroke="white" stroke-width="1.6" mask="url(#path-12-inside-10)"/>
+                  <path d="M343.747 442.111L489.29 442.111L489.29 425.587L343.747 425.587L343.747 442.111Z" stroke="white" stroke-width="1.6" mask="url(#path-12-inside-10)" />
                 </g>
                 <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
                   <tspan class="testo" x="473.046" y="411.896">0%</tspan>
@@ -1173,19 +1184,19 @@
               </g>
               <g id="soundcloud">
                 <g class="sost" data-s="17">
-                  <path d="M171.151 571L316.694 571L316.694 547.103L171.151 547.103L171.151 571Z" stroke="#8FFF00" stroke-width="1.6" mask="url(#path-15-inside-11)"/>
+                  <path d="M171.151 571L316.694 571L316.694 547.103L171.151 547.103L171.151 571Z" stroke="#8FFF00" stroke-width="1.6" mask="url(#path-15-inside-11)" />
                 </g>
                 <g class="gas" data-g="24">
-                  <path d="M171.151 546.086L316.694 546.086L316.694 512.021L171.151 512.021L171.151 546.086Z" stroke="#A67EFF" stroke-width="1.6" mask="url(#path-16-inside-12)"/>
+                  <path d="M171.151 546.086L316.694 546.086L316.694 512.021L171.151 512.021L171.151 546.086Z" stroke="#A67EFF" stroke-width="1.6" mask="url(#path-16-inside-12)" />
                 </g>
                 <g class="carb" data-c="30">
-                  <path d="M171.151 511.005L316.694 511.005L316.694 468.042L171.151 468.042L171.151 511.005Z" stroke="#FF9900" stroke-width="1.6" mask="url(#path-17-inside-13)"/>
+                  <path d="M171.151 511.005L316.694 511.005L316.694 468.042L171.151 468.042L171.151 511.005Z" stroke="#FF9900" stroke-width="1.6" mask="url(#path-17-inside-13)" />
                 </g>
                 <g class="nuc" data-n="26">
-                  <path d="M171.151 467.025L316.694 467.025L316.694 429.909L171.151 429.909L171.151 467.025Z" stroke="#FF1111" stroke-width="1.6" mask="url(#path-18-inside-14)"/>
+                  <path d="M171.151 467.025L316.694 467.025L316.694 429.909L171.151 429.909L171.151 467.025Z" stroke="#FF1111" stroke-width="1.6" mask="url(#path-18-inside-14)" />
                 </g>
                 <g class="altro2" data-a="3">
-                  <path d="M171.151 428.892L316.694 428.892L316.694 425.587L171.151 425.587L171.151 428.892Z" stroke="white" stroke-width="1.6" mask="url(#path-19-inside-15)"/>
+                  <path d="M171.151 428.892L316.694 428.892L316.694 425.587L171.151 425.587L171.151 428.892Z" stroke="white" stroke-width="1.6" mask="url(#path-19-inside-15)" />
                 </g>
                 <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
                   <tspan class="testo" x="300.391" y="411.896">0%</tspan>
@@ -1196,19 +1207,19 @@
               </g>
               <g id="netflix">
                 <g class="sost" data-s="17">
-                  <path d="M2.17325 571L147.716 571L147.716 547.103L2.17325 547.103L2.17325 571Z" stroke="#8FFF00" stroke-width="1.6" mask="url(#path-22-inside-16)"/>
+                  <path d="M2.17325 571L147.716 571L147.716 547.103L2.17325 547.103L2.17325 571Z" stroke="#8FFF00" stroke-width="1.6" mask="url(#path-22-inside-16)" />
                 </g>
                 <g class="gas" data-g="24">
-                  <path d="M2.17361 546.086L147.716 546.086L147.716 512.021L2.17362 512.021L2.17361 546.086Z" stroke="#A67EFF" stroke-width="1.6" mask="url(#path-23-inside-17)"/>
+                  <path d="M2.17361 546.086L147.716 546.086L147.716 512.021L2.17362 512.021L2.17361 546.086Z" stroke="#A67EFF" stroke-width="1.6" mask="url(#path-23-inside-17)" />
                 </g>
                 <g class="carb" data-c="30">
-                  <path d="M2.17361 511.005L147.716 511.005L147.716 468.042L2.17362 468.042L2.17361 511.005Z" stroke="#FF9900" stroke-width="1.6" mask="url(#path-24-inside-18)"/>
+                  <path d="M2.17361 511.005L147.716 511.005L147.716 468.042L2.17362 468.042L2.17361 511.005Z" stroke="#FF9900" stroke-width="1.6" mask="url(#path-24-inside-18)" />
                 </g>
                 <g class="nuc" data-n="26">
-                  <path d="M2.17361 467.024L147.716 467.024L147.716 429.909L2.17362 429.909L2.17361 467.024Z" stroke="#FF1111" stroke-width="1.6" mask="url(#path-25-inside-19)"/>
+                  <path d="M2.17361 467.024L147.716 467.024L147.716 429.909L2.17362 429.909L2.17361 467.024Z" stroke="#FF1111" stroke-width="1.6" mask="url(#path-25-inside-19)" />
                 </g>
                 <g class="altro2" data-a="3">
-                  <path d="M2.17361 428.892L147.716 428.892L147.716 425.587L2.17361 425.587L2.17361 428.892Z" stroke="white" stroke-width="1.6" mask="url(#path-26-inside-20)"/>
+                  <path d="M2.17361 428.892L147.716 428.892L147.716 425.587L2.17361 425.587L2.17361 428.892Z" stroke="white" stroke-width="1.6" mask="url(#path-26-inside-20)" />
                 </g>
                 <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
                   <tspan class="testo" x="131.414" y="410.636">0%</tspan>
@@ -1219,19 +1230,19 @@
               </g>
               <g id="amazon">
                 <g class="sost" data-s="17">
-                  <path d="M518.457 376.2L664 376.2L664 352.303L518.457 352.303L518.457 376.2Z" stroke="#8FFF00" stroke-width="1.6" mask="url(#path-29-inside-21)"/>
+                  <path d="M518.457 376.2L664 376.2L664 352.303L518.457 352.303L518.457 376.2Z" stroke="#8FFF00" stroke-width="1.6" mask="url(#path-29-inside-21)" />
                 </g>
                 <g class="gas" data-g="24">
-                  <path d="M518.457 351.286L664 351.286L664 317.221L518.457 317.221L518.457 351.286Z" stroke="#A67EFF" stroke-width="1.6" mask="url(#path-30-inside-22)"/>
+                  <path d="M518.457 351.286L664 351.286L664 317.221L518.457 317.221L518.457 351.286Z" stroke="#A67EFF" stroke-width="1.6" mask="url(#path-30-inside-22)" />
                 </g>
                 <g class="carb" data-c="30">
-                  <path d="M518.457 316.204L664 316.204L664 273.241L518.457 273.241L518.457 316.204Z" stroke="#FF9900" stroke-width="1.6" mask="url(#path-31-inside-23)"/>
+                  <path d="M518.457 316.204L664 316.204L664 273.241L518.457 273.241L518.457 316.204Z" stroke="#FF9900" stroke-width="1.6" mask="url(#path-31-inside-23)" />
                 </g>
                 <g class="nuc" data-n="26">
-                  <path d="M518.457 272.224L664 272.224L664 235.108L518.457 235.108L518.457 272.224Z" stroke="#FF1111" stroke-width="1.6" mask="url(#path-32-inside-24)"/>
+                  <path d="M518.457 272.224L664 272.224L664 235.108L518.457 235.108L518.457 272.224Z" stroke="#FF1111" stroke-width="1.6" mask="url(#path-32-inside-24)" />
                 </g>
                 <g class="altro2" data-a="3">
-                  <path d="M518.457 234.092L664 234.092L664 230.787L518.457 230.787L518.457 234.092Z" stroke="white" stroke-width="1.6" mask="url(#path-33-inside-25)"/>
+                  <path d="M518.457 234.092L664 234.092L664 230.787L518.457 230.787L518.457 234.092Z" stroke="white" stroke-width="1.6" mask="url(#path-33-inside-25)" />
                 </g>
                 <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
                   <tspan class="testo" x="647.78" y="216.006">0%</tspan>
@@ -1242,19 +1253,19 @@
               </g>
               <g id="skype">
                 <g class="sost" data-s="32">
-                  <path d="M344.583 376.2L490.126 376.2L490.126 330.44L344.583 330.44L344.583 376.2Z" stroke="#8FFF00" stroke-width="1.6" mask="url(#path-36-inside-26)"/>
+                  <path d="M344.583 376.2L490.126 376.2L490.126 330.44L344.583 330.44L344.583 376.2Z" stroke="#8FFF00" stroke-width="1.6" mask="url(#path-36-inside-26)" />
                 </g>
                 <g class="gas" data-g="23">
-                  <path d="M344.583 329.424L490.126 329.424L490.126 296.629L344.583 296.629L344.583 329.424Z" stroke="#A67EFF" stroke-width="1.6" mask="url(#path-37-inside-27)"/>
+                  <path d="M344.583 329.424L490.126 329.424L490.126 296.629L344.583 296.629L344.583 329.424Z" stroke="#A67EFF" stroke-width="1.6" mask="url(#path-37-inside-27)" />
                 </g>
                 <g class="carb" data-c="31">
-                  <path d="M344.583 295.612L490.126 295.612L490.126 251.378L344.583 251.378L344.583 295.612Z" stroke="#FF9900" stroke-width="1.6" mask="url(#path-38-inside-28)"/>
+                  <path d="M344.583 295.612L490.126 295.612L490.126 251.378L344.583 251.378L344.583 295.612Z" stroke="#FF9900" stroke-width="1.6" mask="url(#path-38-inside-28)" />
                 </g>
                 <g class="nuc" data-n="10">
-                  <path d="M344.583 250.362L490.126 250.362L490.126 236.634L344.583 236.634L344.583 250.362Z" stroke="#FF1111" stroke-width="1.6" mask="url(#path-39-inside-29)"/>
+                  <path d="M344.583 250.362L490.126 250.362L490.126 236.634L344.583 236.634L344.583 250.362Z" stroke="#FF1111" stroke-width="1.6" mask="url(#path-39-inside-29)" />
                 </g>
                 <g class="altro2" data-a="4">
-                  <path d="M344.583 235.617L490.126 235.617L490.126 230.787L344.583 230.787L344.583 235.617Z" stroke="white" stroke-width="1.6" mask="url(#path-40-inside-30)"/>
+                  <path d="M344.583 235.617L490.126 235.617L490.126 230.787L344.583 230.787L344.583 235.617Z" stroke="white" stroke-width="1.6" mask="url(#path-40-inside-30)" />
                 </g>
                 <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
                   <tspan class="testo" x="474.375" y="217.588">0%</tspan>
@@ -1265,19 +1276,19 @@
               </g>
               <g id="vimeo">
                 <g class="sost" data-s="47">
-                  <path d="M171.151 376.2L316.694 376.2L316.694 308.323L171.151 308.323L171.151 376.2Z" stroke="#8FFF00" stroke-width="1.6" mask="url(#path-43-inside-31)"/>
+                  <path d="M171.151 376.2L316.694 376.2L316.694 308.323L171.151 308.323L171.151 376.2Z" stroke="#8FFF00" stroke-width="1.6" mask="url(#path-43-inside-31)" />
                 </g>
                 <g class="gas" data-g="13">
-                  <path d="M171.151 307.307L316.694 307.307L316.694 289.257L171.151 289.257L171.151 307.307Z" stroke="#B697F8" stroke-width="1.6" mask="url(#path-44-inside-32)"/>
+                  <path d="M171.151 307.307L316.694 307.307L316.694 289.257L171.151 289.257L171.151 307.307Z" stroke="#B697F8" stroke-width="1.6" mask="url(#path-44-inside-32)" />
                 </g>
                 <g class="carb" data-c="20">
-                  <path d="M171.151 288.24L316.694 288.24L316.694 260.022L171.151 260.022L171.151 288.24Z" stroke="#FCA31D" stroke-width="1.6" mask="url(#path-45-inside-33)"/>
+                  <path d="M171.151 288.24L316.694 288.24L316.694 260.022L171.151 260.022L171.151 288.24Z" stroke="#FCA31D" stroke-width="1.6" mask="url(#path-45-inside-33)" />
                 </g>
                 <g class="nuc" data-n="19">
-                  <path d="M171.151 259.005L316.694 259.005L316.694 232.312L171.151 232.312L171.151 259.005Z" stroke="#FF1111" stroke-width="1.6" mask="url(#path-46-inside-34)"/>
+                  <path d="M171.151 259.005L316.694 259.005L316.694 232.312L171.151 232.312L171.151 259.005Z" stroke="#FF1111" stroke-width="1.6" mask="url(#path-46-inside-34)" />
                 </g>
                 <g class="altro2" data-a="1">
-                  <path d="M171.151 231.295L316.694 231.295L316.694 230.786L171.151 230.786L171.151 231.295Z" stroke="white" stroke-width="1.6" mask="url(#path-47-inside-35)"/>
+                  <path d="M171.151 231.295L316.694 231.295L316.694 230.786L171.151 230.786L171.151 231.295Z" stroke="white" stroke-width="1.6" mask="url(#path-47-inside-35)" />
                 </g>
                 <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
                   <tspan class="testo" x="300.474" y="213.462">0%</tspan>
@@ -1288,19 +1299,19 @@
               </g>
               <g id="spotify">
                 <g class="sost" data-s="56">
-                  <path d="M0.15567 376.2L145.698 376.2L145.698 295.104L0.155677 295.104L0.15567 376.2Z" stroke="#8FFF00" stroke-width="1.6" mask="url(#path-50-inside-36)"/>
+                  <path d="M0.15567 376.2L145.698 376.2L145.698 295.104L0.155677 295.104L0.15567 376.2Z" stroke="#8FFF00" stroke-width="1.6" mask="url(#path-50-inside-36)" />
                 </g>
                 <g class="gas" data-g="15">
-                  <path d="M0.15567 294.087L145.698 294.087L145.698 273.241L0.155672 273.241L0.15567 294.087Z" stroke="#A67EFF" stroke-width="1.6" mask="url(#path-51-inside-37)"/>
+                  <path d="M0.15567 294.087L145.698 294.087L145.698 273.241L0.155672 273.241L0.15567 294.087Z" stroke="#A67EFF" stroke-width="1.6" mask="url(#path-51-inside-37)" />
                 </g>
                 <g class="carb" data-c="14">
-                  <path d="M0.15567 272.224L145.698 272.224L145.698 252.649L0.155672 252.649L0.15567 272.224Z" stroke="#FF9900" stroke-width="1.6" mask="url(#path-52-inside-38)"/>
+                  <path d="M0.15567 272.224L145.698 272.224L145.698 252.649L0.155672 252.649L0.15567 272.224Z" stroke="#FF9900" stroke-width="1.6" mask="url(#path-52-inside-38)" />
                 </g>
                 <g class="nuc" data-n="10">
-                  <path d="M0.15567 251.633L145.698 251.633L145.698 238.159L0.155671 238.159L0.15567 251.633Z" stroke="#FF1111" stroke-width="1.6" mask="url(#path-53-inside-39)"/>
+                  <path d="M0.15567 251.633L145.698 251.633L145.698 238.159L0.155671 238.159L0.15567 251.633Z" stroke="#FF1111" stroke-width="1.6" mask="url(#path-53-inside-39)" />
                 </g>
                 <g class="altro" data-a="5">
-                  <path d="M0.15567 237.142L145.698 237.142L145.698 230.787L0.155671 230.787L0.15567 237.142Z" stroke="white" stroke-width="1.6" mask="url(#path-54-inside-40)"/>
+                  <path d="M0.15567 237.142L145.698 237.142L145.698 230.787L0.155671 230.787L0.15567 237.142Z" stroke="white" stroke-width="1.6" mask="url(#path-54-inside-40)" />
                 </g>
                 <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
                   <tspan class="testo" x="129.414" y="213.892">0%</tspan>
@@ -1311,19 +1322,19 @@
               </g>
               <g id="youtube">
                 <g class="sost" data-s="56">
-                  <path d="M518.457 177.404L664 177.404L664 96.3082L518.457 96.3082L518.457 177.404Z" stroke="#8FFF00" stroke-width="1.6" mask="url(#path-57-inside-41)"/>
+                  <path d="M518.457 177.404L664 177.404L664 96.3082L518.457 96.3082L518.457 177.404Z" stroke="#8FFF00" stroke-width="1.6" mask="url(#path-57-inside-41)" />
                 </g>
                 <g class="gas" data-g="15">
-                  <path d="M518.457 95.2911L664 95.2911L664 74.4452L518.457 74.4452L518.457 95.2911Z" stroke="#B697F8" stroke-width="1.6" mask="url(#path-58-inside-42)"/>
+                  <path d="M518.457 95.2911L664 95.2911L664 74.4452L518.457 74.4452L518.457 95.2911Z" stroke="#B697F8" stroke-width="1.6" mask="url(#path-58-inside-42)" />
                 </g>
                 <g class="carb" data-c="14">
-                  <path d="M518.457 73.4286L664 73.4286L664 53.8538L518.457 53.8537L518.457 73.4286Z" stroke="#FCA31D" stroke-width="1.6" mask="url(#path-59-inside-43)"/>
+                  <path d="M518.457 73.4286L664 73.4286L664 53.8538L518.457 53.8537L518.457 73.4286Z" stroke="#FCA31D" stroke-width="1.6" mask="url(#path-59-inside-43)" />
                 </g>
                 <g class="nuc" data-n="10">
-                  <path d="M518.457 52.8367L664 52.8367L664 39.3631L518.457 39.3631L518.457 52.8367Z" stroke="#FF1111" stroke-width="1.6" mask="url(#path-60-inside-44)"/>
+                  <path d="M518.457 52.8367L664 52.8367L664 39.3631L518.457 39.3631L518.457 52.8367Z" stroke="#FF1111" stroke-width="1.6" mask="url(#path-60-inside-44)" />
                 </g>
                 <g class="altro2" data-a="5">
-                  <path d="M518.457 38.3464L664 38.3464L664 31.9909L518.457 31.9909L518.457 38.3464Z" stroke="white" stroke-width="1.6" mask="url(#path-61-inside-45)"/>
+                  <path d="M518.457 38.3464L664 38.3464L664 31.9909L518.457 31.9909L518.457 38.3464Z" stroke="white" stroke-width="1.6" mask="url(#path-61-inside-45)" />
                 </g>
                 <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
                   <tspan class="testo" x="646.847" y="17.5744">0%</tspan>
@@ -1334,19 +1345,19 @@
               </g>
               <g id="google">
                 <g class="sost" data-s="56">
-                  <path d="M343.746 177.404L489.289 177.404L489.289 96.3082L343.746 96.3082L343.746 177.404Z" stroke="#8FFF00" stroke-width="1.6" mask="url(#path-64-inside-46)"/>
+                  <path d="M343.746 177.404L489.289 177.404L489.289 96.3082L343.746 96.3082L343.746 177.404Z" stroke="#8FFF00" stroke-width="1.6" mask="url(#path-64-inside-46)" />
                 </g>
                 <g class="gas" data-g="14">
-                  <path d="M343.747 95.2915L489.29 95.2915L489.29 75.9709L343.747 75.9709L343.747 95.2915Z" stroke="#A67EFF" stroke-width="1.6" mask="url(#path-65-inside-47)"/>
+                  <path d="M343.747 95.2915L489.29 95.2915L489.29 75.9709L343.747 75.9709L343.747 95.2915Z" stroke="#A67EFF" stroke-width="1.6" mask="url(#path-65-inside-47)" />
                 </g>
                 <g class="carb" data-c="15">
-                  <path d="M343.747 74.9535L489.29 74.9535L489.29 53.8533L343.747 53.8533L343.747 74.9535Z" stroke="#FF9900" stroke-width="1.6" mask="url(#path-66-inside-48)"/>
+                  <path d="M343.747 74.9535L489.29 74.9535L489.29 53.8533L343.747 53.8533L343.747 74.9535Z" stroke="#FF9900" stroke-width="1.6" mask="url(#path-66-inside-48)" />
                 </g>
                 <g class="nuc" data-n="10">
-                  <path d="M343.747 52.837L489.29 52.837L489.29 39.3634L343.747 39.3634L343.747 52.837Z" stroke="#FF1111" stroke-width="1.6" mask="url(#path-67-inside-49)"/>
+                  <path d="M343.747 52.837L489.29 52.837L489.29 39.3634L343.747 39.3634L343.747 52.837Z" stroke="#FF1111" stroke-width="1.6" mask="url(#path-67-inside-49)" />
                 </g>
                 <g class="altro2" data-a="5">
-                  <path d="M343.747 38.3467L489.29 38.3467L489.29 31.9912L343.747 31.9912L343.747 38.3467Z" stroke="white" stroke-width="1.6" mask="url(#path-68-inside-50)"/>
+                  <path d="M343.747 38.3467L489.29 38.3467L489.29 31.9912L343.747 31.9912L343.747 38.3467Z" stroke="white" stroke-width="1.6" mask="url(#path-68-inside-50)" />
                 </g>
                 <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
                   <tspan class="testo" x="473.291" y="12.9746">0%</tspan>
@@ -1357,19 +1368,19 @@
               </g>
               <g id="fbwa">
                 <g class="sost" data-s="67">
-                  <path d="M171.588 177.404L317.131 177.404L317.131 80.2923L171.588 80.2923L171.588 177.404Z" stroke="#8FFF00" stroke-width="1.6" mask="url(#path-71-inside-51)"/>
+                  <path d="M171.588 177.404L317.131 177.404L317.131 80.2923L171.588 80.2923L171.588 177.404Z" stroke="#8FFF00" stroke-width="1.6" mask="url(#path-71-inside-51)" />
                 </g>
                 <g class="gas" data-g="7">
-                  <path d="M171.588 79.2757L317.131 79.2758L317.131 70.1239L171.588 70.1239L171.588 79.2757Z" stroke="#A67EFF" stroke-width="1.6" mask="url(#path-72-inside-52)"/>
+                  <path d="M171.588 79.2757L317.131 79.2758L317.131 70.1239L171.588 70.1239L171.588 79.2757Z" stroke="#A67EFF" stroke-width="1.6" mask="url(#path-72-inside-52)" />
                 </g>
                 <g class="carb" data-c="15">
-                  <path d="M171.588 69.1069L317.131 69.1069L317.131 48.0067L171.588 48.0067L171.588 69.1069Z" stroke="#FF9900" stroke-width="1.6" mask="url(#path-73-inside-53)"/>
+                  <path d="M171.588 69.1069L317.131 69.1069L317.131 48.0067L171.588 48.0067L171.588 69.1069Z" stroke="#FF9900" stroke-width="1.6" mask="url(#path-73-inside-53)" />
                 </g>
                 <g class="nuc" data-n="9">
-                  <path d="M171.588 46.99L317.131 46.99L317.131 35.0417L171.588 35.0417L171.588 46.99Z" stroke="#FF1111" stroke-width="1.6" mask="url(#path-74-inside-54)"/>
+                  <path d="M171.588 46.99L317.131 46.99L317.131 35.0417L171.588 35.0417L171.588 46.99Z" stroke="#FF1111" stroke-width="1.6" mask="url(#path-74-inside-54)" />
                 </g>
                 <g class="altro2" data-a="2">
-                  <path d="M171.588 34.0246L317.131 34.0247L317.131 31.9909L171.588 31.9909L171.588 34.0246Z" stroke="white" stroke-width="1.6" mask="url(#path-75-inside-55)"/>
+                  <path d="M171.588 34.0246L317.131 34.0247L317.131 31.9909L171.588 31.9909L171.588 34.0246Z" stroke="white" stroke-width="1.6" mask="url(#path-75-inside-55)" />
                 </g>
                 <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
                   <tspan class="testo" x="300.925" y="11.52">0%</tspan>
@@ -1381,19 +1392,19 @@
               </g>
               <g id="apple">
                 <g class="sost" data-s="83">
-                  <path d="M0.173737 177.404L145.717 177.404L145.717 56.9045L0.173747 56.9045L0.173737 177.404Z" stroke="#8FFF00" stroke-width="1.6" mask="url(#path-78-inside-56)"/>
+                  <path d="M0.173737 177.404L145.717 177.404L145.717 56.9045L0.173747 56.9045L0.173737 177.404Z" stroke="#8FFF00" stroke-width="1.6" mask="url(#path-78-inside-56)" />
                 </g>
                 <g class="gas" data-g="4">
-                  <path d="M0.173752 55.8877L145.717 55.8877L145.717 51.0575L0.173752 51.0575L0.173752 55.8877Z" stroke="#A67EFF" stroke-width="1.6" mask="url(#path-79-inside-57)"/>
+                  <path d="M0.173752 55.8877L145.717 55.8877L145.717 51.0575L0.173752 51.0575L0.173752 55.8877Z" stroke="#A67EFF" stroke-width="1.6" mask="url(#path-79-inside-57)" />
                 </g>
                 <g class="carb" data-c="5">
-                  <path d="M0.173737 50.0405L145.717 50.0405L145.717 43.6851L0.173737 43.6851L0.173737 50.0405Z" stroke="#FF9900" stroke-width="1.6" mask="url(#path-80-inside-58)"/>
+                  <path d="M0.173737 50.0405L145.717 50.0405L145.717 43.6851L0.173737 43.6851L0.173737 50.0405Z" stroke="#FF9900" stroke-width="1.6" mask="url(#path-80-inside-58)" />
                 </g>
                 <g class="nuc" data-n="5">
-                  <path d="M0.173737 42.6684L145.717 42.6685L145.717 36.313L0.173737 36.313L0.173737 42.6684Z" stroke="#FF1111" stroke-width="1.6" mask="url(#path-81-inside-59)"/>
+                  <path d="M0.173737 42.6684L145.717 42.6685L145.717 36.313L0.173737 36.313L0.173737 42.6684Z" stroke="#FF1111" stroke-width="1.6" mask="url(#path-81-inside-59)" />
                 </g>
                 <g class="altro2" data-a="3">
-                  <path d="M0.173737 35.2956L145.717 35.2957L145.717 31.9908L0.173737 31.9908L0.173737 35.2956Z" stroke="white" stroke-width="1.6" mask="url(#path-82-inside-60)"/>
+                  <path d="M0.173737 35.2956L145.717 35.2957L145.717 31.9908L0.173737 31.9908L0.173737 35.2956Z" stroke="white" stroke-width="1.6" mask="url(#path-82-inside-60)" />
                 </g>
                 <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
                   <tspan class="testo" x="129.24" y="13.973">0%</tspan>
@@ -1405,284 +1416,282 @@
             </g>
           </svg>
 
-          <svg id="barchartMobile" width="100%" height="100%" viewBox="0 0 333 528" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g id="barchart">
-              <g id="linkedin">
-                <g class="sost" data-s="10">
-                  <path d="M231.5 528L331.5 528L331.5 518.559L231.5 518.559L231.5 528Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-1-inside-1)" />
-                </g>
-                <g class="gas" data-g="31">
-                  <path d="M231.5 517.86L331.5 517.86L331.5 487.44L231.5 487.44L231.5 517.86Z" stroke="#A67EFF" stroke-width="0.8" mask="url(#path-2-inside-2)" />
-                </g>
-                <g class="carb" data-c="23">
-                  <path d="M231.5 486.741L331.5 486.741L331.5 464.189L231.5 464.189L231.5 486.741Z" stroke="#FF9900" stroke-width="0.8" mask="url(#path-3-inside-3)" />
-                </g>
-                <g class="nuc" data-n="20">
-                  <path d="M231.5 463.489L331.5 463.49L331.5 444.084L231.5 444.084L231.5 463.489Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-4-inside-4)" />
-                </g>
-                <g class="altro2" data-a="16">
-                  <path d="M231.5 443.385L331.5 443.385L331.5 428L231.5 428L231.5 443.385Z" stroke="white" stroke-width="0.8" mask="url(#path-5-inside-5)" />
-                </g>
-                <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                  <tspan class="testo" x="310.147" y="422.52">0%</tspan>
-                </text>
-                <text id="Linkedin_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                  <tspan x="231.5" y="422.183">Linkedin</tspan>
-                </text>
+          <svg id="barchart" id="barchartMobile" width="100%" height="100%" viewBox="0 0 333 528" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="linkedin">
+              <g class="sost" data-s="10">
+                <path d="M231.5 528L331.5 528L331.5 518.559L231.5 518.559L231.5 528Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-1-inside-1)" />
               </g>
-              <g id="twitter">
-                <g class="sost" data-s="10">
-                  <path d="M115.5 528L215.5 528L215.5 518.559L115.5 518.559L115.5 528Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-8-inside-6)" />
-                </g>
-                <g class="gas" data-g="47">
-                  <path d="M115.5 517.86L215.5 517.86L215.5 475.378L115.5 475.378L115.5 517.86Z" stroke="#A67EFF" stroke-width="0.8" mask="url(#path-9-inside-7)" />
-                </g>
-                <g class="carb" data-c="21">
-                  <path d="M115.5 474.678L215.5 474.678L215.5 454.224L115.5 454.224L115.5 474.678Z" stroke="#FF9900" stroke-width="0.8" mask="url(#path-10-inside-8)" />
-                </g>
-                <g class="nuc" data-n="14">
-                  <path d="M115.5 453.525L215.5 453.525L215.5 440.063L115.5 440.063L115.5 453.525Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-11-inside-9)" />
-                </g>
-                <g class="altro2" data-a="12">
-                  <path d="M115.5 439.364L215.5 439.364L215.5 428L115.5 428L115.5 439.364Z" stroke="white" stroke-width="0.8" mask="url(#path-12-inside-10)" />
-                </g>
-                <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                  <tspan class="testo" x="193.985" y="422.183">0%</tspan>
-                </text>
-                <text id="Twitter_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                  <tspan x="116.5" y="422.52">Twitter</tspan>
-                </text>
+              <g class="gas" data-g="31">
+                <path d="M231.5 517.86L331.5 517.86L331.5 487.44L231.5 487.44L231.5 517.86Z" stroke="#A67EFF" stroke-width="0.8" mask="url(#path-2-inside-2)" />
               </g>
-              <g id="soundcloud">
-                <g class="sost" data-s="17">
-                  <path d="M1.50002 528L101.5 528L101.5 511.566L1.50002 511.566L1.50002 528Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-15-inside-11)" />
-                </g>
-                <g class="gas" data-g="24">
-                  <path d="M1.50002 510.867L101.5 510.867L101.5 487.441L1.50002 487.441L1.50002 510.867Z" stroke="#A67EFF" stroke-width="0.8" mask="url(#path-16-inside-12)" />
-                </g>
-                <g class="carb" data-c="30">
-                  <path d="M1.50002 486.741L101.5 486.741L101.5 457.196L1.50003 457.196L1.50002 486.741Z" stroke="#FF9900" stroke-width="0.8" mask="url(#path-17-inside-13)" />
-                </g>
-                <g class="nuc" data-n="26">
-                  <path d="M1.50002 456.497L101.5 456.497L101.5 430.972L1.50003 430.972L1.50002 456.497Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-18-inside-14)" />
-                </g>
-                <g class="altro2" data-a="3">
-                  <path d="M1.50004 430.273L101.5 430.273L101.5 428L1.50004 428L1.50004 430.273Z" stroke="white" stroke-width="0.8" mask="url(#path-19-inside-15)" />
-                </g>
-                <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                  <tspan class="testo" x="81.1221" y="422.183">0%</tspan>
-                </text>
-                <text id="Sound-cloud" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                  <tspan x="1.50002" y="422.183">Sound-cloud</tspan>
-                </text>
+              <g class="carb" data-c="23">
+                <path d="M231.5 486.741L331.5 486.741L331.5 464.189L231.5 464.189L231.5 486.741Z" stroke="#FF9900" stroke-width="0.8" mask="url(#path-3-inside-3)" />
               </g>
-              <g id="netflix">
-                <g class="sost" data-s="17">
-                  <path d="M232.5 393L332.5 393L332.5 376.566L232.5 376.566L232.5 393Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-22-inside-16)" />
-                </g>
-                <g class="gas" data-g="24">
-                  <path d="M232.5 375.867L332.5 375.867L332.5 352.44L232.5 352.44L232.5 375.867Z" stroke="#A67EFF" stroke-width="0.8" mask="url(#path-23-inside-17)" />
-                </g>
-                <g class="carb" data-c="30">
-                  <path d="M232.5 351.741L332.5 351.741L332.5 322.196L232.5 322.196L232.5 351.741Z" stroke="#FF9900" stroke-width="0.8" mask="url(#path-24-inside-18)" />
-                </g>
-                <g class="nuc" data-n="26">
-                  <path d="M232.5 321.497L332.5 321.497L332.5 295.972L232.5 295.972L232.5 321.497Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-25-inside-19)" />
-                </g>
-                <g class="altro2" data-a="3">
-                  <path d="M232.5 295.273L332.5 295.273L332.5 293L232.5 293L232.5 295.273Z" stroke="white" stroke-width="0.8" mask="url(#path-26-inside-20)" />
-                </g>
-                <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                  <tspan class="testo" x="311.283" y="286.433">0%</tspan>
-                </text>
-                <text id="Netflix_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                  <tspan x="232.5" y="286.433">Netflix</tspan>
-                </text>
+              <g class="nuc" data-n="20">
+                <path d="M231.5 463.489L331.5 463.49L331.5 444.084L231.5 444.084L231.5 463.489Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-4-inside-4)" />
               </g>
-              <g id="amazon">
-                <g class="sost" data-s="17">
-                  <path d="M115.5 393L215.5 393L215.5 376.566L115.5 376.566L115.5 393Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-29-inside-21)" />
-                </g>
-                <g class="gas" data-g="24">
-                  <path d="M115.5 375.867L215.5 375.867L215.5 352.44L115.5 352.44L115.5 375.867Z" stroke="#A67EFF" stroke-width="0.8" mask="url(#path-30-inside-22)" />
-                </g>
-                <g class="carb" data-c="30">
-                  <path d="M115.5 351.741L215.5 351.741L215.5 322.195L115.5 322.195L115.5 351.741Z" stroke="#FF9900" stroke-width="0.8" mask="url(#path-31-inside-23)" />
-                </g>
-                <g class="nuc" data-n="26">
-                  <path d="M115.5 321.496L215.5 321.496L215.5 295.971L115.5 295.971L115.5 321.496Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-32-inside-24)" />
-                </g>
-                <g class="altro2" data-a="3">
-                  <path d="M115.5 295.273L215.5 295.273L215.5 293L115.5 293L115.5 295.273Z" stroke="white" stroke-width="0.8" mask="url(#path-33-inside-25)" />
-                </g>
-                <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                  <tspan class="testo" x="195.122" y="286.433">0%</tspan>
-                </text>
-                <text id="Amazon_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                  <tspan x="115.5" y="286.433">Amazon</tspan>
-                </text>
+              <g class="altro2" data-a="16">
+                <path d="M231.5 443.385L331.5 443.385L331.5 428L231.5 428L231.5 443.385Z" stroke="white" stroke-width="0.8" mask="url(#path-5-inside-5)" />
               </g>
-              <g id="skype">
-                <g class="sost" data-s="32">
-                  <path d="M1.50001 392L101.5 392L101.5 360.531L1.50001 360.531L1.50001 392Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-36-inside-26)" />
-                </g>
-                <g class="gas" data-g="23">
-                  <path d="M1.50001 359.832L101.5 359.832L101.5 337.28L1.50001 337.28L1.50001 359.832Z" stroke="#A67EFF" stroke-width="0.8" mask="url(#path-37-inside-27)" />
-                </g>
-                <g class="carb" data-c="31">
-                  <path d="M1.50001 336.58L101.5 336.58L101.5 306.161L1.50001 306.161L1.50001 336.58Z" stroke="#FF9900" stroke-width="0.8" mask="url(#path-38-inside-28)" />
-                </g>
-                <g class="nuc" data-n="10">
-                  <path d="M1.50001 305.462L101.5 305.462L101.5 296.021L1.50001 296.021L1.50001 305.462Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-39-inside-29)" />
-                </g>
-                <g class="altro2" data-a="4">
-                  <path d="M1.50002 295.322L101.5 295.322L101.5 292L1.50002 292L1.50002 295.322Z" stroke="white" stroke-width="0.8" mask="url(#path-40-inside-30)" />
-                </g>
-                <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                  <tspan class="testo" x="76.3526" y="286.433">0%</tspan>
-                </text>
-                <text id="Skype_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                  <tspan x="0.500004" y="286.52">Skype</tspan>
-                </text>
+              <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan class="testo" x="310.147" y="422.52">0%</tspan>
+              </text>
+              <text id="Linkedin_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan x="231.5" y="422.183">Linkedin</tspan>
+              </text>
+            </g>
+            <g id="twitter">
+              <g class="sost" data-s="10">
+                <path d="M115.5 528L215.5 528L215.5 518.559L115.5 518.559L115.5 528Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-8-inside-6)" />
               </g>
-              <g id="vimeo">
-                <g class="sost" data-s="47">
-                  <path d="M231.5 259L331.5 259L331.5 212.322L231.5 212.322L231.5 259Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-43-inside-31)" />
-                </g>
-                <g class="gas" data-g="13">
-                  <path d="M231.5 211.623L331.5 211.623L331.5 199.21L231.5 199.21L231.5 211.623Z" stroke="#B697F8" stroke-width="0.8" mask="url(#path-44-inside-32)" />
-                </g>
-                <g class="carb" data-c="20">
-                  <path d="M231.5 198.511L331.5 198.511L331.5 179.105L231.5 179.105L231.5 198.511Z" stroke="#FCA31D" stroke-width="0.8" mask="url(#path-45-inside-33)" />
-                </g>
-                <g class="nuc" data-n="19">
-                  <path d="M231.5 178.406L331.5 178.406L331.5 160.049L231.5 160.049L231.5 178.406Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-46-inside-34)" />
-                </g>
-                <g class="altro2" data-a="1">
-                  <path d="M231.5 159.35L331.5 159.35L331.5 159L231.5 159L231.5 159.35Z" stroke="white" stroke-width="0.8" mask="url(#path-47-inside-35)" />
-                </g>
-                <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                  <tspan class="testo" x="309.985" y="150.684">0%</tspan>
-                </text>
-                <text id="Vimeo_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                  <tspan x="231.5" y="149.693">Vimeo</tspan>
-                </text>
+              <g class="gas" data-g="47">
+                <path d="M115.5 517.86L215.5 517.86L215.5 475.378L115.5 475.378L115.5 517.86Z" stroke="#A67EFF" stroke-width="0.8" mask="url(#path-9-inside-7)" />
               </g>
-              <g id="spotify">
-                <g class="sost" data-s="56">
-                  <path d="M115.5 259L215.5 259L215.5 203.231L115.5 203.231L115.5 259Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-50-inside-36)" />
-                </g>
-                <g class="gas" data-g="15">
-                  <path d="M115.5 202.531L215.5 202.531L215.5 188.196L115.5 188.196L115.5 202.531Z" stroke="#A67EFF" stroke-width="0.8" mask="url(#path-51-inside-37)" />
-                </g>
-                <g class="carb" data-c="14">
-                  <path d="M115.5 187.496L215.5 187.496L215.5 174.035L115.5 174.035L115.5 187.496Z" stroke="#FF9900" stroke-width="0.8" mask="url(#path-52-inside-38)" />
-                </g>
-                <g class="nuc" data-n="10">
-                  <path d="M115.5 173.336L215.5 173.336L215.5 164.07L115.5 164.07L115.5 173.336Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-53-inside-39)" />
-                </g>
-                <g class="altro" data-a="5">
-                  <path d="M115.5 163.371L215.5 163.371L215.5 159L115.5 159L115.5 163.371Z" stroke="white" stroke-width="0.8" mask="url(#path-54-inside-40)" />
-                </g>
-                <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                  <tspan class="testo" x="195.271" y="150.684">0%</tspan>
-                </text>
-                <text id="Spotify_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                  <tspan x="114.019" y="150.684">Spotify</tspan>
-                </text>
+              <g class="carb" data-c="21">
+                <path d="M115.5 474.678L215.5 474.678L215.5 454.224L115.5 454.224L115.5 474.678Z" stroke="#FF9900" stroke-width="0.8" mask="url(#path-10-inside-8)" />
               </g>
-              <g id="youtube">
-                <g class="sost" data-s="56">
-                  <path d="M1.50001 257L101.5 257L101.5 201.231L1.50001 201.231L1.50001 257Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-57-inside-41)" />
-                </g>
-                <g class="gas" data-g="15">
-                  <path d="M1.50001 200.531L101.5 200.531L101.5 186.196L1.50001 186.196L1.50001 200.531Z" stroke="#B697F8" stroke-width="0.8" mask="url(#path-58-inside-42)" />
-                </g>
-                <g class="carb" data-c="14">
-                  <path d="M1.50001 185.497L101.5 185.497L101.5 172.035L1.50001 172.035L1.50001 185.497Z" stroke="#FCA31D" stroke-width="0.8" mask="url(#path-59-inside-43)" />
-                </g>
-                <g class="nuc" data-n="10">
-                  <path d="M1.50001 171.336L101.5 171.336L101.5 162.07L1.50001 162.07L1.50001 171.336Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-60-inside-44)" />
-                </g>
-                <g class="altro2" data-a="5">
-                  <path d="M1.50002 161.371L101.5 161.371L101.5 157L1.50002 157L1.50002 161.371Z" stroke="white" stroke-width="0.8" mask="url(#path-61-inside-45)" />
-                </g>
-                <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                  <tspan class="testo" x="77.8586" y="150.684">0%</tspan>
-                </text>
-                <text id="YouTube" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                  <tspan x="0.570683" y="150.684">YouTube</tspan>
-                </text>
+              <g class="nuc" data-n="14">
+                <path d="M115.5 453.525L215.5 453.525L215.5 440.063L115.5 440.063L115.5 453.525Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-11-inside-9)" />
               </g>
-              <g id="google">
-                <g class="sost" data-s="56">
-                  <path d="M232.5 121L332.5 121L332.5 65.2305L232.5 65.2305L232.5 121Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-64-inside-46)" />
-                </g>
-                <g class="gas" data-g="14">
-                  <path d="M232.5 64.5314L332.5 64.5314L332.5 51.2447L232.5 51.2446L232.5 64.5314Z" stroke="#A67EFF" stroke-width="0.8" mask="url(#path-65-inside-47)" />
-                </g>
-                <g class="carb" data-c="15">
-                  <path d="M232.5 50.5449L332.5 50.5449L332.5 36.0344L232.5 36.0344L232.5 50.5449Z" stroke="#FF9900" stroke-width="0.8" mask="url(#path-66-inside-48)" />
-                </g>
-                <g class="nuc" data-n="10">
-                  <path d="M232.5 35.3355L332.5 35.3355L332.5 26.0698L232.5 26.0698L232.5 35.3355Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-67-inside-49)" />
-                </g>
-                <g class="altro2" data-a="5">
-                  <path d="M232.5 25.3705L332.5 25.3705L332.5 20.9999L232.5 20.9999L232.5 25.3705Z" stroke="white" stroke-width="0.8" mask="url(#path-68-inside-50)" />
-                </g>
-                <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                  <tspan class="testo" x="310.118" y="11.52">0%</tspan>
-                </text>
-                <text id="Google_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                  <tspan x="232.5" y="11.9614">Google</tspan>
-                </text>
+              <g class="altro2" data-a="12">
+                <path d="M115.5 439.364L215.5 439.364L215.5 428L115.5 428L115.5 439.364Z" stroke="white" stroke-width="0.8" mask="url(#path-12-inside-10)" />
               </g>
-              <g id="fbwa">
-                <g class="sost" data-s="67">
-                  <path d="M115.5 122L215.5 122L215.5 55.2167L115.5 55.2167L115.5 122Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-71-inside-51)" />
-                </g>
-                <g class="gas" data-g="7">
-                  <path d="M115.5 54.5176L215.5 54.5176L215.5 48.2239L115.5 48.2239L115.5 54.5176Z" stroke="#A67EFF" stroke-width="0.8" mask="url(#path-72-inside-52)" />
-                </g>
-                <g class="carb" data-c="15">
-                  <path d="M115.5 47.5245L215.5 47.5245L215.5 33.014L115.5 33.014L115.5 47.5245Z" stroke="#FF9900" stroke-width="0.8" mask="url(#path-73-inside-53)" />
-                </g>
-                <g class="nuc" data-n="9">
-                  <path d="M115.5 32.3147L215.5 32.3148L215.5 24.098L115.5 24.098L115.5 32.3147Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-74-inside-54)" />
-                </g>
-                <g class="altro2" data-a="2">
-                  <path d="M115.5 23.3986L215.5 23.3986L215.5 22L115.5 22L115.5 23.3986Z" stroke="white" stroke-width="0.8" mask="url(#path-75-inside-55)" />
-                </g>
-                <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                  <tspan class="testo" x="193.666" y="11.52">0%</tspan>
-                </text>
-                <text id="Fb/ WA/ IG" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                  <tspan x="115.5" y="11.9614">Fb/ WA/ IG </tspan>
-                </text>
+              <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan class="testo" x="193.985" y="422.183">0%</tspan>
+              </text>
+              <text id="Twitter_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan x="116.5" y="422.52">Twitter</tspan>
+              </text>
+            </g>
+            <g id="soundcloud">
+              <g class="sost" data-s="17">
+                <path d="M1.50002 528L101.5 528L101.5 511.566L1.50002 511.566L1.50002 528Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-15-inside-11)" />
               </g>
-              <g id="apple">
-                <g class="sost" data-s="83">
-                  <path d="M0.499992 121L100.5 121L100.5 38.133L0.5 38.133L0.499992 121Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-78-inside-56)" />
-                </g>
-                <g class="gas" data-g="4">
-                  <path d="M0.500008 37.4337L100.5 37.4337L100.5 34.112L0.500008 34.112L0.500008 37.4337Z" stroke="#A67EFF" stroke-width="0.8" mask="url(#path-79-inside-57)" />
-                </g>
-                <g class="carb" data-c="5">
-                  <path d="M0.500008 33.4126L100.5 33.4127L100.5 29.042L0.500008 29.042L0.500008 33.4126Z" stroke="#FF9900" stroke-width="0.8" mask="url(#path-80-inside-58)" />
-                </g>
-                <g class="nuc" data-n="5">
-                  <path d="M0.500008 28.3429L100.5 28.3429L100.5 23.9723L0.500008 23.9723L0.500008 28.3429Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-81-inside-59)" />
-                </g>
-                <g class="altro2" data-a="3">
-                  <path d="M0.500008 23.2727L100.5 23.2727L100.5 21L0.500008 21L0.500008 23.2727Z" stroke="white" stroke-width="0.8" mask="url(#path-82-inside-60)" />
-                </g>
-                <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                  <tspan class="testo" x="80.7606" y="11.9614">0%</tspan>
-                </text>
-                <text id="Apple_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                  <tspan x="0.499996" y="11.9614">Apple</tspan>
-                </text>
+              <g class="gas" data-g="24">
+                <path d="M1.50002 510.867L101.5 510.867L101.5 487.441L1.50002 487.441L1.50002 510.867Z" stroke="#A67EFF" stroke-width="0.8" mask="url(#path-16-inside-12)" />
               </g>
+              <g class="carb" data-c="30">
+                <path d="M1.50002 486.741L101.5 486.741L101.5 457.196L1.50003 457.196L1.50002 486.741Z" stroke="#FF9900" stroke-width="0.8" mask="url(#path-17-inside-13)" />
+              </g>
+              <g class="nuc" data-n="26">
+                <path d="M1.50002 456.497L101.5 456.497L101.5 430.972L1.50003 430.972L1.50002 456.497Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-18-inside-14)" />
+              </g>
+              <g class="altro2" data-a="3">
+                <path d="M1.50004 430.273L101.5 430.273L101.5 428L1.50004 428L1.50004 430.273Z" stroke="white" stroke-width="0.8" mask="url(#path-19-inside-15)" />
+              </g>
+              <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan class="testo" x="81.1221" y="422.183">0%</tspan>
+              </text>
+              <text id="Sound-cloud" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan x="1.50002" y="422.183">Sound-cloud</tspan>
+              </text>
+            </g>
+            <g id="netflix">
+              <g class="sost" data-s="17">
+                <path d="M232.5 393L332.5 393L332.5 376.566L232.5 376.566L232.5 393Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-22-inside-16)" />
+              </g>
+              <g class="gas" data-g="24">
+                <path d="M232.5 375.867L332.5 375.867L332.5 352.44L232.5 352.44L232.5 375.867Z" stroke="#A67EFF" stroke-width="0.8" mask="url(#path-23-inside-17)" />
+              </g>
+              <g class="carb" data-c="30">
+                <path d="M232.5 351.741L332.5 351.741L332.5 322.196L232.5 322.196L232.5 351.741Z" stroke="#FF9900" stroke-width="0.8" mask="url(#path-24-inside-18)" />
+              </g>
+              <g class="nuc" data-n="26">
+                <path d="M232.5 321.497L332.5 321.497L332.5 295.972L232.5 295.972L232.5 321.497Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-25-inside-19)" />
+              </g>
+              <g class="altro2" data-a="3">
+                <path d="M232.5 295.273L332.5 295.273L332.5 293L232.5 293L232.5 295.273Z" stroke="white" stroke-width="0.8" mask="url(#path-26-inside-20)" />
+              </g>
+              <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan class="testo" x="311.283" y="286.433">0%</tspan>
+              </text>
+              <text id="Netflix_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan x="232.5" y="286.433">Netflix</tspan>
+              </text>
+            </g>
+            <g id="amazon">
+              <g class="sost" data-s="17">
+                <path d="M115.5 393L215.5 393L215.5 376.566L115.5 376.566L115.5 393Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-29-inside-21)" />
+              </g>
+              <g class="gas" data-g="24">
+                <path d="M115.5 375.867L215.5 375.867L215.5 352.44L115.5 352.44L115.5 375.867Z" stroke="#A67EFF" stroke-width="0.8" mask="url(#path-30-inside-22)" />
+              </g>
+              <g class="carb" data-c="30">
+                <path d="M115.5 351.741L215.5 351.741L215.5 322.195L115.5 322.195L115.5 351.741Z" stroke="#FF9900" stroke-width="0.8" mask="url(#path-31-inside-23)" />
+              </g>
+              <g class="nuc" data-n="26">
+                <path d="M115.5 321.496L215.5 321.496L215.5 295.971L115.5 295.971L115.5 321.496Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-32-inside-24)" />
+              </g>
+              <g class="altro2" data-a="3">
+                <path d="M115.5 295.273L215.5 295.273L215.5 293L115.5 293L115.5 295.273Z" stroke="white" stroke-width="0.8" mask="url(#path-33-inside-25)" />
+              </g>
+              <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan class="testo" x="195.122" y="286.433">0%</tspan>
+              </text>
+              <text id="Amazon_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan x="115.5" y="286.433">Amazon</tspan>
+              </text>
+            </g>
+            <g id="skype">
+              <g class="sost" data-s="32">
+                <path d="M1.50001 392L101.5 392L101.5 360.531L1.50001 360.531L1.50001 392Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-36-inside-26)" />
+              </g>
+              <g class="gas" data-g="23">
+                <path d="M1.50001 359.832L101.5 359.832L101.5 337.28L1.50001 337.28L1.50001 359.832Z" stroke="#A67EFF" stroke-width="0.8" mask="url(#path-37-inside-27)" />
+              </g>
+              <g class="carb" data-c="31">
+                <path d="M1.50001 336.58L101.5 336.58L101.5 306.161L1.50001 306.161L1.50001 336.58Z" stroke="#FF9900" stroke-width="0.8" mask="url(#path-38-inside-28)" />
+              </g>
+              <g class="nuc" data-n="10">
+                <path d="M1.50001 305.462L101.5 305.462L101.5 296.021L1.50001 296.021L1.50001 305.462Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-39-inside-29)" />
+              </g>
+              <g class="altro2" data-a="4">
+                <path d="M1.50002 295.322L101.5 295.322L101.5 292L1.50002 292L1.50002 295.322Z" stroke="white" stroke-width="0.8" mask="url(#path-40-inside-30)" />
+              </g>
+              <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan class="testo" x="76.3526" y="286.433">0%</tspan>
+              </text>
+              <text id="Skype_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan x="0.500004" y="286.52">Skype</tspan>
+              </text>
+            </g>
+            <g id="vimeo">
+              <g class="sost" data-s="47">
+                <path d="M231.5 259L331.5 259L331.5 212.322L231.5 212.322L231.5 259Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-43-inside-31)" />
+              </g>
+              <g class="gas" data-g="13">
+                <path d="M231.5 211.623L331.5 211.623L331.5 199.21L231.5 199.21L231.5 211.623Z" stroke="#B697F8" stroke-width="0.8" mask="url(#path-44-inside-32)" />
+              </g>
+              <g class="carb" data-c="20">
+                <path d="M231.5 198.511L331.5 198.511L331.5 179.105L231.5 179.105L231.5 198.511Z" stroke="#FCA31D" stroke-width="0.8" mask="url(#path-45-inside-33)" />
+              </g>
+              <g class="nuc" data-n="19">
+                <path d="M231.5 178.406L331.5 178.406L331.5 160.049L231.5 160.049L231.5 178.406Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-46-inside-34)" />
+              </g>
+              <g class="altro2" data-a="1">
+                <path d="M231.5 159.35L331.5 159.35L331.5 159L231.5 159L231.5 159.35Z" stroke="white" stroke-width="0.8" mask="url(#path-47-inside-35)" />
+              </g>
+              <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan class="testo" x="309.985" y="150.684">0%</tspan>
+              </text>
+              <text id="Vimeo_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan x="231.5" y="149.693">Vimeo</tspan>
+              </text>
+            </g>
+            <g id="spotify">
+              <g class="sost" data-s="56">
+                <path d="M115.5 259L215.5 259L215.5 203.231L115.5 203.231L115.5 259Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-50-inside-36)" />
+              </g>
+              <g class="gas" data-g="15">
+                <path d="M115.5 202.531L215.5 202.531L215.5 188.196L115.5 188.196L115.5 202.531Z" stroke="#A67EFF" stroke-width="0.8" mask="url(#path-51-inside-37)" />
+              </g>
+              <g class="carb" data-c="14">
+                <path d="M115.5 187.496L215.5 187.496L215.5 174.035L115.5 174.035L115.5 187.496Z" stroke="#FF9900" stroke-width="0.8" mask="url(#path-52-inside-38)" />
+              </g>
+              <g class="nuc" data-n="10">
+                <path d="M115.5 173.336L215.5 173.336L215.5 164.07L115.5 164.07L115.5 173.336Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-53-inside-39)" />
+              </g>
+              <g class="altro" data-a="5">
+                <path d="M115.5 163.371L215.5 163.371L215.5 159L115.5 159L115.5 163.371Z" stroke="white" stroke-width="0.8" mask="url(#path-54-inside-40)" />
+              </g>
+              <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan class="testo" x="195.271" y="150.684">0%</tspan>
+              </text>
+              <text id="Spotify_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan x="114.019" y="150.684">Spotify</tspan>
+              </text>
+            </g>
+            <g id="youtube">
+              <g class="sost" data-s="56">
+                <path d="M1.50001 257L101.5 257L101.5 201.231L1.50001 201.231L1.50001 257Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-57-inside-41)" />
+              </g>
+              <g class="gas" data-g="15">
+                <path d="M1.50001 200.531L101.5 200.531L101.5 186.196L1.50001 186.196L1.50001 200.531Z" stroke="#B697F8" stroke-width="0.8" mask="url(#path-58-inside-42)" />
+              </g>
+              <g class="carb" data-c="14">
+                <path d="M1.50001 185.497L101.5 185.497L101.5 172.035L1.50001 172.035L1.50001 185.497Z" stroke="#FCA31D" stroke-width="0.8" mask="url(#path-59-inside-43)" />
+              </g>
+              <g class="nuc" data-n="10">
+                <path d="M1.50001 171.336L101.5 171.336L101.5 162.07L1.50001 162.07L1.50001 171.336Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-60-inside-44)" />
+              </g>
+              <g class="altro2" data-a="5">
+                <path d="M1.50002 161.371L101.5 161.371L101.5 157L1.50002 157L1.50002 161.371Z" stroke="white" stroke-width="0.8" mask="url(#path-61-inside-45)" />
+              </g>
+              <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan class="testo" x="77.8586" y="150.684">0%</tspan>
+              </text>
+              <text id="YouTube" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan x="0.570683" y="150.684">YouTube</tspan>
+              </text>
+            </g>
+            <g id="google">
+              <g class="sost" data-s="56">
+                <path d="M232.5 121L332.5 121L332.5 65.2305L232.5 65.2305L232.5 121Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-64-inside-46)" />
+              </g>
+              <g class="gas" data-g="14">
+                <path d="M232.5 64.5314L332.5 64.5314L332.5 51.2447L232.5 51.2446L232.5 64.5314Z" stroke="#A67EFF" stroke-width="0.8" mask="url(#path-65-inside-47)" />
+              </g>
+              <g class="carb" data-c="15">
+                <path d="M232.5 50.5449L332.5 50.5449L332.5 36.0344L232.5 36.0344L232.5 50.5449Z" stroke="#FF9900" stroke-width="0.8" mask="url(#path-66-inside-48)" />
+              </g>
+              <g class="nuc" data-n="10">
+                <path d="M232.5 35.3355L332.5 35.3355L332.5 26.0698L232.5 26.0698L232.5 35.3355Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-67-inside-49)" />
+              </g>
+              <g class="altro2" data-a="5">
+                <path d="M232.5 25.3705L332.5 25.3705L332.5 20.9999L232.5 20.9999L232.5 25.3705Z" stroke="white" stroke-width="0.8" mask="url(#path-68-inside-50)" />
+              </g>
+              <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan class="testo" x="310.118" y="11.52">0%</tspan>
+              </text>
+              <text id="Google_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan x="232.5" y="11.9614">Google</tspan>
+              </text>
+            </g>
+            <g id="fbwa">
+              <g class="sost" data-s="67">
+                <path d="M115.5 122L215.5 122L215.5 55.2167L115.5 55.2167L115.5 122Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-71-inside-51)" />
+              </g>
+              <g class="gas" data-g="7">
+                <path d="M115.5 54.5176L215.5 54.5176L215.5 48.2239L115.5 48.2239L115.5 54.5176Z" stroke="#A67EFF" stroke-width="0.8" mask="url(#path-72-inside-52)" />
+              </g>
+              <g class="carb" data-c="15">
+                <path d="M115.5 47.5245L215.5 47.5245L215.5 33.014L115.5 33.014L115.5 47.5245Z" stroke="#FF9900" stroke-width="0.8" mask="url(#path-73-inside-53)" />
+              </g>
+              <g class="nuc" data-n="9">
+                <path d="M115.5 32.3147L215.5 32.3148L215.5 24.098L115.5 24.098L115.5 32.3147Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-74-inside-54)" />
+              </g>
+              <g class="altro2" data-a="2">
+                <path d="M115.5 23.3986L215.5 23.3986L215.5 22L115.5 22L115.5 23.3986Z" stroke="white" stroke-width="0.8" mask="url(#path-75-inside-55)" />
+              </g>
+              <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan class="testo" x="193.666" y="11.52">0%</tspan>
+              </text>
+              <text id="Fb/ WA/ IG" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan x="115.5" y="11.9614">Fb/ WA/ IG </tspan>
+              </text>
+            </g>
+            <g id="apple">
+              <g class="sost" data-s="83">
+                <path d="M0.499992 121L100.5 121L100.5 38.133L0.5 38.133L0.499992 121Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-78-inside-56)" />
+              </g>
+              <g class="gas" data-g="4">
+                <path d="M0.500008 37.4337L100.5 37.4337L100.5 34.112L0.500008 34.112L0.500008 37.4337Z" stroke="#A67EFF" stroke-width="0.8" mask="url(#path-79-inside-57)" />
+              </g>
+              <g class="carb" data-c="5">
+                <path d="M0.500008 33.4126L100.5 33.4127L100.5 29.042L0.500008 29.042L0.500008 33.4126Z" stroke="#FF9900" stroke-width="0.8" mask="url(#path-80-inside-58)" />
+              </g>
+              <g class="nuc" data-n="5">
+                <path d="M0.500008 28.3429L100.5 28.3429L100.5 23.9723L0.500008 23.9723L0.500008 28.3429Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-81-inside-59)" />
+              </g>
+              <g class="altro2" data-a="3">
+                <path d="M0.500008 23.2727L100.5 23.2727L100.5 21L0.500008 21L0.500008 23.2727Z" stroke="white" stroke-width="0.8" mask="url(#path-82-inside-60)" />
+              </g>
+              <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan class="testo" x="80.7606" y="11.9614">0%</tspan>
+              </text>
+              <text id="Apple_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                <tspan x="0.499996" y="11.9614">Apple</tspan>
+              </text>
             </g>
           </svg>
 
