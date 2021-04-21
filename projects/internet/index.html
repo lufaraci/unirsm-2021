@@ -136,6 +136,7 @@
         })
         .on("progress", function(e) {
 
+
           tmpValLinkS = $("#linkedin .sost").data("s");
           tmpValGooS = $("#google .sost").data("s");
           tmpValFbS = $("#fbwa g").data("s");
@@ -154,7 +155,7 @@
           tmpValFbG = $("#fbwa .gas").data("g");
           tmpValAmazonG = $("#amazon .gas").data("g");
           tmpValSpotG = $("#spotify .gas").data("g");
-          tmpValSkypeG = $("#skype g.gas").data("g");
+          tmpValSkypeG = $("#skype .gas").data("g");
           tmpValNetG = $("#netflix .gas").data("g");
           tmpValTwitG = $("#twitter .gas").data("g");
           tmpValSoundG = $("#soundcloud .gas").data("g");
@@ -213,6 +214,16 @@
             $("#youtube text .testo").html(tmpValYouS + "%").css("opacity", "1").css("fill", "#8fff00");
             $("#apple text .testo").html(tmpValAppS + "%").css("opacity", "1").css("fill", "#8fff00");
 
+            if (prog > 0 && prog <= 0.1) {
+              $("#parole").css("opacity", "1");
+              $("#parole").html("1");
+
+
+            } else {
+              $("#parole").css("opacity", "0");
+              $("#parole").html("1");
+            }
+
           } else if ((prog > 0.2) && (prog <= 0.4)) {
             //gas
             console.log("<.4");
@@ -242,6 +253,15 @@
             $("#youtube text .testo").html(tmpValYouG + "%").css("opacity", "1").css("fill", "#A67EFF");
             $("#apple text .testo").html(tmpValAppG + "%").css("opacity", "1").css("fill", "#A67EFF");
 
+
+            if (prog > 0.2 && prog <= 0.3) {
+              $("#parole").css("opacity", "1");
+              $("#parole").html("2");
+            } else {
+              $("#parole").css("opacity", "0");
+              $("#parole").html("2");
+            }
+
           } else if ((prog > 0.4) && (prog <= 0.6)) {
             //carb
             console.log("<.6");
@@ -270,6 +290,15 @@
             $("#vimeo text .testo").html(tmpValVimeC + "%").css("opacity", "1").css("fill", "#ff9900");
             $("#youtube text .testo").html(tmpValYouC + "%").css("opacity", "1").css("fill", "#ff9900");
             $("#apple text .testo").html(tmpValAppC + "%").css("opacity", "1").css("fill", "#ff9900");
+
+            if (prog > 0.4 && prog <= 0.5) {
+              $("#parole").css("opacity", "1");
+              $("#parole").html("3");
+            } else {
+              $("#parole").css("opacity", "0");
+              $("#parole").html("3");
+            }
+
           } else if ((prog > 0.6) && (prog <= 0.8)) {
             //nuc
             console.log("<.8");
@@ -295,6 +324,13 @@
             $("#youtube text .testo").html(tmpValYouN + "%").css("opacity", "1").css("fill", "#ff1111");
             $("#apple text .testo").html(tmpValAppN + "%").css("opacity", "1").css("fill", "#ff1111");
 
+            if (prog > 0.6 && prog <= 0.7) {
+              $("#parole").css("opacity", "1");
+              $("#parole").html("4");
+            } else {
+              $("#parole").css("opacity", "0");
+              $("#parole").html("4");
+            }
           } else if ((prog > 0.8) && (prog <= 1)) {
             //altro
             console.log("<.1");
@@ -303,9 +339,12 @@
             $("#nucleare").css("background-color", "#1e1e1e");
 
             $("#grafico2 text .testo").html("0%").css("fill", "white").css("opacity", "0");
+
           } else {
             $("#grafico2 .sost path").css("fill", "#1e1e1e");
             $("#grafico2 text .testo").html("0%").css("fill", "white").css("opacity", "0");
+
+            //$("#parole").html("0");
           }
         })
         .addIndicators()
@@ -1126,12 +1165,14 @@
   -->
 
     <div class="row" id="grafico2">
-      <div class="barChart" class="columns twelve">
+      <div class="barChartclass" class="columns twelve">
         <div class="titoloGrafici"> Energie dell’ICT </div>
 
         <!--GRAFICO FONTI ENERGETICHE-->
+        <div id="parole"> 🌸 </div>
 
         <div id="box">
+
 
           <!--grafico Desktop-->
           <svg id="barchartDesk" width="100%" height="100%" viewBox="0 0 664 571" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1416,299 +1457,300 @@
             </g>
           </svg>
 
-          <svg id="barchart" id="barchartMobile" width="100%" height="100%" viewBox="0 0 333 528" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g id="linkedin">
-              <g class="sost" data-s="10">
-                <path d="M231.5 528L331.5 528L331.5 518.559L231.5 518.559L231.5 528Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-1-inside-1)" />
+          <svg id="barchartMobile" width="100%" height="100%" viewBox="0 0 333 528" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="barchart">
+              <g id="linkedin">
+                <g class="sost" data-s="10">
+                  <path d="M231.5 528L331.5 528L331.5 518.559L231.5 518.559L231.5 528Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-1-inside-1)" />
+                </g>
+                <g class="gas" data-g="31">
+                  <path d="M231.5 517.86L331.5 517.86L331.5 487.44L231.5 487.44L231.5 517.86Z" stroke="#A67EFF" stroke-width="0.8" mask="url(#path-2-inside-2)" />
+                </g>
+                <g class="carb" data-c="23">
+                  <path d="M231.5 486.741L331.5 486.741L331.5 464.189L231.5 464.189L231.5 486.741Z" stroke="#FF9900" stroke-width="0.8" mask="url(#path-3-inside-3)" />
+                </g>
+                <g class="nuc" data-n="20">
+                  <path d="M231.5 463.489L331.5 463.49L331.5 444.084L231.5 444.084L231.5 463.489Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-4-inside-4)" />
+                </g>
+                <g class="altro2" data-a="16">
+                  <path d="M231.5 443.385L331.5 443.385L331.5 428L231.5 428L231.5 443.385Z" stroke="white" stroke-width="0.8" mask="url(#path-5-inside-5)" />
+                </g>
+                <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                  <tspan class="testo" x="310.147" y="422.52">0%</tspan>
+                </text>
+                <text id="Linkedin_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                  <tspan x="231.5" y="422.183">Linkedin</tspan>
+                </text>
               </g>
-              <g class="gas" data-g="31">
-                <path d="M231.5 517.86L331.5 517.86L331.5 487.44L231.5 487.44L231.5 517.86Z" stroke="#A67EFF" stroke-width="0.8" mask="url(#path-2-inside-2)" />
+              <g id="twitter">
+                <g class="sost" data-s="10">
+                  <path d="M115.5 528L215.5 528L215.5 518.559L115.5 518.559L115.5 528Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-8-inside-6)" />
+                </g>
+                <g class="gas" data-g="47">
+                  <path d="M115.5 517.86L215.5 517.86L215.5 475.378L115.5 475.378L115.5 517.86Z" stroke="#A67EFF" stroke-width="0.8" mask="url(#path-9-inside-7)" />
+                </g>
+                <g class="carb" data-c="21">
+                  <path d="M115.5 474.678L215.5 474.678L215.5 454.224L115.5 454.224L115.5 474.678Z" stroke="#FF9900" stroke-width="0.8" mask="url(#path-10-inside-8)" />
+                </g>
+                <g class="nuc" data-n="14">
+                  <path d="M115.5 453.525L215.5 453.525L215.5 440.063L115.5 440.063L115.5 453.525Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-11-inside-9)" />
+                </g>
+                <g class="altro2" data-a="12">
+                  <path d="M115.5 439.364L215.5 439.364L215.5 428L115.5 428L115.5 439.364Z" stroke="white" stroke-width="0.8" mask="url(#path-12-inside-10)" />
+                </g>
+                <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                  <tspan class="testo" x="193.985" y="422.183">0%</tspan>
+                </text>
+                <text id="Twitter_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                  <tspan x="116.5" y="422.52">Twitter</tspan>
+                </text>
               </g>
-              <g class="carb" data-c="23">
-                <path d="M231.5 486.741L331.5 486.741L331.5 464.189L231.5 464.189L231.5 486.741Z" stroke="#FF9900" stroke-width="0.8" mask="url(#path-3-inside-3)" />
+              <g id="soundcloud">
+                <g class="sost" data-s="17">
+                  <path d="M1.50002 528L101.5 528L101.5 511.566L1.50002 511.566L1.50002 528Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-15-inside-11)" />
+                </g>
+                <g class="gas" data-g="24">
+                  <path d="M1.50002 510.867L101.5 510.867L101.5 487.441L1.50002 487.441L1.50002 510.867Z" stroke="#A67EFF" stroke-width="0.8" mask="url(#path-16-inside-12)" />
+                </g>
+                <g class="carb" data-c="30">
+                  <path d="M1.50002 486.741L101.5 486.741L101.5 457.196L1.50003 457.196L1.50002 486.741Z" stroke="#FF9900" stroke-width="0.8" mask="url(#path-17-inside-13)" />
+                </g>
+                <g class="nuc" data-n="26">
+                  <path d="M1.50002 456.497L101.5 456.497L101.5 430.972L1.50003 430.972L1.50002 456.497Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-18-inside-14)" />
+                </g>
+                <g class="altro2" data-a="3">
+                  <path d="M1.50004 430.273L101.5 430.273L101.5 428L1.50004 428L1.50004 430.273Z" stroke="white" stroke-width="0.8" mask="url(#path-19-inside-15)" />
+                </g>
+                <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                  <tspan class="testo" x="81.1221" y="422.183">0%</tspan>
+                </text>
+                <text id="Sound-cloud" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                  <tspan x="1.50002" y="422.183">Sound-cloud</tspan>
+                </text>
               </g>
-              <g class="nuc" data-n="20">
-                <path d="M231.5 463.489L331.5 463.49L331.5 444.084L231.5 444.084L231.5 463.489Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-4-inside-4)" />
+              <g id="netflix">
+                <g class="sost" data-s="17">
+                  <path d="M232.5 393L332.5 393L332.5 376.566L232.5 376.566L232.5 393Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-22-inside-16)" />
+                </g>
+                <g class="gas" data-g="24">
+                  <path d="M232.5 375.867L332.5 375.867L332.5 352.44L232.5 352.44L232.5 375.867Z" stroke="#A67EFF" stroke-width="0.8" mask="url(#path-23-inside-17)" />
+                </g>
+                <g class="carb" data-c="30">
+                  <path d="M232.5 351.741L332.5 351.741L332.5 322.196L232.5 322.196L232.5 351.741Z" stroke="#FF9900" stroke-width="0.8" mask="url(#path-24-inside-18)" />
+                </g>
+                <g class="nuc" data-n="26">
+                  <path d="M232.5 321.497L332.5 321.497L332.5 295.972L232.5 295.972L232.5 321.497Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-25-inside-19)" />
+                </g>
+                <g class="altro2" data-a="3">
+                  <path d="M232.5 295.273L332.5 295.273L332.5 293L232.5 293L232.5 295.273Z" stroke="white" stroke-width="0.8" mask="url(#path-26-inside-20)" />
+                </g>
+                <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                  <tspan class="testo" x="311.283" y="286.433">0%</tspan>
+                </text>
+                <text id="Netflix_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                  <tspan x="232.5" y="286.433">Netflix</tspan>
+                </text>
               </g>
-              <g class="altro2" data-a="16">
-                <path d="M231.5 443.385L331.5 443.385L331.5 428L231.5 428L231.5 443.385Z" stroke="white" stroke-width="0.8" mask="url(#path-5-inside-5)" />
+              <g id="amazon">
+                <g class="sost" data-s="17">
+                  <path d="M115.5 393L215.5 393L215.5 376.566L115.5 376.566L115.5 393Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-29-inside-21)" />
+                </g>
+                <g class="gas" data-g="24">
+                  <path d="M115.5 375.867L215.5 375.867L215.5 352.44L115.5 352.44L115.5 375.867Z" stroke="#A67EFF" stroke-width="0.8" mask="url(#path-30-inside-22)" />
+                </g>
+                <g class="carb" data-c="30">
+                  <path d="M115.5 351.741L215.5 351.741L215.5 322.195L115.5 322.195L115.5 351.741Z" stroke="#FF9900" stroke-width="0.8" mask="url(#path-31-inside-23)" />
+                </g>
+                <g class="nuc" data-n="26">
+                  <path d="M115.5 321.496L215.5 321.496L215.5 295.971L115.5 295.971L115.5 321.496Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-32-inside-24)" />
+                </g>
+                <g class="altro2" data-a="3">
+                  <path d="M115.5 295.273L215.5 295.273L215.5 293L115.5 293L115.5 295.273Z" stroke="white" stroke-width="0.8" mask="url(#path-33-inside-25)" />
+                </g>
+                <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                  <tspan class="testo" x="195.122" y="286.433">0%</tspan>
+                </text>
+                <text id="Amazon_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                  <tspan x="115.5" y="286.433">Amazon</tspan>
+                </text>
               </g>
-              <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                <tspan class="testo" x="310.147" y="422.52">0%</tspan>
-              </text>
-              <text id="Linkedin_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                <tspan x="231.5" y="422.183">Linkedin</tspan>
-              </text>
-            </g>
-            <g id="twitter">
-              <g class="sost" data-s="10">
-                <path d="M115.5 528L215.5 528L215.5 518.559L115.5 518.559L115.5 528Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-8-inside-6)" />
+              <g id="skype">
+                <g class="sost" data-s="32">
+                  <path d="M1.50001 392L101.5 392L101.5 360.531L1.50001 360.531L1.50001 392Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-36-inside-26)" />
+                </g>
+                <g class="gas" data-g="23">
+                  <path d="M1.50001 359.832L101.5 359.832L101.5 337.28L1.50001 337.28L1.50001 359.832Z" stroke="#A67EFF" stroke-width="0.8" mask="url(#path-37-inside-27)" />
+                </g>
+                <g class="carb" data-c="31">
+                  <path d="M1.50001 336.58L101.5 336.58L101.5 306.161L1.50001 306.161L1.50001 336.58Z" stroke="#FF9900" stroke-width="0.8" mask="url(#path-38-inside-28)" />
+                </g>
+                <g class="nuc" data-n="10">
+                  <path d="M1.50001 305.462L101.5 305.462L101.5 296.021L1.50001 296.021L1.50001 305.462Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-39-inside-29)" />
+                </g>
+                <g class="altro2" data-a="4">
+                  <path d="M1.50002 295.322L101.5 295.322L101.5 292L1.50002 292L1.50002 295.322Z" stroke="white" stroke-width="0.8" mask="url(#path-40-inside-30)" />
+                </g>
+                <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                  <tspan class="testo" x="76.3526" y="286.433">0%</tspan>
+                </text>
+                <text id="Skype_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                  <tspan x="0.500004" y="286.52">Skype</tspan>
+                </text>
               </g>
-              <g class="gas" data-g="47">
-                <path d="M115.5 517.86L215.5 517.86L215.5 475.378L115.5 475.378L115.5 517.86Z" stroke="#A67EFF" stroke-width="0.8" mask="url(#path-9-inside-7)" />
+              <g id="vimeo">
+                <g class="sost" data-s="47">
+                  <path d="M231.5 259L331.5 259L331.5 212.322L231.5 212.322L231.5 259Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-43-inside-31)" />
+                </g>
+                <g class="gas" data-g="13">
+                  <path d="M231.5 211.623L331.5 211.623L331.5 199.21L231.5 199.21L231.5 211.623Z" stroke="#B697F8" stroke-width="0.8" mask="url(#path-44-inside-32)" />
+                </g>
+                <g class="carb" data-c="20">
+                  <path d="M231.5 198.511L331.5 198.511L331.5 179.105L231.5 179.105L231.5 198.511Z" stroke="#FCA31D" stroke-width="0.8" mask="url(#path-45-inside-33)" />
+                </g>
+                <g class="nuc" data-n="19">
+                  <path d="M231.5 178.406L331.5 178.406L331.5 160.049L231.5 160.049L231.5 178.406Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-46-inside-34)" />
+                </g>
+                <g class="altro2" data-a="1">
+                  <path d="M231.5 159.35L331.5 159.35L331.5 159L231.5 159L231.5 159.35Z" stroke="white" stroke-width="0.8" mask="url(#path-47-inside-35)" />
+                </g>
+                <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                  <tspan class="testo" x="309.985" y="150.684">0%</tspan>
+                </text>
+                <text id="Vimeo_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                  <tspan x="231.5" y="149.693">Vimeo</tspan>
+                </text>
               </g>
-              <g class="carb" data-c="21">
-                <path d="M115.5 474.678L215.5 474.678L215.5 454.224L115.5 454.224L115.5 474.678Z" stroke="#FF9900" stroke-width="0.8" mask="url(#path-10-inside-8)" />
+              <g id="spotify">
+                <g class="sost" data-s="56">
+                  <path d="M115.5 259L215.5 259L215.5 203.231L115.5 203.231L115.5 259Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-50-inside-36)" />
+                </g>
+                <g class="gas" data-g="15">
+                  <path d="M115.5 202.531L215.5 202.531L215.5 188.196L115.5 188.196L115.5 202.531Z" stroke="#A67EFF" stroke-width="0.8" mask="url(#path-51-inside-37)" />
+                </g>
+                <g class="carb" data-c="14">
+                  <path d="M115.5 187.496L215.5 187.496L215.5 174.035L115.5 174.035L115.5 187.496Z" stroke="#FF9900" stroke-width="0.8" mask="url(#path-52-inside-38)" />
+                </g>
+                <g class="nuc" data-n="10">
+                  <path d="M115.5 173.336L215.5 173.336L215.5 164.07L115.5 164.07L115.5 173.336Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-53-inside-39)" />
+                </g>
+                <g class="altro" data-a="5">
+                  <path d="M115.5 163.371L215.5 163.371L215.5 159L115.5 159L115.5 163.371Z" stroke="white" stroke-width="0.8" mask="url(#path-54-inside-40)" />
+                </g>
+                <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                  <tspan class="testo" x="195.271" y="150.684">0%</tspan>
+                </text>
+                <text id="Spotify_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                  <tspan x="114.019" y="150.684">Spotify</tspan>
+                </text>
               </g>
-              <g class="nuc" data-n="14">
-                <path d="M115.5 453.525L215.5 453.525L215.5 440.063L115.5 440.063L115.5 453.525Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-11-inside-9)" />
+              <g id="youtube">
+                <g class="sost" data-s="56">
+                  <path d="M1.50001 257L101.5 257L101.5 201.231L1.50001 201.231L1.50001 257Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-57-inside-41)" />
+                </g>
+                <g class="gas" data-g="15">
+                  <path d="M1.50001 200.531L101.5 200.531L101.5 186.196L1.50001 186.196L1.50001 200.531Z" stroke="#B697F8" stroke-width="0.8" mask="url(#path-58-inside-42)" />
+                </g>
+                <g class="carb" data-c="14">
+                  <path d="M1.50001 185.497L101.5 185.497L101.5 172.035L1.50001 172.035L1.50001 185.497Z" stroke="#FCA31D" stroke-width="0.8" mask="url(#path-59-inside-43)" />
+                </g>
+                <g class="nuc" data-n="10">
+                  <path d="M1.50001 171.336L101.5 171.336L101.5 162.07L1.50001 162.07L1.50001 171.336Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-60-inside-44)" />
+                </g>
+                <g class="altro2" data-a="5">
+                  <path d="M1.50002 161.371L101.5 161.371L101.5 157L1.50002 157L1.50002 161.371Z" stroke="white" stroke-width="0.8" mask="url(#path-61-inside-45)" />
+                </g>
+                <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                  <tspan class="testo" x="77.8586" y="150.684">0%</tspan>
+                </text>
+                <text id="YouTube" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                  <tspan x="0.570683" y="150.684">YouTube</tspan>
+                </text>
               </g>
-              <g class="altro2" data-a="12">
-                <path d="M115.5 439.364L215.5 439.364L215.5 428L115.5 428L115.5 439.364Z" stroke="white" stroke-width="0.8" mask="url(#path-12-inside-10)" />
+              <g id="google">
+                <g class="sost" data-s="56">
+                  <path d="M232.5 121L332.5 121L332.5 65.2305L232.5 65.2305L232.5 121Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-64-inside-46)" />
+                </g>
+                <g class="gas" data-g="14">
+                  <path d="M232.5 64.5314L332.5 64.5314L332.5 51.2447L232.5 51.2446L232.5 64.5314Z" stroke="#A67EFF" stroke-width="0.8" mask="url(#path-65-inside-47)" />
+                </g>
+                <g class="carb" data-c="15">
+                  <path d="M232.5 50.5449L332.5 50.5449L332.5 36.0344L232.5 36.0344L232.5 50.5449Z" stroke="#FF9900" stroke-width="0.8" mask="url(#path-66-inside-48)" />
+                </g>
+                <g class="nuc" data-n="10">
+                  <path d="M232.5 35.3355L332.5 35.3355L332.5 26.0698L232.5 26.0698L232.5 35.3355Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-67-inside-49)" />
+                </g>
+                <g class="altro2" data-a="5">
+                  <path d="M232.5 25.3705L332.5 25.3705L332.5 20.9999L232.5 20.9999L232.5 25.3705Z" stroke="white" stroke-width="0.8" mask="url(#path-68-inside-50)" />
+                </g>
+                <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                  <tspan class="testo" x="310.118" y="11.52">0%</tspan>
+                </text>
+                <text id="Google_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                  <tspan x="232.5" y="11.9614">Google</tspan>
+                </text>
               </g>
-              <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                <tspan class="testo" x="193.985" y="422.183">0%</tspan>
-              </text>
-              <text id="Twitter_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                <tspan x="116.5" y="422.52">Twitter</tspan>
-              </text>
-            </g>
-            <g id="soundcloud">
-              <g class="sost" data-s="17">
-                <path d="M1.50002 528L101.5 528L101.5 511.566L1.50002 511.566L1.50002 528Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-15-inside-11)" />
+              <g id="fbwa">
+                <g class="sost" data-s="67">
+                  <path d="M115.5 122L215.5 122L215.5 55.2167L115.5 55.2167L115.5 122Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-71-inside-51)" />
+                </g>
+                <g class="gas" data-g="7">
+                  <path d="M115.5 54.5176L215.5 54.5176L215.5 48.2239L115.5 48.2239L115.5 54.5176Z" stroke="#A67EFF" stroke-width="0.8" mask="url(#path-72-inside-52)" />
+                </g>
+                <g class="carb" data-c="15">
+                  <path d="M115.5 47.5245L215.5 47.5245L215.5 33.014L115.5 33.014L115.5 47.5245Z" stroke="#FF9900" stroke-width="0.8" mask="url(#path-73-inside-53)" />
+                </g>
+                <g class="nuc" data-n="9">
+                  <path d="M115.5 32.3147L215.5 32.3148L215.5 24.098L115.5 24.098L115.5 32.3147Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-74-inside-54)" />
+                </g>
+                <g class="altro2" data-a="2">
+                  <path d="M115.5 23.3986L215.5 23.3986L215.5 22L115.5 22L115.5 23.3986Z" stroke="white" stroke-width="0.8" mask="url(#path-75-inside-55)" />
+                </g>
+                <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                  <tspan class="testo" x="193.666" y="11.52">0%</tspan>
+                </text>
+                <text id="Fb/ WA/ IG" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                  <tspan x="115.5" y="11.9614">Fb/ WA/ IG </tspan>
+                </text>
               </g>
-              <g class="gas" data-g="24">
-                <path d="M1.50002 510.867L101.5 510.867L101.5 487.441L1.50002 487.441L1.50002 510.867Z" stroke="#A67EFF" stroke-width="0.8" mask="url(#path-16-inside-12)" />
+              <g id="apple">
+                <g class="sost" data-s="83">
+                  <path d="M0.499992 121L100.5 121L100.5 38.133L0.5 38.133L0.499992 121Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-78-inside-56)" />
+                </g>
+                <g class="gas" data-g="4">
+                  <path d="M0.500008 37.4337L100.5 37.4337L100.5 34.112L0.500008 34.112L0.500008 37.4337Z" stroke="#A67EFF" stroke-width="0.8" mask="url(#path-79-inside-57)" />
+                </g>
+                <g class="carb" data-c="5">
+                  <path d="M0.500008 33.4126L100.5 33.4127L100.5 29.042L0.500008 29.042L0.500008 33.4126Z" stroke="#FF9900" stroke-width="0.8" mask="url(#path-80-inside-58)" />
+                </g>
+                <g class="nuc" data-n="5">
+                  <path d="M0.500008 28.3429L100.5 28.3429L100.5 23.9723L0.500008 23.9723L0.500008 28.3429Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-81-inside-59)" />
+                </g>
+                <g class="altro2" data-a="3">
+                  <path d="M0.500008 23.2727L100.5 23.2727L100.5 21L0.500008 21L0.500008 23.2727Z" stroke="white" stroke-width="0.8" mask="url(#path-82-inside-60)" />
+                </g>
+                <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                  <tspan class="testo" x="80.7606" y="11.9614">0%</tspan>
+                </text>
+                <text id="Apple_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
+                  <tspan x="0.499996" y="11.9614">Apple</tspan>
+                </text>
               </g>
-              <g class="carb" data-c="30">
-                <path d="M1.50002 486.741L101.5 486.741L101.5 457.196L1.50003 457.196L1.50002 486.741Z" stroke="#FF9900" stroke-width="0.8" mask="url(#path-17-inside-13)" />
-              </g>
-              <g class="nuc" data-n="26">
-                <path d="M1.50002 456.497L101.5 456.497L101.5 430.972L1.50003 430.972L1.50002 456.497Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-18-inside-14)" />
-              </g>
-              <g class="altro2" data-a="3">
-                <path d="M1.50004 430.273L101.5 430.273L101.5 428L1.50004 428L1.50004 430.273Z" stroke="white" stroke-width="0.8" mask="url(#path-19-inside-15)" />
-              </g>
-              <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                <tspan class="testo" x="81.1221" y="422.183">0%</tspan>
-              </text>
-              <text id="Sound-cloud" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                <tspan x="1.50002" y="422.183">Sound-cloud</tspan>
-              </text>
-            </g>
-            <g id="netflix">
-              <g class="sost" data-s="17">
-                <path d="M232.5 393L332.5 393L332.5 376.566L232.5 376.566L232.5 393Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-22-inside-16)" />
-              </g>
-              <g class="gas" data-g="24">
-                <path d="M232.5 375.867L332.5 375.867L332.5 352.44L232.5 352.44L232.5 375.867Z" stroke="#A67EFF" stroke-width="0.8" mask="url(#path-23-inside-17)" />
-              </g>
-              <g class="carb" data-c="30">
-                <path d="M232.5 351.741L332.5 351.741L332.5 322.196L232.5 322.196L232.5 351.741Z" stroke="#FF9900" stroke-width="0.8" mask="url(#path-24-inside-18)" />
-              </g>
-              <g class="nuc" data-n="26">
-                <path d="M232.5 321.497L332.5 321.497L332.5 295.972L232.5 295.972L232.5 321.497Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-25-inside-19)" />
-              </g>
-              <g class="altro2" data-a="3">
-                <path d="M232.5 295.273L332.5 295.273L332.5 293L232.5 293L232.5 295.273Z" stroke="white" stroke-width="0.8" mask="url(#path-26-inside-20)" />
-              </g>
-              <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                <tspan class="testo" x="311.283" y="286.433">0%</tspan>
-              </text>
-              <text id="Netflix_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                <tspan x="232.5" y="286.433">Netflix</tspan>
-              </text>
-            </g>
-            <g id="amazon">
-              <g class="sost" data-s="17">
-                <path d="M115.5 393L215.5 393L215.5 376.566L115.5 376.566L115.5 393Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-29-inside-21)" />
-              </g>
-              <g class="gas" data-g="24">
-                <path d="M115.5 375.867L215.5 375.867L215.5 352.44L115.5 352.44L115.5 375.867Z" stroke="#A67EFF" stroke-width="0.8" mask="url(#path-30-inside-22)" />
-              </g>
-              <g class="carb" data-c="30">
-                <path d="M115.5 351.741L215.5 351.741L215.5 322.195L115.5 322.195L115.5 351.741Z" stroke="#FF9900" stroke-width="0.8" mask="url(#path-31-inside-23)" />
-              </g>
-              <g class="nuc" data-n="26">
-                <path d="M115.5 321.496L215.5 321.496L215.5 295.971L115.5 295.971L115.5 321.496Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-32-inside-24)" />
-              </g>
-              <g class="altro2" data-a="3">
-                <path d="M115.5 295.273L215.5 295.273L215.5 293L115.5 293L115.5 295.273Z" stroke="white" stroke-width="0.8" mask="url(#path-33-inside-25)" />
-              </g>
-              <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                <tspan class="testo" x="195.122" y="286.433">0%</tspan>
-              </text>
-              <text id="Amazon_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                <tspan x="115.5" y="286.433">Amazon</tspan>
-              </text>
-            </g>
-            <g id="skype">
-              <g class="sost" data-s="32">
-                <path d="M1.50001 392L101.5 392L101.5 360.531L1.50001 360.531L1.50001 392Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-36-inside-26)" />
-              </g>
-              <g class="gas" data-g="23">
-                <path d="M1.50001 359.832L101.5 359.832L101.5 337.28L1.50001 337.28L1.50001 359.832Z" stroke="#A67EFF" stroke-width="0.8" mask="url(#path-37-inside-27)" />
-              </g>
-              <g class="carb" data-c="31">
-                <path d="M1.50001 336.58L101.5 336.58L101.5 306.161L1.50001 306.161L1.50001 336.58Z" stroke="#FF9900" stroke-width="0.8" mask="url(#path-38-inside-28)" />
-              </g>
-              <g class="nuc" data-n="10">
-                <path d="M1.50001 305.462L101.5 305.462L101.5 296.021L1.50001 296.021L1.50001 305.462Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-39-inside-29)" />
-              </g>
-              <g class="altro2" data-a="4">
-                <path d="M1.50002 295.322L101.5 295.322L101.5 292L1.50002 292L1.50002 295.322Z" stroke="white" stroke-width="0.8" mask="url(#path-40-inside-30)" />
-              </g>
-              <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                <tspan class="testo" x="76.3526" y="286.433">0%</tspan>
-              </text>
-              <text id="Skype_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                <tspan x="0.500004" y="286.52">Skype</tspan>
-              </text>
-            </g>
-            <g id="vimeo">
-              <g class="sost" data-s="47">
-                <path d="M231.5 259L331.5 259L331.5 212.322L231.5 212.322L231.5 259Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-43-inside-31)" />
-              </g>
-              <g class="gas" data-g="13">
-                <path d="M231.5 211.623L331.5 211.623L331.5 199.21L231.5 199.21L231.5 211.623Z" stroke="#B697F8" stroke-width="0.8" mask="url(#path-44-inside-32)" />
-              </g>
-              <g class="carb" data-c="20">
-                <path d="M231.5 198.511L331.5 198.511L331.5 179.105L231.5 179.105L231.5 198.511Z" stroke="#FCA31D" stroke-width="0.8" mask="url(#path-45-inside-33)" />
-              </g>
-              <g class="nuc" data-n="19">
-                <path d="M231.5 178.406L331.5 178.406L331.5 160.049L231.5 160.049L231.5 178.406Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-46-inside-34)" />
-              </g>
-              <g class="altro2" data-a="1">
-                <path d="M231.5 159.35L331.5 159.35L331.5 159L231.5 159L231.5 159.35Z" stroke="white" stroke-width="0.8" mask="url(#path-47-inside-35)" />
-              </g>
-              <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                <tspan class="testo" x="309.985" y="150.684">0%</tspan>
-              </text>
-              <text id="Vimeo_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                <tspan x="231.5" y="149.693">Vimeo</tspan>
-              </text>
-            </g>
-            <g id="spotify">
-              <g class="sost" data-s="56">
-                <path d="M115.5 259L215.5 259L215.5 203.231L115.5 203.231L115.5 259Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-50-inside-36)" />
-              </g>
-              <g class="gas" data-g="15">
-                <path d="M115.5 202.531L215.5 202.531L215.5 188.196L115.5 188.196L115.5 202.531Z" stroke="#A67EFF" stroke-width="0.8" mask="url(#path-51-inside-37)" />
-              </g>
-              <g class="carb" data-c="14">
-                <path d="M115.5 187.496L215.5 187.496L215.5 174.035L115.5 174.035L115.5 187.496Z" stroke="#FF9900" stroke-width="0.8" mask="url(#path-52-inside-38)" />
-              </g>
-              <g class="nuc" data-n="10">
-                <path d="M115.5 173.336L215.5 173.336L215.5 164.07L115.5 164.07L115.5 173.336Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-53-inside-39)" />
-              </g>
-              <g class="altro" data-a="5">
-                <path d="M115.5 163.371L215.5 163.371L215.5 159L115.5 159L115.5 163.371Z" stroke="white" stroke-width="0.8" mask="url(#path-54-inside-40)" />
-              </g>
-              <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                <tspan class="testo" x="195.271" y="150.684">0%</tspan>
-              </text>
-              <text id="Spotify_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                <tspan x="114.019" y="150.684">Spotify</tspan>
-              </text>
-            </g>
-            <g id="youtube">
-              <g class="sost" data-s="56">
-                <path d="M1.50001 257L101.5 257L101.5 201.231L1.50001 201.231L1.50001 257Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-57-inside-41)" />
-              </g>
-              <g class="gas" data-g="15">
-                <path d="M1.50001 200.531L101.5 200.531L101.5 186.196L1.50001 186.196L1.50001 200.531Z" stroke="#B697F8" stroke-width="0.8" mask="url(#path-58-inside-42)" />
-              </g>
-              <g class="carb" data-c="14">
-                <path d="M1.50001 185.497L101.5 185.497L101.5 172.035L1.50001 172.035L1.50001 185.497Z" stroke="#FCA31D" stroke-width="0.8" mask="url(#path-59-inside-43)" />
-              </g>
-              <g class="nuc" data-n="10">
-                <path d="M1.50001 171.336L101.5 171.336L101.5 162.07L1.50001 162.07L1.50001 171.336Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-60-inside-44)" />
-              </g>
-              <g class="altro2" data-a="5">
-                <path d="M1.50002 161.371L101.5 161.371L101.5 157L1.50002 157L1.50002 161.371Z" stroke="white" stroke-width="0.8" mask="url(#path-61-inside-45)" />
-              </g>
-              <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                <tspan class="testo" x="77.8586" y="150.684">0%</tspan>
-              </text>
-              <text id="YouTube" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                <tspan x="0.570683" y="150.684">YouTube</tspan>
-              </text>
-            </g>
-            <g id="google">
-              <g class="sost" data-s="56">
-                <path d="M232.5 121L332.5 121L332.5 65.2305L232.5 65.2305L232.5 121Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-64-inside-46)" />
-              </g>
-              <g class="gas" data-g="14">
-                <path d="M232.5 64.5314L332.5 64.5314L332.5 51.2447L232.5 51.2446L232.5 64.5314Z" stroke="#A67EFF" stroke-width="0.8" mask="url(#path-65-inside-47)" />
-              </g>
-              <g class="carb" data-c="15">
-                <path d="M232.5 50.5449L332.5 50.5449L332.5 36.0344L232.5 36.0344L232.5 50.5449Z" stroke="#FF9900" stroke-width="0.8" mask="url(#path-66-inside-48)" />
-              </g>
-              <g class="nuc" data-n="10">
-                <path d="M232.5 35.3355L332.5 35.3355L332.5 26.0698L232.5 26.0698L232.5 35.3355Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-67-inside-49)" />
-              </g>
-              <g class="altro2" data-a="5">
-                <path d="M232.5 25.3705L332.5 25.3705L332.5 20.9999L232.5 20.9999L232.5 25.3705Z" stroke="white" stroke-width="0.8" mask="url(#path-68-inside-50)" />
-              </g>
-              <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                <tspan class="testo" x="310.118" y="11.52">0%</tspan>
-              </text>
-              <text id="Google_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                <tspan x="232.5" y="11.9614">Google</tspan>
-              </text>
-            </g>
-            <g id="fbwa">
-              <g class="sost" data-s="67">
-                <path d="M115.5 122L215.5 122L215.5 55.2167L115.5 55.2167L115.5 122Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-71-inside-51)" />
-              </g>
-              <g class="gas" data-g="7">
-                <path d="M115.5 54.5176L215.5 54.5176L215.5 48.2239L115.5 48.2239L115.5 54.5176Z" stroke="#A67EFF" stroke-width="0.8" mask="url(#path-72-inside-52)" />
-              </g>
-              <g class="carb" data-c="15">
-                <path d="M115.5 47.5245L215.5 47.5245L215.5 33.014L115.5 33.014L115.5 47.5245Z" stroke="#FF9900" stroke-width="0.8" mask="url(#path-73-inside-53)" />
-              </g>
-              <g class="nuc" data-n="9">
-                <path d="M115.5 32.3147L215.5 32.3148L215.5 24.098L115.5 24.098L115.5 32.3147Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-74-inside-54)" />
-              </g>
-              <g class="altro2" data-a="2">
-                <path d="M115.5 23.3986L215.5 23.3986L215.5 22L115.5 22L115.5 23.3986Z" stroke="white" stroke-width="0.8" mask="url(#path-75-inside-55)" />
-              </g>
-              <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                <tspan class="testo" x="193.666" y="11.52">0%</tspan>
-              </text>
-              <text id="Fb/ WA/ IG" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                <tspan x="115.5" y="11.9614">Fb/ WA/ IG </tspan>
-              </text>
-            </g>
-            <g id="apple">
-              <g class="sost" data-s="83">
-                <path d="M0.499992 121L100.5 121L100.5 38.133L0.5 38.133L0.499992 121Z" stroke="#8FFF00" stroke-width="0.8" mask="url(#path-78-inside-56)" />
-              </g>
-              <g class="gas" data-g="4">
-                <path d="M0.500008 37.4337L100.5 37.4337L100.5 34.112L0.500008 34.112L0.500008 37.4337Z" stroke="#A67EFF" stroke-width="0.8" mask="url(#path-79-inside-57)" />
-              </g>
-              <g class="carb" data-c="5">
-                <path d="M0.500008 33.4126L100.5 33.4127L100.5 29.042L0.500008 29.042L0.500008 33.4126Z" stroke="#FF9900" stroke-width="0.8" mask="url(#path-80-inside-58)" />
-              </g>
-              <g class="nuc" data-n="5">
-                <path d="M0.500008 28.3429L100.5 28.3429L100.5 23.9723L0.500008 23.9723L0.500008 28.3429Z" stroke="#FF1111" stroke-width="0.8" mask="url(#path-81-inside-59)" />
-              </g>
-              <g class="altro2" data-a="3">
-                <path d="M0.500008 23.2727L100.5 23.2727L100.5 21L0.500008 21L0.500008 23.2727Z" stroke="white" stroke-width="0.8" mask="url(#path-82-inside-60)" />
-              </g>
-              <text fill="#FFFFFF" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                <tspan class="testo" x="80.7606" y="11.9614">0%</tspan>
-              </text>
-              <text id="Apple_2" fill="white" xml:space="preserve" style="white-space: pre" font-family="Sole24Sans" font-size="12" letter-spacing="0em">
-                <tspan x="0.499996" y="11.9614">Apple</tspan>
-              </text>
-            </g>
           </svg>
-
+          </g>
         </div>
 
         <div id="linkini"> Fonte:
           <a href="http://www.clickclean.org/international/en/about/"> ClickClean </a></br>
         </div>
 
-        <div class="bottoni">
+        <!--        <div class="bottoni">
           <div class="flex-item" id="rinnovabili">rinnovabili</div>
           <div class="flex-item" id="gasNaturale">gas naturale</div>
           <div class="flex-item" id="carbone">carbone</div>
           <div class="flex-item" id="nucleare">nucleare</div>
           <div class="flex-item" id="altro">altro</div>
         </div>
-
+-->
       </div>
     </div>
 
