@@ -1569,7 +1569,7 @@ p {
 
 .titolo_cards {
 	font-size: 3rem;
-	font-family: 'sole24serif_displaybold';
+	font-family: "made_sunflowerregular";
 	color: black;
 }
 
@@ -1577,6 +1577,7 @@ p {
 	font-family: 'sole24serif_textregular';
 	font-size: 2rem;
 	color: black;
+	text-align: left;
 }
 
 .eventi {
