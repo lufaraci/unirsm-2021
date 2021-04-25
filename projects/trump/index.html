@@ -1201,11 +1201,11 @@
 								<rect x="76.64" y="324.22" width="9.02" height="7.11" fill="#f32f52"/>
 								<rect x="85.66" y="324.22" width="9.02" height="7.11" fill="#1bc8ff"/>
 								<rect x="94.68" y="324.22" width="9.02" height="7.11" fill="#e1e8ed"/>
-								<text transform="translate(0.5 12.4)" font-size="14" fill="#aab8c2" font-family="SoleSans" font-weight="400">8.12.2020</text>
-								<text transform="translate(0.5 125.57)" font-size="14" fill="#aab8c2" font-family="SoleSans" font-weight="400">14.12.2020</text>
-								<text transform="translate(0.5 238.76)" font-size="14" fill="#aab8c2" font-family="SoleSans" font-weight="400">21.12.2020</text>
-								<text transform="translate(0.5 352.06)" font-size="14" fill="#aab8c2" font-family="SoleSans" font-weight="400">28.12.2020</text>
-								<text transform="translate(0.5 465.21)" font-size="14" fill="#aab8c2" font-family="SoleSans" font-weight="400">4.12.2021</text>
+								<text transform="translate(0.5 12.4)" font-size="14" fill="#aab8c2" font-family="SoleSans" font-weight="600">8.12.2020</text>
+								<text transform="translate(0.5 125.57)" font-size="14" fill="#aab8c2" font-family="SoleSans" font-weight="600">14.12.2020</text>
+								<text transform="translate(0.5 238.76)" font-size="14" fill="#aab8c2" font-family="SoleSans" font-weight="600">21.12.2020</text>
+								<text transform="translate(0.5 352.06)" font-size="14" fill="#aab8c2" font-family="SoleSans" font-weight="600">28.12.2020</text>
+								<text transform="translate(0.5 465.21)" font-size="14" fill="#aab8c2" font-family="SoleSans" font-weight="600">4.12.2021</text>
 								<text transform="translate(0.5 512.7)" font-size="14" fill="#f32f52" font-family="SoleSans" font-weight="800">8 gen 2021</text>
 								<text transform="translate(155 513.47)" font-size="12" fill="#f32f52" font-family="SoleSans" font-weight="800">Data della sospensione dell’account</text>
 								<g>
@@ -1259,7 +1259,7 @@
 							<g id="newsAssalto">
 								<g>
 									<rect x="24.9" y="446.69" width="310.21" height="54.23" fill="#f32f52"/>
-									<text transform="translate(142.81 468.86)" font-size="14" fill="#fff" font-family="SoleSans" font-weight="400">06 gen 2021<tspan font-family="Sole_display"><tspan x="-109.41" y="16.8">Diversi sostenitori di Trump assaltano Capitol Hill</text>
+									<text transform="translate(142.81 468.86)" font-size="14" fill="#fff" font-family="SoleSans" font-weight="400">06 gen 2021<tspan font-family="Sole_display"><tspan x="-109.41" y="16.8">Diversi sostenitori di Trump assaltano Capitol Hill</tspan></tspan></text>
 								</g>
 							</g>
 
@@ -1270,7 +1270,6 @@
 								</g>
 							</g>
 							</svg>
-
 					</div>
 			</div>
 		</div>
@@ -1331,9 +1330,10 @@
 	<script>
 		$(document).ready(function() {
 
+			// INIZIO COUNTER          
             $('.counter').counterUp({
                 delay: 10,
-                time: 2000
+                time: 1500
             });
 
 			var controller = new ScrollMagic.Controller();
@@ -1376,9 +1376,6 @@
 
 				.addTo(controller);
 
-      // FINE INTERAZIONE TREEMAP
-			/////////////////////////////////////////////////////////////
-
 			/////////////////////////////////////////////////////////////
 			// PROVA INTERAZIONE TREEMAP
 			new ScrollMagic.Scene({
@@ -1393,21 +1390,11 @@
 				.on("progress", function(e) {
 
 					prog = JSON.stringify(e.progress);
-					if ((prog > 0) && (prog <= 0.2)) {
-						//niente
-						//console.log("<.15");
-						//$("#tweet1").css("opacity", "0");
-
-					} else {
-						//deve sparire il 579
-						//console.log("<.30");
+					if (prog > 0.5) {
 						$("#copertinaTM").css("opacity", "0");
-
-
-
 					}
 				})
-
+            
 				.addIndicators()
 				.addTo(controller);
 				// FINE INTERAZIONE treemap
