@@ -882,6 +882,7 @@ p {
   padding-right: 15px;
   background: url('../images/copertina_trump_def.jpg') no-repeat;
   background-size: cover;
+  background-position: center;
 }
 #titolo_copertina {
   color: white;
