@@ -1300,7 +1300,7 @@
 			<div class="row">
 					<div class="columns twelve">
 							<div id="logoFooter">
-					      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320.15 199">
+					          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320.15 199">
 										  <g id="name_outline" data-name="name outline">
 												    <g>
 												      <path d="M822.42,604.33h3.46v19a10,10,0,0,1-1.37,5.23,9.69,9.69,0,0,1-3.88,3.62,13.73,13.73,0,0,1-11.75,0,9.69,9.69,0,0,1-3.88-3.62,10.05,10.05,0,0,1-1.37-5.23v-19h3.46V623a7.36,7.36,0,0,0,.93,3.72,6.49,6.49,0,0,0,2.63,2.56,9.55,9.55,0,0,0,8.22,0,6.49,6.49,0,0,0,2.63-2.56,7.46,7.46,0,0,0,.92-3.72Z" transform="translate(-799.92 -434.46)" fill="#fff"/>
@@ -1322,14 +1322,14 @@
 										    <path d="M1044.88,585.49a75.19,75.19,0,1,0,0-150.38H969.69V585.49Z" transform="translate(-799.92 -434.46)" fill="#fff"/>
 										    <path d="M799.92,510.69a76.23,76.23,0,0,0,152.46,0V434.46H799.92Z" transform="translate(-799.92 -434.46)" fill="#fff"/>
 										  </g>
-					      </svg>
+					          </svg>
 							</div>
 
 			        <div id="testoFooter">
-					        Progetto degli studenti del laboratorio di Design dei Sistemi del corso di Laurea Magistrale in Design dell'Università degli Studi della Repubblica di San Marino, con la supervisione editoriale del Sole 24 Ore.</br>
-					        <b>Design e sviluppo:</b> Andrea Castellucci, Lucrezia Nediani e Emanuele Pizzuti.</br>
-					        <b>Docenti:</b> Matteo Moretti e Paolo Rigamonti.</br>
-		          </div>
+					        Progetto degli studenti del laboratorio di Design dei Sistemi del corso di Laurea Magistrale in Design dell'Università degli Studi della Repubblica di San Marino, con la supervisione editoriale del Sole 24 Ore.<br>
+					        <b>Design e sviluppo:</b> Andrea Castellucci, Lucrezia Nediani e Emanuele Pizzuti.<br>
+					        <b>Docenti:</b> Matteo Moretti e Paolo Rigamonti.<br>
+		           </div>
 		     </div>
 			</div>
 	</div>
@@ -1377,95 +1377,6 @@
 
 				.addTo(controller);
 
-/*
-			// INIZIO INTERAZIONE TREEMAP
-			$("#treeMap rect").hover(
-				function() {
-					id = $(this).attr("id");
-					idnumero = "#" + id + "numero";
-					idlinea = "#" + id + "linea";
-					idtesto = "#" + id + "testo";
-
-					$('#blmlinea').off('click');
-					$('#spacelinea').off('click');
-
-					if (id == "rect_elezionipres2020") {
-						$("#treeMap rect").css("opacity", "0.2");
-						$(this).css("opacity", "0");
-						$("#text_elezionipres2020").css("opacity", "0");
-						$("#elezpresactive rect").css("opacity", "100");
-					}
-
-					else if (id == "blm" || id =="space") {
-						$("#treeMap rect").css("opacity", "0.2");
-						$(this).css("opacity", "100");
-						$("#elezpresactive rect").css("opacity", "0"); //
-						$(idlinea).css("display", "block");
-						$(idtesto).css("display", "block");
-						$(idnumero).css("display", "block");
-					}
-
-					else {
-						$(idnumero).css("display", "block");
-						$("#treeMap rect").css("opacity", "0.2");
-						$("#elezpresactive rect").css("opacity", "0"); //
-						$(this).css("opacity", "100");
-					}
-				},
-
-				function() {
-					if (id == "rect_elezionipres2020") {
-						$("#treeMap rect").css("opacity", "100");
-						$(this).css("opacity", "100");
-						$("#text_elezionipres2020").css("opacity", "100");
-					}
-
-					if (id == "blm" || id =="space") {
-						$("#treeMap rect").css("opacity", "100");
-						$(idlinea).css("display", "none");
-						$(idtesto).css("display", "none");
-					}
-
-					$(idnumero).css("display", "none");
-					$("#elezionipres2020 rect").css("opacity", "100"); //
-					$("#treeMap rect").css("opacity", "100"); //
-					// ho aggiunto queste ultime due righe per
-					// riportare alla normalità i rect quando
-					// clicco fuori
-				}
-			) // FINE INTERAZIONE TREEMAP
-			*/
-
-			/////////////////////////////////////////////////////////////
-			// INIZIO INTERAZIONE TREEMAP
-			/*
-			new ScrollMagic.Scene({
-					triggerElement: "#lastgrafico",
-					triggerHook: 'onLeave',
-					duration: "600%"
-				})
-				.setPin("#lastgrafico", {
-					pushFollowers: true
-				})
-
-				.on("progress", function(e) {
-
-					prog = JSON.stringify(e.progress);
-					if ((prog > 0) && (prog <= 0.15)) {
-						//niente
-						console.log("<.15");
-						$("#tweet1").css("opacity", "0");
-
-					} else {
-						 //niente
-						 $("#newsAssalto").css("opacity", "0");
-						 $("#tweet4").css("opacity", "0");
-					}
-				})
-
-				.addIndicators()
-				.addTo(controller);
-				*/
       // FINE INTERAZIONE TREEMAP
 			/////////////////////////////////////////////////////////////
 
