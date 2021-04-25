@@ -927,7 +927,7 @@ p {
   margin: 0;
 }
 .box_dataviz {
-  padding-top: 30px;
+  padding-top: 20px;
   padding-bottom: 30px;
 }
 .titolo_dataviz {
@@ -945,9 +945,16 @@ p {
   line-height: 24px;
   font-weight: 400;
   text-align: left;
-  padding-left: 15px;
-  border-left: 1px solid #AAB8C2;
   margin-bottom: 30px;
+  padding-top: 5px;
+}
+#legenda {
+  font-family: "SoleSans";
+  font-weight: 400;
+  color: #657786;
+  font-size: 11px;
+  padding-left: 15px;
+  margin-bottom: 10px;
 }
 .padding {
   padding-left: 15px;
