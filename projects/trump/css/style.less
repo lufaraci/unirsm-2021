@@ -1,0 +1,341 @@
+// out: style.css, sourcemap: true, compress: false
+@import "normalize";
+@import "skeleton";
+
+///////////////////////////////////
+//PALETTE//////////////////////////
+///////////////////////////////////
+@light-blue-twitter: #1BC8FF;
+@blue-twitter: #1DA1F2;
+@dark-grey: #657786;
+@grey: #AAB8C2;
+@light-grey: #E1E8ED;
+@bg-color: #F5F8FA;
+@red: #F32F52;
+@light-red: #F54263;
+@salmon-red: #FF5B65;
+///////////////////////////////////
+
+@body-fontsize: 20px;
+@body-lineheight: 30px;
+
+body {
+	background-color: white;
+	font-size: @body-fontsize;
+}
+
+.container, p{
+	padding: 0;
+}
+
+#copertina{
+     height: 90vh;
+		 padding-left: 15px;
+		 padding-right: 15px;
+		 background: url('../images/copertina_trump_def.jpg') no-repeat;
+		 background-size: 100%;
+}
+
+#titolo_copertina{
+	color: white;
+	font-family:  "Sole_display";
+	font-size: 34px;
+	text-align: center;
+	text-shadow: 0px 4px 10px rgba(255, 0, 0, 0.25);
+	padding-top: 40px;
+	margin-bottom: @body-lineheight;
+	letter-spacing: normal;
+}
+
+#sottotitolo_copertina{
+	color: white;
+	font-family: "Sole_sub_it";
+	font-size: 18px;
+	font-weight: 400;
+	font-style: italic;
+	text-align: center;
+	line-height: 25px;
+	margin-bottom: 15px;
+}
+
+#info_copertina{
+	font-family:  "Sole_sub";
+	color: white;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: center;
+}
+
+.box_testo{
+	font-family: "Sole_text";
+	border-top: 1px solid @grey;
+	padding-top: @body-lineheight;
+	background-color: @bg-color;
+	padding-left: 15px;
+	padding-right: 15px;
+
+	font-size: @body-fontsize;
+  line-height: @body-lineheight;
+
+	padding-bottom: @body-lineheight;
+	border-bottom: 1px solid @grey;
+}
+
+.box_testo p{
+	margin: 0;
+}
+
+.box_dataviz{
+	padding-top: @body-lineheight;
+	padding-bottom: @body-lineheight;
+}
+
+.titolo_dataviz{
+	color: black;
+	font-family: "SoleSans";
+	font-size: 25px;
+  line-height: 30px;
+	font-weight: 800;
+	letter-spacing: normal;
+}
+
+.didascalia_dataviz{
+	font-family: "SoleSans";
+	color: @dark-grey;
+	font-size: 18px;
+  line-height: 24px;
+	font-weight: 400;
+	text-align: left;
+	padding-left: 15px;
+	border-left: 1px solid @grey;
+	margin-bottom: @body-lineheight;
+}
+
+.padding{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.cornice {
+	padding-top: 2*@body-lineheight;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 1.5*@body-lineheight;
+}
+
+.linea {
+	display: block;
+	border-bottom: 0.5px solid @grey;
+  margin-top: @body-lineheight;
+	margin-bottom: 1.5*@body-lineheight;
+}
+
+#tweetfade1 {
+				opacity: 0;
+				-webkit-transform: scale(0.95);
+					 -moz-transform: scale(0.95);
+						-ms-transform: scale(0.95);
+						 -o-transform: scale(0.95);
+								transform: scale(0.95);
+				-webkit-transition: all .5s ease-in-out;
+					 -moz-transition: all .5s ease-in-out;
+						-ms-transition: all .5s ease-in-out;
+						 -o-transition: all .5s ease-in-out;
+								transition: all .5s ease-in-out;
+			}
+			#tweetfade1.visible {
+				opacity: 1;
+				-webkit-transform: none;
+					 -moz-transform: none;
+						-ms-transform: none;
+						 -o-transform: none;
+								transform: none;
+			}
+
+#tweetfade2 {
+				opacity: 0;
+				-webkit-transform: scale(0.95);
+					 -moz-transform: scale(0.95);
+						-ms-transform: scale(0.95);
+						 -o-transform: scale(0.95);
+								transform: scale(0.95);
+				-webkit-transition: all .5s ease-in-out;
+					 -moz-transition: all .5s ease-in-out;
+						-ms-transition: all .5s ease-in-out;
+						 -o-transition: all .5s ease-in-out;
+								transition: all .5s ease-in-out;
+			}
+			#tweetfade2.visible {
+				opacity: 1;
+				-webkit-transform: none;
+					 -moz-transform: none;
+						-ms-transform: none;
+						 -o-transform: none;
+								transform: none;
+			}
+
+#tweetfade3 {
+				opacity: 0;
+				-webkit-transform: scale(0.95);
+					 -moz-transform: scale(0.95);
+						-ms-transform: scale(0.95);
+						 -o-transform: scale(0.95);
+								transform: scale(0.95);
+				-webkit-transition: all .5s ease-in-out;
+					 -moz-transition: all .5s ease-in-out;
+						-ms-transition: all .5s ease-in-out;
+						 -o-transition: all .5s ease-in-out;
+								transition: all .5s ease-in-out;
+			}
+			#tweetfade3.visible {
+				opacity: 1;
+				-webkit-transform: none;
+					 -moz-transform: none;
+						-ms-transform: none;
+						 -o-transform: none;
+								transform: none;
+			}
+
+#covidnumero, #altronumero, #pesteranumero, #blmnumero, #spacenumero, #blmtesto, #spacetesto, #blmlinea, #spacelinea {
+	display: none;
+
+}
+
+#tweet1, #tweet2, #tweet3, #tweet4, #newsAssalto{
+
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+#copertinaTM {
+	opacity: 1;
+	transition: opacity 0.5s;
+}
+
+///////////////////////////////////
+//HEADER///////////////////////////
+///////////////////////////////////
+#header {
+	background-color: black;
+	height: 65px;
+}
+
+#header .row {
+	position: relative;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+///////////////////////////////////
+//FOOTER///////////////////////////
+///////////////////////////////////
+#footer {
+	background-color: black;
+	padding-top: @body-lineheight;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: @body-lineheight;
+}
+
+#logoFooter{
+		display: inline-block;
+		width: 15%;
+		float: left;
+}
+
+#testoFooter{
+	float: right;
+	width: 75%;
+	color: white;
+	font-family: "SoleSans";
+	font-size: 14px;
+	line-height: 20px;
+	display: inline-block;
+}
+
+/* Larger than mobile */
+@media screen and (max-width: 480px) {
+
+    #titolo_copertina{
+	font-size: 41px;
+	padding-top: 40px;
+	margin-bottom: @body-lineheight;
+    }
+
+    #sottotitolo_copertina{
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 15px;
+    }
+
+    #info_copertina{
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+	#copertina{
+		height: 100vh;
+		background: url('../images/desktopCopertina.png') no-repeat;
+		background-position: center center;
+		background-size: cover;
+	}
+
+    #titolo_copertina{
+        font-size: 54px;
+        padding-top: 40px;
+        margin-bottom: @body-lineheight;
+    }
+
+    #sottotitolo_copertina{
+        font-size: 25px;
+        line-height: @body-lineheight;
+        margin-bottom: 15px;
+    }
+
+    #info_copertina{
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 801px) {
+
+	#copertina{
+		height: 100vh;
+		background: url('../images/desktopCopertina.png') no-repeat;
+		background-position: center center;
+		background-size: cover;
+	}
+    #titolo_copertina{
+        font-size: 65px;
+        padding-top: 60px;
+        margin-bottom: @body-lineheight;
+    }
+
+    #sottotitolo_copertina{
+        font-size: 30px;
+        line-height: @body-lineheight;
+        margin-bottom: 15px;
+    }
+
+    #info_copertina{
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    #titolo_copertina{
+        font-size: 90px;
+        padding-top: 170px;
+        margin-bottom: @body-lineheight;
+    }
+}
