@@ -27,6 +27,12 @@
 }
 
 @font-face {
+  font-family: 'SoleSans'; /*medium*/
+  src: url(../fonts/Sole24Sans-Medium.otf);
+  font-weight: 600;
+}
+
+@font-face {
   font-family: 'SoleSans'; /*testo*/
   src: url(../fonts/Sole24Sans-Bold.otf);
   font-weight: 800;
