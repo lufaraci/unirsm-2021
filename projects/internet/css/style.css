@@ -1037,7 +1037,7 @@ p {
 #linkini {
   font-weight: 400;
   font-style: normal;
-  font-size: 1em;
+  font-size: 1.1em;
   color: white;
   opacity: 0.3;
 }
@@ -1307,7 +1307,7 @@ a:hover {
   #linkini {
     font-weight: 400;
     font-style: normal;
-    font-size: 0.7em;
+    font-size: 0.9em;
     color: white;
     opacity: 0.3;
   }
