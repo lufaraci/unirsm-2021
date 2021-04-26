@@ -1176,12 +1176,12 @@ p {
   #lastgrafico {
     display: none;
   }
-  #legenda {
+  #legenda_desktop {
     font-size: 16px;
     padding-left: 0px;
     margin-bottom: 10px;
   }
-  #legenda span {
+  #legenda_desktop span {
     padding: 0 1%;
     margin-right: 12px;
   }
