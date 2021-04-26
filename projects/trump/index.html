@@ -29,11 +29,11 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
+<!--	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>-->
 
-    <!-- counter -->
-    <script src="way-points.js"></script>
-    <script src="jquery.counterup.min.js"></script>
+  <!-- counter -->
+  <script src="way-points.js"></script>
+  <script src="jquery.counterup.min.js"></script>
 
 </head>
 
@@ -211,7 +211,7 @@
 										<text transform="matrix(1 0 0 1 27.1995 143.4883)" class="st23 st24 st25 counter">57.000</text>
 										</svg>
 										</div>
-					<span id = "tweetfade2" class = "linea"> </span>
+					<span id = "tweetfade2" class = "linea"></span>
 					<div id = "tweetfade3">
 					<img src="images/profilePic.png" style = "width: 15%; float: left; padding-right: 10px;">
 					<?xml version="1.0" encoding="utf-8"?>
@@ -387,20 +387,21 @@
 	<div class="container" id="main">
 		<div class="row">
 			<div class="box_dataviz" id="magicTreemap">
+				<!--versione mobile -->
 					<h3 class="titolo_dataviz padding">I contenuti degli ultimi <span style="color:#1DA1F2"> tweet </span> di Donald Trump</h3>
 
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350.57 475.33">
-					  <g id="graph">
-					    <rect id="path0" x="249.54" width="101.03" height="303.7" fill="#1da1f2"/>
-					    <rect id="path1" width="248.32" height="303.7" fill="#1da1f2"/>
-					    <rect id="path2" x="163.11" y="304.92" width="187.46" height="170.41" fill="#1da1f2"/>
-					    <rect id="path3" x="69.38" y="304.92" width="92.51" height="111.99" fill="#188bd1"/>
-					    <rect id="path4" y="304.92" width="68.17" height="111.99" fill="#1272ad"/>
-					    <rect id="path5" x="33.47" y="418.12" width="128.42" height="57.21" fill="#126593"/>
-					    <rect id="path6" y="418.12" width="32.26" height="15.22" fill="#084266"/>
-					    <rect id="path7" y="434.56" width="32.26" height="40.78" fill="#0a537f"/>
+					  <g>
+					    <rect x="249.54" width="101.03" height="303.7" fill="#1da1f2"/>
+					    <rect width="248.32" height="303.7" fill="#1da1f2"/>
+					    <rect x="163.11" y="304.92" width="187.46" height="170.41" fill="#1da1f2"/>
+					    <rect x="69.38" y="304.92" width="92.51" height="111.99" fill="#188bd1"/>
+					    <rect y="304.92" width="68.17" height="111.99" fill="#1272ad"/>
+					    <rect x="33.47" y="418.12" width="128.42" height="57.21" fill="#126593"/>
+					    <rect y="418.12" width="32.26" height="15.22" fill="#084266"/>
+					    <rect y="434.56" width="32.26" height="40.78" fill="#0a537f"/>
 					  </g>
-					  <g id="text">
+					  <g>
 					    <g>
 					      <path d="M12.51,16.16V20H11.23V10.94h6V12H12.51v3h3.73v1.08Z" fill="#fff"/>
 					      <path d="M18.21,20V13.05h1.14v1.42a2.14,2.14,0,0,1,1.84-1.6,2.72,2.72,0,0,1,.71.11v1.18a3.12,3.12,0,0,0-.77-.1,1.81,1.81,0,0,0-1.74,1.8V20Z" fill="#fff"/>
@@ -506,7 +507,7 @@
 					    </g>
 					  </g>
 					  <g id="copertinaTM">
-					    <rect id="path1-2" data-name="path1" width="350.57" height="475.33" fill="#1da1f2"/>
+					    <rect data-name="path1" width="350.57" height="475.33" fill="#1da1f2"/>
 					    <text transform="translate(70.15 293.75)" font-size="14" fill="#fff" font-family="SoleSans" font-weight="400">Tweet pubblicati nell'ultimo mese</text>
 					    <text transform="translate(74.26 265.54)" font-size="120" fill="#fff" font-family="SoleSans" font-weight="800">579</text>
 					  </g>
@@ -519,21 +520,22 @@
 					</div>
 
 			</div>
-            
-            <div class="box_dataviz offset-by-one columns ten" id="magicTreemap_desktop">
+
+    <div class="box_dataviz offset-by-one columns ten" id="magicTreemap_desktop">
 					<h3 class="titolo_dataviz padding">I contenuti degli ultimi <span style="color:#1DA1F2"> tweet </span> di Donald Trump</h3>
+
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 475.33 350.57">
-                          <g id="graph">
-                            <rect id="path0" y="249.54" width="303.7" height="101.03" fill="#1da1f2"/>
-                            <rect id="path1" width="303.7" height="248.32" fill="#1da1f2"/>
-                            <rect id="path2" x="304.92" width="170.41" height="187.46" fill="#1da1f2"/>
-                            <rect id="path3" x="304.92" y="188.67" width="97.38" height="106.39" fill="#188bd1"/>
-                            <rect id="path4" x="403.58" y="188.67" width="71.75" height="106.39" fill="#1272ad"/>
-                            <rect id="path5" x="304.92" y="296.22" width="135.18" height="54.35" fill="#126593"/>
-                            <rect id="path6" x="441.38" y="336.11" width="33.95" height="14.45" fill="#084266"/>
-                            <rect id="path7" x="441.38" y="296.22" width="33.95" height="38.74" fill="#0a537f"/>
+                          <g id="graph_desktop">
+                            <rect y="249.54" width="303.7" height="101.03" fill="#1da1f2"/>
+                            <rect width="303.7" height="248.32" fill="#1da1f2"/>
+                            <rect x="304.92" width="170.41" height="187.46" fill="#1da1f2"/>
+                            <rect x="304.92" y="188.67" width="97.38" height="106.39" fill="#188bd1"/>
+                            <rect x="403.58" y="188.67" width="71.75" height="106.39" fill="#1272ad"/>
+                            <rect x="304.92" y="296.22" width="135.18" height="54.35" fill="#126593"/>
+                            <rect x="441.38" y="336.11" width="33.95" height="14.45" fill="#084266"/>
+                            <rect x="441.38" y="296.22" width="33.95" height="38.74" fill="#0a537f"/>
                           </g>
-                          <g id="text">
+                          <g>
                             <g>
                               <g>
                                 <path d="M10,14v3.84H8.72V8.8h6V9.91H10v3h3.74V14Z" transform="translate(0)" fill="#fff"/>
@@ -651,19 +653,20 @@
                             </g>
                           </g>
                           <g id="copertinaTM_desktop">
-                            <rect id="path1-2" data-name="path1" width="475.33" height="350.57" fill="#1da1f2"/>
+                            <rect data-name="path1" width="475.33" height="350.57" fill="#1da1f2"/>
                             <text transform="translate(132.53 233.36)" font-size="14" fill="#fff" font-family="Sole24Sans-Regular, Sole24Sans"><tspan letter-spacing="-0.05em">T</tspan><tspan x="6.93" y="0" letter-spacing="0em">w</tspan><tspan x="16.51" y="0" letter-spacing="0em">e</tspan><tspan x="23.8" y="0" letter-spacing="0em">e</tspan><tspan x="31.02" y="0">ts pubblicati nell’ultimo mese</tspan></text>
                             <text transform="translate(136.64 205.16)" font-size="120" fill="#fff" font-family="Sole24Sans-Bold, Sole24Sans" font-weight="700">579</text>
                           </g>
-                        </svg>
+					</svg>
+
 					<div class="padding">
-							<p class="didascalia_dataviz">
-								Nell’ultimo periodo il mondo non sta attraversando un periodo troppo “chiaro”, ma questo non sembra trasparire dai tweet di Donald, che nell’ultimo mese ha parlato quasi interamente delle elezioni, e di come fossero state truccate.
-							</p>
+									<p class="didascalia_dataviz">
+										Nell’ultimo periodo il mondo non sta attraversando un periodo troppo “chiaro”, ma questo non sembra trasparire dai tweet di Donald, che nell’ultimo mese ha parlato quasi interamente delle elezioni, e di come fossero state truccate.
+									</p>
 					</div>
-			</div>
-		</div>
-	</div>
+    </div>
+	 </div>
+  </div>
 
   <!-- BOX DI TESTO 2 -->
 	<div class="container" id="main">
@@ -684,7 +687,7 @@
                     <p id="legenda"><span style="padding: 0 1%; margin-right: 2px; background-color: #E1E8ED; color: black">tweet</span><span style="padding: 0 1%; margin-right: 2px; background-color: #1bc8ff; color: black">tweet segnalati</span><span style="padding: 0 1%; margin-right: 2px; background-color: #1888cd; color: white">tweet eliminati </span><span style="padding: 0 1%; background-color: #f32f52; color: white">tweet segnalati ed eliminati</span></p>
 					<div class="padding">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 359.89 518.15">
-							<g id="grafico">
+							<g>
 								<rect x="76.57" y="502.8" width="282.82" height="14.23" fill="#f5f8fa"/>
 								<rect x="76.57" y="486.88" width="282.82" height="14.23" fill="#f5f8fa"/>
 								<rect x="76.57" y="470.96" width="282.82" height="14.23" fill="#f5f8fa"/>
@@ -1415,18 +1418,20 @@
 							</g>
 							</svg>
 					</div>
-                    <div class="padding">
+
+          <div class="padding">
 							<p class="didascalia_dataviz">
 								Molti dei 579 tweet pubblicati nell’ultimo mese sono stati segnalati,  eliminati, o segnalati ed eliminati da Twitter.
 							</p>
 					</div>
 			</div>
-            <div class="box_dataviz offset-by-one columns ten" id="lastgrafico_desktop">
+
+    <div class="box_dataviz offset-by-one columns ten" id="lastgrafico_desktop">
 					<h3 class="titolo_dataviz padding">L’intervento di <span style="color:#1DA1F2">Twitter</span> sui <span style="color:#AAB8C2">tweet</span> di Trump</h3>
-                    <p id="legenda"><span style="background-color: #E1E8ED; color: black">tweet</span><span style="background-color: #1bc8ff; color: black">tweet segnalati</span><span style="background-color: #1888cd; color: white">tweet eliminati </span><span style="background-color: #f32f52; color: white">tweet segnalati ed eliminati</span></p>
-					<div class="padding">
+                    <p id="legenda_desktop"><span style="background-color: #E1E8ED; color: black">tweet</span><span style="background-color: #1bc8ff; color: black">tweet segnalati</span><span style="background-color: #1888cd; color: white">tweet eliminati </span><span style="background-color: #f32f52; color: white">tweet segnalati ed eliminati</span></p>
+				      	<div class="padding">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 658.77 410.58">
-                                  <g id="grafico">
+                                  <g>
                                     <rect x="535.77" y="193.3" width="354.37" height="17.83" transform="translate(440.13 900.76) rotate(-90)" fill="#f5f8fa"/>
                                     <rect x="515.83" y="193.3" width="354.37" height="17.83" transform="translate(420.19 880.81) rotate(-90)" fill="#f5f8fa"/>
                                     <rect x="495.89" y="193.3" width="354.37" height="17.83" transform="translate(400.24 860.87) rotate(-90)" fill="#f5f8fa"/>
@@ -2160,7 +2165,7 @@
 								Molti dei 579 tweet pubblicati nell’ultimo mese sono stati segnalati,  eliminati, o segnalati ed eliminati da Twitter.
 							</p>
 					</div>
-			</div>
+		</div>
 		</div>
 	</div>
 
@@ -2219,16 +2224,16 @@
 	<script>
 		$(document).ready(function() {
 
-			// INIZIO COUNTER -------------------------------------         
+			// INIZIO COUNTER -------------------------------------
             $('.counter').counterUp({
                 delay: 10,
                 time: 1500
             });
-            // FINE COUNTER ------------------------------------- 
-            
+            // FINE COUNTER -------------------------------------
+
 			var controller = new ScrollMagic.Controller();
 
-			// Fade-in Tweet1 ------------------------------------- 
+			// Fade-in Tweet1 -------------------------------------
 			new ScrollMagic.Scene ({
 				triggerElement: "#tweetfadebox",
 				triggerHook: 0.7,
@@ -2240,7 +2245,7 @@
 
 				.addTo(controller);
 
-			// Fade-in Linea ------------------------------------- 
+			// Fade-in Linea -------------------------------------
 			new ScrollMagic.Scene ({
 				triggerElement: "#tweetfadebox",
 				triggerHook: 0.55,
@@ -2252,7 +2257,7 @@
 
 				.addTo(controller);
 
-			// Fade-in Tweet2 ------------------------------------- 
+			// Fade-in Tweet2 -------------------------------------
 			new ScrollMagic.Scene ({
 				triggerElement: "#tweetfadebox",
 				triggerHook: 0.4,
@@ -2264,7 +2269,8 @@
 
 				.addTo(controller);
 
-			// Fade-out Copertina dataviz 1 mobile ------------------------------------- 
+
+			// Fade-out Copertina dataviz 1 mobile -------------------------------------
 			new ScrollMagic.Scene({
 					triggerElement: "#magicTreemap",
 					triggerHook: 'onLeave',
@@ -2279,15 +2285,17 @@
 					prog = JSON.stringify(e.progress);
 					if (prog < 0.5) {
 						$("#copertinaTM").css("opacity", "100");
+                        console.log("Treemap < .0.5");
 					} else if (prog > 0.5) {
 						$("#copertinaTM").css("opacity", "0");
+                        console.log("Treemap > .0.5");
 					}
 				})
-            
+
 				.addIndicators()
 				.addTo(controller);
-            
-			// Fade-out Copertina dataviz 1 desktop ------------------------------------- 
+
+			// Fade-out Copertina dataviz 1 desktop -------------------------------------
 			new ScrollMagic.Scene({
 					triggerElement: "#magicTreemap_desktop",
 					triggerHook: 'onLeave',
@@ -2302,15 +2310,17 @@
 					prog = JSON.stringify(e.progress);
 					if (prog < 0.5) {
 						$("#copertinaTM_desktop").css("opacity", "100");
+                        console.log("Treemapdesktop < .0.5");
 					} else if (prog > 0.5) {
 						$("#copertinaTM_desktop").css("opacity", "0");
+                        console.log("Treemapdesktop > .0.5");
 					}
 				})
-            
+
 				.addIndicators()
 				.addTo(controller);
-            
-			// Interazione Scroll ultima dataviz mobile ------------------------------------- 
+
+			// Interazione Scroll ultima dataviz mobile -------------------------------------
 			new ScrollMagic.Scene({
 					triggerElement: "#lastgrafico",
 					triggerHook: 'onLeave',
@@ -2374,9 +2384,9 @@
 
 				.addIndicators()
 				.addTo(controller);
-            
-			// Interazione Scroll ultima dataviz desktop ------------------------------------- 
-            new ScrollMagic.Scene({
+
+			// Interazione Scroll ultima dataviz desktop -------------------------------------
+        new ScrollMagic.Scene({
 					triggerElement: "#lastgrafico_desktop",
 					triggerHook: 'onLeave',
 					duration: "600%"
@@ -2439,7 +2449,6 @@
 
 				.addIndicators()
 				.addTo(controller);
-
 		}); // chiusura document ready function
 
 	</script>
