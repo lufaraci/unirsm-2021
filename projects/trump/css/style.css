@@ -398,7 +398,7 @@ th {
   box-sizing: border-box;
 }
 /* For devices larger than 400px */
-@media (min-width: 400px) {
+@media (min-width: 500px) {
   .container {
     width: 85%;
     padding: 0;
@@ -937,6 +937,7 @@ p {
   line-height: 30px;
   font-weight: 800;
   letter-spacing: normal;
+  margin-bottom: 10px;
 }
 .didascalia_dataviz {
   font-family: "SoleSans";
@@ -955,6 +956,10 @@ p {
   font-size: 11px;
   padding-left: 15px;
   margin-bottom: 10px;
+}
+#legenda span {
+  padding: 0 1%;
+  margin-right: 2px;
 }
 .padding {
   padding-left: 15px;
@@ -1050,11 +1055,20 @@ p {
 #tweet2,
 #tweet3,
 #tweet4,
-#newsAssalto {
+#newsAssalto,
+#tweet1_desktop,
+#tweet2_desktop,
+#tweet3_desktop,
+#tweet4_desktop,
+#newsAssalto_desktop {
   opacity: 0;
   transition: opacity 0.5s;
 }
 #copertinaTM {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+#copertinaTM_desktop {
   opacity: 1;
   transition: opacity 0.5s;
 }
@@ -1130,6 +1144,12 @@ p {
     text-align: center;
   }
 }
+@media screen and (max-width: 800px) {
+  #magicTreemap_desktop,
+  #lastgrafico_desktop {
+    display: none;
+  }
+}
 @media screen and (min-width: 801px) {
   #copertina {
     height: 100vh;
@@ -1152,11 +1172,55 @@ p {
     font-weight: 400;
     text-align: center;
   }
+  #magicTreemap,
+  #lastgrafico {
+    display: none;
+  }
+  #legenda {
+    font-size: 16px;
+    padding-left: 0px;
+    margin-bottom: 10px;
+  }
+  #legenda span {
+    padding: 0 1%;
+    margin-right: 12px;
+  }
+  .titolo_dataviz {
+    margin-bottom: 20px;
+  }
 }
 @media screen and (min-width: 1024px) {
   #titolo_copertina {
-    font-size: 90px;
-    padding-top: 170px;
+    font-size: 95px;
+    padding-top: 120px;
+    line-height: 90px;
     margin-bottom: 30px;
+  }
+  #sottotitolo_copertina {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    margin-top: 50px;
+  }
+  #info_copertina {
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 30px;
+  }
+  .box_testo {
+    border-top: 0px solid #AAB8C2;
+    border-bottom: 0px solid #AAB8C2;
+  }
+  .padding {
+    padding-left: 0;
+  }
+  .titolo_dataviz {
+    font-size: 36px;
+    margin-top: 30px;
+  }
+  .didascalia_dataviz {
+    font-size: 22px;
+    line-height: 26px;
+    margin-top: 30px;
   }
 }
