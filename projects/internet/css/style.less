@@ -238,15 +238,22 @@ p {
 #parole {
     position: absolute;
     z-index: 999;
+    
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    padding-left: 25%;
+    padding-right: 25%;
+    margin-left: 0%;
+    
     font-size: @h2-fontsize-desktop;
     text-align: center;
+    align-items: center;
     justify-content: center;
+    
     background-color: rgba(30, 30, 30, 0.7);
     opacity: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
+    
     transition: opacity 0.3s;
 }
 
